@@ -1,0 +1,22 @@
+{
+  "ᐅ": [{"math_operation": 1.0}, {"multi_dialogue": 0.0}],
+  "行": [{"multi_dialogue": 1.0}, {"unknow": 0.0}],
+  "好": [{"multi_dialogue": 1.0}, {"unknow": 0.0}],
+  "ok": [{"multi_dialogue": 1.0}, {"unknown": 0.0}],
+  "嗯": [{"multi_dialogue": 1.0}, {"unknow": 0.0}],
+  "好的": [{"multi_dialogue": 1.0}, {"unknow": 0.0}],
+  "知道了": [{"multi_dialogue": 1.0}, {"unknow": 0.0}],
+  "可以": [{"multi_dialogue": 1.0}, {"unknow": 0.0}],
+  "打开听歌识曲": [{"search": 1.0}, {"audio": 0.0}],
+  "请播放新闻大求真": [{"search": 1.0}, {"info_news": 0.0}],
+  "看军事报道": [{"search": 1.0}, {"info_news": 0.0}],
+  "播放我想看看": [{"search": 1.0}, {"multi_dialogue": 0.0}],
+  "搜索歌手": [{"search": 1.0}, {"audio": 0.0}],
+  "我要看霍元甲老版的": [{"search": 1.0}, {"multi_dialogue": 0.0}],
+  "名侦探柯南唐红的恋歌中文": [{"search": 1.0}, {"audio": 0.0}],
+  "我要看宝宝儿歌":  [{"search": 1.0}, {"audio": 0.0}],
+  "今日说法军事报道": [{"search": 1.0}, {"info_news": 0.0}],
+  "片头曲跳过": [{"control": 1.0}, {"multi_dialogue": 0.0}],
+  "静音开": [{"control": 1.0}, {"multi_dialogue": 0.0}]
+}
+

@@ -1,0 +1,634 @@
+aseline 项目 panel 第三批点屏发现黑斑 #### 第三批发生1PCS (mask改版，W TEG曾被量测）; 1）MT（W）点亮时，阴阳极short，破坏封装；; 2) 水汽侵入导致OLED失效，产生黑斑；;  #### 设计建议：发光区内，; 阳极应保留底部平坦化层（PLN），以避免阴阳极形成尖端而短路
+Baseline 项目 panel 第三批点屏发现黑斑 #### dummy pixel维修，能量过高（350），导致了VDD-VSS short，产生黑斑； #### Dummy picel维修建议不要使用过高，; 正常切线使用250即可。
+Cu WOLED CT暗点爆量，拆片后OM下可见暗点像素有白斑，中间有小黑点 #### 暗点pixel中小黑点在FIB的切割结果发现，是PLN凸起或下凹导致的OLED器件阴阳极短路，从而形成暗点。; 实际为PLN光阻在使用过程中被污染。 #### 指定PLN道光阻使用spec，从人、机、物、法、环等方面进行规范。
+CT点屏时暗点爆量，各纯色画面下均可见，且面内分布无规律，初步统计暗点数量>1000，发生率为100%。 #### 异物有概率造成EL阴阳极short，且异物点位于阴极上方，故确认异物引入发生于封装段。（封装端反馈CVD段尾气处理有异常） #### 改善CVD尾气处理后，第三批panel的暗点数量恢复正常（<50）；; 后续请封装端增加CVD段Particle检测手段或点灯检测手段。
+CT模组点屏暗点曝量，呈两边多中间少趋势；OM下观察暗点pixel有小黑点。 #### 对小黑点进行laser repair，后恢复为正常pixel，判断为EL阴阳极短路；通过FIB切片，可见Ag凸起。 #### 改善Ag制程工艺条件
+CT模组点屏暗点曝量，呈两边多中间少趋势；OM下观察暗点pixel有小黑点。 #### 1）Pixel的PDL边界的阴极下凹; 2）ITOAgITO突起 #### 改善制程工艺条件
+RA后panel产生亮斑，亮斑中央有小黑斑出现；; 随着RA时间增加，亮斑变成椭圆形 #### 拆片观察到TFT或CF侧有凹坑/碎屑。有fill的panel亮斑发生的数量更多，RA时间更少。 #### /
+RA后部分Block暗线曝量 #### 封装区外Cu严重腐蚀; 腐蚀程度：没有PLN膜层及ITO/Ag/ITO 膜层的区域>ITO/Ag/ITO区域>PLN保护区域 #### /
+CT各种黑画面点屏下均有亮线产生，且曝量 #### 1、Buffer PHT时， M1（Cu6500A）较厚，上方的PR由于流动性大较薄（<2.2um); 2、Buffer过孔刻蚀时，一次性刻蚀8000A SiO2，导致M1 上方PR被刻薄甚至刻蚀到下方的ILD膜层（~1300A），; M1和M2 cross处的ILD偏薄被击穿，使VDD，Data，WR，RD等信号short。 #### 采用ILD新光罩，Buffer过孔分两次刻蚀，避免PR被刻光从而导致ILD过刻，使ILD层偏薄容易击穿短路
+panel出现水滴状亮点群，并产生点带亮线簇 #### 电容位置处M2和VDD走线， 以及VDD与Data短路，形成亮点，并拉升整条Data线电压形成亮线簇；推测为M2 WET过程药液被稀释或者Nozzle头堵塞导致刻蚀不干净 #### 建议EOP改善相应制程
+诸多产品均有像素两侧漏光现象，于Baseline项目解析中找出根因与对策 #### Pixel之间存在光学传播路径 #### 1、色阻设计范围扩大，尽量包含附近的走线部分。; 2、W像素两侧（PDL层）挖槽设计，阻断光学传播路径。; 3、金属走线位置设计需谨慎，考虑是否借鉴LG的设计思路。
+Panel不同点位的漏光情况不相同，与CF基板和TFT基板之间的Shift有关 #### Vernier值大于3，CF光罩无法Cover对位偏差带来的影响。; 如：Vernier值Y方向为正，则CF相对TFT基板向右偏，左侧红色像素漏光 #### 第四批Panel点屏结果，Vernier值小于3的Panel漏光情况改善明显，轻微漏光甚至无漏光；; 附图：R-轻微漏光、G-无漏光、B-上下漏光
+Baseline第三批panel的R/G/B/W 的线性区/饱和区/sense TFT CT点灯以及黑画面均出现 #### 色阻风刀吹干异常：; 1）色阻形貌发生变化; 显影清洗后的风刀吹干，风压过大，造成形貌发生改变。; 2）色阻CD发生改变; 显影清洗后，色阻表面仍会残留少量稀释后的显影液，在使用风刀吹干的过程中，局部残留的显影液不均匀，造成色阻CD发生变化。 #### 1）调整风刀压力，减少B色阻形貌的形变；; 2）怀疑R和G色阻对Mura形成有影响，R/G色阻Bypass验证。
+ 面板上出现圆环状暗区，且位置固定 #### 与PH Line2 Pre-bake Pin位置对应，Array基板上M1后出现；; 产生原因与基板受热，以及pin处的散热不佳有关 #### 优先采用Line1进行PH制程
+面板中央对称区域，间隔15cm 4个点位 #### 与PVD LL low step的pin位置对应，Array基板上M1后出现；Normal条件沉积Cu膜后，玻璃基板达到150~180℃，lower plate为8mm厚的Cu板，Cu板上方分布有塑胶材质的pin，导热性能差，基板和pin接触区域散热较慢导致散热不均，Cu膜晶粒发生变化，可能会出现mura #### Cu制程的M1沉积时，recipe加1 step，即传送至一常温chamber冷却后，再进入LL chamber。
+左右距边8cm，上下距边10cm（由于中间切掉一部分，因此完整版约15cm） #### pin mura分布左右对称，怀疑Dry机台low LC pin长期未更换，磨损之后由原来的点接触变成面接触，导致mura的产生 #### 对pin进行更换
+对称分布的4个暗圆环形mura，且半板相关性大，A半板相比B半板更明显。 #### 怀疑是FA robot造成，此Pin为吸真空，可能是IGZO制程，高温250℃出片，之后进入Cooling进行冷却，由于温度过高，导致Pin mura的问题 #### /
+电性漂移导致分区mura #### 合作方点屏时使用block的方式点亮局部，并且在切换block时，未先将电荷放空，使电荷留在panel内持续产生电应力，造成局部Vth漂移 #### 细化SOP，要求合作方严格执行。; 重新产出demo，按SOP点屏操作，block mura消失。
+baseline halftone验证片3T交流点屏下出现周边黑mura现象。 #### 通过2T直流点屏、sense点屏、3T交流点屏，判断mura区的电容Cst发生了短路。; OM观察mura区域的像素电容区M1M2堆叠处的颜色有异常，SEM切片结果显示有①ITO与M2存在短路，②部分区域PV厚度偏薄。; 通过判断，是halftone区域的dose量较大，导致PLN剩余厚度小，在第二步刻蚀时导致PV过刻。 #### 短期对策：Halftone Dose亮减小310→280; 长期对策：后续halftone产品设计中去除问题高发区域的ITO Pattern
+GOA第一级输出幅值低于输入幅值的50% #### 影响GOA的第一级输出幅值因子为：（1）治具本身的漏电与信号耦合（最大拉低幅值6.3V）；（2）GOA的TFT器件特性漂移（最大拉低幅值7.1V）；（3）GOA驱动的设计原因，RC Loading大（最大拉低9.6V）；（4）工艺导致的信号之间漏电（最大拉低5.1V）； #### 1、ACD设计端，在GOA设计时应尽可能减小RC Loading；; 2、治具验收时，需确认探针信号间电阻，确保20MΩ以上以确保不漏电；; 3、工艺方面微漏电的方法解析目前比较欠缺，需和背板技术部同事研究解析测试方法；; 4、IGZO TFT特性的稳定性，需要重点突破。
+GOA级传只能级传92行且仅有GOA侧能够点亮 #### 1)Gate IC影响了GOA的驱动；2）GOA失效发生在G92或G93行的GOA电路侧，在给G596行加CK信号后可正常级传。 #### 1）调整GOA电路中的T8/T9管的尺寸；2）取消或减少ck信号间的时钟间隔；3）改善GOA电路区域的工艺条件
+横向Block&暗线不良 #### 高发区域ESD释放能力弱，且Cu制程较Al制程易产生ESD问题；; 异常点发生在BP ITO/AG/ITO及后续制程 #### TFT制程改善：ILD加厚，Cu减薄；; 设计可改善方案：去掉两侧发生ESD的VSS busline
+Panel在棋盘格画面、白画面等出现闪烁问题 #### Panel ID中A、B半板都有发生；仿真结果表明，将Vth负漂时，会有闪烁现象的产生；; 将WR的VgL电压调低，能抑制闪烁的发生，与实验现象一致； #### 1、短期内，将WR的VgL电压调低，抑制闪烁的发生；; 2、长期目标：优化背板特性，增强TFT管的稳定性，以彻底解决问题；
+panel在PG点屏时，存在分block点屏不良的问题 #### 治具与转接板之间信号的连接口接反，导致信号传输异常。 #### 修改设计，使信号接口对应接上；; 更换VDD信号线（有烧断）
+panel暗点爆量，常规电压无法点亮Panel；加大WR/Data电压，Panel可被点亮；sense点屏部分面板仍无法点亮 #### OLED阴阳极大面积短路：导致面板起亮电流增大；同时面板Vth正漂导致常规电压无法起亮。 #### TFT性能改善，改善Vth正漂问题；改善制程条件从而改善暗点情况
+VDD无电流产生，VSS搭接异常 #### 负型PLN内缩，PDL与PLN形成undercut #### Bank（负性） 曝光制程使用挡板将四周挡住，使bank内缩，避免与PLN重叠导致undercut
+Driving TFT Vth侦测实验中，侦测回传数据异常：同一列子像素的侦测回传数据几乎一样，差异小于10LSB #### Dummy Pixel中WR/RD/Data等信号线直接连接ESD，在对Normal Pixel进行Sensing时，T3状态不确定，可能开启导致Sensing失真。 #### 短期对策：红叉位置切断，红点位置Welding，通过Dummy Line将Dummy Pixel RD Line拉至VGL，确保T3关闭; 长期对策：改版Buffer/IGZO/ILD/M2其中一张光罩，或进行IGZO光罩Repair
+Cu WOLED T/E模组九点量测均匀性差， #### 顶发光Panel阴极较薄，方阻较大，导致IR Drop严重，影响亮度均匀性 #### 在现有mask下，增加2PCS mask，采用Cover metal实现与阴极的搭接；; 但fill的存在会使CM与阴极无法搭接，因此对封装要求高。; 
+AOI进行测试时发现AOI设备黑屏无任何显示，AOI主机进行重复开机动作。主机异常，无法进行正常测试 #### 主机电源损坏 #### 更换新电源
+t3 实验PEP5 PHO执行前，发现CAR076 Slot14 玻璃与其他Slot颜色不一致 #### 执行CVD时 ，FA Port 未mapping到 Slot14，下货人员未确认到该情况，少执行一片 #### 1.FA协助确认Port扫描异常; 2.加强新人下货注意事项的培训
+8/12下午16:12执行31寸Slim Border demo 薄膜封装生产时出现报警，Peripherals task stop error，手臂伸入CVD Chamber后动作停止 #### Robot本体异常 #### 更换ring-cover后回复正常
+Robot在低位取篮过程中突然中止，操作界面显示“提升伺服故障&横移伺服故障”报警信息，Robot手臂无法移动，实验货无法手动取出 #### 伺服马达与Robot手臂之间的连接轴螺丝松动，导致马达空转，Robot手臂无法正常运行 #### 拧紧螺丝
+生产时Plasma导轨运动过程中发现异音 #### 厂商调试结束后忘记将马达turning mode由AUTO改为Manual #### 调整马达tuning mode
+PC电脑与Tester连接异常，无法打开测量软件;; Tester与Pro连接异常，测量电性曲线异常; #### 数据线损伤及连接线损伤 #### 更换PC电脑与Tester连接线，通信异常报警取消
+9/16因台风影响，设备异常断电。TEG复机过程中发现PC电脑与tester及Pro无法建立通信，无法进行自动量测 #### 因断电异常，导致PC电脑与Tester数据线损坏 #### 更换PC电脑与Tester连接线，通信异常报警取消
+CVD执行Recipe“ACTIVELAYER_D”第八步“AH”时，出现Alarm，Alarm信息为 “Pressure Deviation”，机台Abort，成膜过程终止。 #### 真空计通信线接触不良 #### 将真空计信号接口重新固定; 后续设备PM时，和其他Chamber对调信号线交叉判定并固定
+, 成膜组技术员在L20层执行点检时发现CVD 区域的地面有大面积液体泄漏；经PH试纸和管道检查后确认为DIW #### DIW水管道裂缝，导致DIW水喷射泄漏 #### 临时措施：1、对泄漏部位包扎，防止产生喷射；2、关闭水阀；3、安排人员不间断巡检。; 后续措施：1 、|依照环安部门意见，后续可能对泄漏部位进行管道更换; 2、节前请环安同仁对RD 实验线管道平行展开排查；
+发现药液副槽与药液主槽之间的Pump下方以及设备下方的盛液盘有大量积液 #### 设备内部Pump（水段及药液段）在工作时震动较大，导致Pump接口处螺丝在长时间工作时易出现松动，出现漏液 #### 定期检查设备内部Pump 及管道接口处螺丝紧固状况，保证设备正常运行
+10/18日下午曝光机报警UM Error #### 拆开UM冷凝器排查，排查结果：冷媒无泄露，正常；判定为制水阀损坏。 #### 更换制水阀，更换后UM冷凝器凝缩压力恢复正常，连续观察三天凝缩压力均维持在1.72~1.73（范围1.61~1.83）
+CF 曝光机复机报警：”The set value is out of the range  for Mask Holding pressure” #### 排查Mask Holder; 气管走向，发现进（air in）; 电磁阀管道有气体，出电磁; 阀口（ air out）无气体，判断 为电磁阀因异常断电损坏 #### 更换新电磁阀设备复机正常
+9/16 因台风影响导致设备断电，TFE Scrubber发生漏水，漏水面积约50平方米 #### 拆解CW的电磁阀，电磁阀内破损，已失效 #### 将同型号的Air的电磁阀与CW的互换，确认CW电磁阀有效
+CVD 复机沉积完AL，TC取片时发生报警，确认原因为 CHD和TC之间气压差大于SPEC:600mttor引起 #### T/C Chamber 下面的Throttle Valve NG #### 临时对策： 将Throttle Valve  设定为Load模式，固定开启74度，使TC  Pressure 稳定在256mtorr （Set：500mtorr）; 备品更换
+01/10 13:02 OEL-2015-1237（李松杉/吴万春）新版bottom MT 基板制作 for蒸镀执行Slot1、Slot2时PVD时机台S4发生Alarm“ S4 DC Set Point Alarm”，主货PVD制程停止 #### DC Power无法到达recipe设定值Alarm发生；; S4 DC Power模块异常导致；; S4 DC Power Slave模块损坏； #### 预备电源模块并更换
+EOP-2016-0450（王质武）CHB电性验证&Baseline TFT Process windows执行Slot20时PVD时机台S4发生Alarm“ S4 DC Set Point Alarm”，主货PVD制程停止 #### S4 DC Power Slave模块损坏 #### 维修厂商及时修复损坏电源以供备用
+16:40 PVD S4执行孟小龙实验货recipe：A33M6时， 发生“S4 DC Set Point Alarm”，电源损坏 #### S4 DC Power Slave模块使用年限到故障高发期导致损坏 #### 联系维修厂商及时修复损坏电源以供备用
+14:44 OEL-2015-1230（李松杉/林碧芬）IJP bottom/top MT 基板制作 for Inkjet printing执行Slot7时PVD时机台S5发生Alarm“ S5 DC Set Point Alarm”，主货PVD制程停止 #### 电源的逆变电路板烧坏，部分电子器件烧毁，维修后检测运行正常 #### 对另一块损坏的电源进行外送维修，后续持续观察维修后电源运行情况
+8/18 CVD CHD PM后，复机数据显示成膜均匀性 out of spec #### Susceptor下方密封处螺丝未完全拧紧，升降装置带动Susceptor运动时，Susceptor不同区域相对Diffuser的的位移不一致。即，成膜时玻璃不同位置的Spacing不一样，导致成膜均匀性变差 #### 采用力矩扳手来代替手动扳手量化所有涉及移动螺丝的扭力标准
+2018年9月由于台风原因造成全厂断电，9/17号 IJP 复机时发现分子泵Touch Panel显示 alarm无法上电，导致无法启动HPB #### 分子泵内部结构破坏，硬体固件损坏 #### 更换新分子泵
+执行MT Slot4基板时在EV3 对位时，发现无法对位，将玻璃转移至传送Chamber查看，发现基板缺块，再次确认Slot1~3发现全部有固定位置缺块现象 #### 怀疑基板裂纹，在Mask与冷板进行压合后导致破片 #### 前制程检测（磨边机、Strip）、加强基板裂纹检测（AOI检测）、优化机台参数（Mask压入量）、Mask入厂标准制定、Mask上机流程制订等
+蒸镀完成基板（5pcs），首片执行完成蒸镀后发现破角，同步确认其余4pcs，发现全部同一位置出现破角 #### 怀疑偶发基板裂纹，在Mask与冷板进行压合后导致破片 #### 强化首制程确认，Run card增加一道，执行完首腔制程后，必须人员确认是否破片；; 破片检知机构添加：检讨在基板进蒸镀机前，裂痕检查机构安装；; 压合参数优化：执行真空压合Process Window，确认最优压合量。
+第1次进EV3时破片 #### Mask Stage异常(高度不一) #### 宣导/PM规范更新：Mask Stage PM由仅酒精无尘布擦拭→砂纸打磨+酒精无尘布擦拭；; 月保项目添加：月保添加Mask Stage与Mask Gap确认项目。
+第1次进EV3时破片 #### Mask Stage异常(高度不一) #### 宣导/PM规范更新：Mask Stage PM由仅酒精无尘布擦拭→砂纸打磨+酒精无尘布擦拭；; 月保项目添加：月保添加Mask Stage与Mask Gap确认项目。
+蒸镀完成基板发生固定角裂纹 #### EV3 Mask 底部有异物，将Mask顶起，导致玻璃固定位置压合力增大（可能性大） #### 调整Cooling Plate高度，使得四角相对高度保持在Spec内（±0.10mm）
+12/16  03:50  CVD CHD执行PV成膜到PL2时，发生“压力波动”报警，机台Down；; 12/16  07:30  夜班人员处理压力异常报警后，机台发生“破片”报警；; 12/16  08：20 白班人员赶到现场，检查发现TC Robot手臂上和CHD靠近V/W的地方均有破片； #### Online机台前未执行”Power lift“导致 #### 不执行Powerlift为成膜处理此类异常的正常手法，现怀疑此手法有缺陷，待重新评估改善
+CVD执行完CAR018 ，准备LLCST取片，FA Robot去LL取Slot1时，未探测到玻璃而Alarm，交换片停止 #### Slot10由TC传至LL时，高温玻璃刚到LL就破真空，玻璃热胀冷缩剧烈，且本次使用玻璃是普通玻璃，耐热性能较差，后LL升起准备出片过程中，slot10碎片掉落导致slot9-1破片； #### 针对高温制程实验原则上要求均使用高温玻璃，减少破片机率；; 如果必须使用低温玻璃，则需要重新调整CVD recipe，增加高温玻璃在LL的冷却时间；; 持续监控CVD传片及膜边状态，预防因传送偏差导致的破片异常；
+11月16日发现在printer机台中无法对位，因此先传入buffer4放置。从buffer4再取片时，发生破片 #### PA table由于之前有破裂导致水平度有调整，因此可能为bank失败原因，再结合bank失败频率，重新banker和gripper动作补偿，无法解决该问题。造成本次破片。 #### 破片清理后将原来已经破裂的 PA table更换下来，换上新的PA table并对其水平度和气路进行调节。调节ok后传片进行测试无bank失败现象发生
+1月05日玻璃基板从buffer4取出传入HPB过程中robot路径偏移，撞击腔壁发生破片。 #### 发现厂商1月4日传片选错手臂，采用Teaching模式手动取片后，Robot传片至HPB的参数路径有所改变，导致移动时撞击TM内壁破片。 #### 3月底完成更换Gen2后机台各部分连接点位偏差消除，上下手臂功能一致，不存在选错手臂需要teaching模式手动取片的问题，可最大程度减少Robot参数设置错误导致的破片。; 
+G4.5 IJP 在执行实验货时，发生玻璃破片。; 经确认：1、每片玻璃破口共两处2、破口在玻璃730边3、破口均距玻璃460边约7.5mm4、四片玻璃破口状况一致； #### VCD 限位机构滑片能力弱，无法滑片； #### 对限位结构进行polish处理（限位结构材料为大理石）；; 模拟玻璃放置偏位，进行滑片测试：
+6/13日下午执行UD IJP Demo时ST传片报警Recieve Fail，人员检查玻璃状态发现玻璃破碎在ST腔体内。 #### 因Align 行程固定螺母松动，导致Align行程发生变化，导致玻璃受力过大发生破片； #### 将螺母固定位置后使用胶带/Mark笔标记，并加入后续设备保养确认项目; 同步检查其他三个Align汽缸行程状况，在传片时确认玻璃抖动状况
+蒸镀完成基板（周六 11:00~22:00 由工艺科执行），执行封装制程(周日 10:00)，首片发现破角问题，同步确认其余8pcs，发现有7片全部同一位置出现破角 #### EV3 Mask 底部有异物，将Mask顶起，导致玻璃固定位置压合力增大（可能性大） #### 调整Cooling Plate高度，使得四角相对高度保持在Spec内（±0.10mm）
+11/24 20:00 基板ST→Flip，TFE 报警破片检知；; 确认基板D角破片，约5*10cm #### ST Clamp机构速度稍快，基板存在抖动，导致面内异常点扩大破裂 #### 将ST段Clamp速度降低，减少Clamp机构对;        基板的冲击
+“Bottom&Top MT基板制作”试验货PVD M1后发现划痕，处于A角附近，17卡实验货，共计5pcs出现划痕，划痕形状不固定，长度5-45mm不等 #### SEM结果显示玻璃存在划痕，划痕上方存在M1膜，即：PVD M1前划痕已存在，来料异常 #### 短期对策：补投5pcs实验货_1/11完成；; 长期对策：待真因查明再做改善；
+下货发现VCD上盖板粘片，显影时间加长到200S后，显影光阻残留，基板报废一片 #### Lift pin电磁阀损坏导致lift pin的气动阀上升部分还有气压，在VCD上盖板盖下准备抽真空时lift pin还有上升动作，导致基板粘在VCD上盖板上 #### 更换电磁阀+备用电磁阀外接部件，复机OK
+Robot→EV2 搬送Mask期间，Alarm：EV2 Mask搬送异常 #### 右侧承接Pin未移动到设定位置 #### 拆卸EV1 承接Pin，EV2暂用，已复机
+TM1手臂因软体帐料错误（有料无帐）且无Alarm提示，半自动取片时，Robot携带Mask撞击腔体 #### Robot送Mask进EV2腔体，因不明原因，EV2 Pin未能接到Mask，导致Mask掉落至Robot，且掉落位置未触碰到Sensor，导致Robot不知道Mask在手臂上，造成有料无帐 #### （Mask上机管控）流程优化：Mask现场管理及上机作业由制程科负责，并撰写SOP，便于规范执行及问题追踪；; 设备优化：将Mask Pin承接位置延长至2~3mm（①增加垫片；②Mask Pin新备品（延长Pin）开发）
+执行OEL-2016-0511（刘兆松/吴万春）Top-MT for 蒸镀，ITO/AG/ITO制程前，PRE SPUTTER时，出现S4 mask short  Alarm 无法reset，AG CH宕机 #### Clamp松动导致Clamp与内Mask有接触，引起short  #### 后续在PM时对clamp进行检查，确认其无松动；; 后续在PM时用万用表测量内Mask与Clamp确认无导通；
+1月2日在进行HPB pump down时发现真空度无法下降，且机台没有alarm信息。多次用操作手柄开闭HPB腔门后pump down时仍存在此问题 #### HPB和TM之间gate valve密封性欠佳有关 #### 将Gate valve调整至Spec内，可正常进行半自动pump down
+TM#1 O2值生产时发生异常跳动，; 幅度最大到9ppm #### 蒸镀Unload chamber漏气导致 #### 拧紧蒸镀舱螺栓，漏气停止，TM#1 O2值恢复正常
+TFE Pass Chamber发现干泵管路真空度显示异常，显示气压为2.7Torr，无法抽至冷泵开启真空度以下 #### 因为防水Cover与波纹管摩擦导致波纹管出现锈蚀并且发展为裂缝，导致设备真空管路真空度异常 #### 备品更换，并且重新制作干泵的防水Cover
+1/23执行MT封装实验过程中，VAS压合完成Unloading过程中RB出现：Lo Glass Sen&Vac Err报警，设备无法作动运行停止，玻璃停留在手臂上 #### 合板脱离MSC时，因MSC吸附粘力太大且强弱不均，导致脱离吸附时部分基板先脱离导致方向有偏差 #### 调整下Stage MSC吸附力
+9/28、10/22、11/6生产时Plasma导轨运动过程中停止并无异常alarm发生 #### 软体异常 #### 修复软体后未再发生
+8/11 第二片基板传进Multi-dispenser Head 3涂布约100mm左右时出现报警，如下：; Dam（Z3） Gap  follow Error #### Dispenser的Head3 伺服控制器异常 #### Umac Reset后设备未再出现异常
+EV6 腔体，执行tooling MT测试准备阶段，发现腔体机构无法移动，且机台有报警：“PLC System Warning”“ARM2 AXIS Controller Alarm” #### PLC模块老化，偶发异常，待厂商拷贝数据原厂分析 #### 更换备品后确认OK
+11/19 14:30 曝光机玻璃进入机台后，无法感知内部存在的玻璃，输入PU code出现“M/P Sync Pos Error”（位置同步错误）， Stage无法做出正确动作。; 11/20更换电源模块后，初始化过程中报X/Y Axis laser Power Not Ready警报，初始化无法通过   #### laser 内部短路，导致电源供电异常，瞬间电流增大，导致其中一电源模块损坏 #### 更换laser head并调整laser电压及光轴（确认laser输出及电压），调整两者OK后曝光机复机
+曝光机在初始化过程中发生Mount Linear Motor Left Z Axis Driver Error #### 机台已运行4年，部分易损备件已老化，容易损坏 #### 更换新品
+t1 Array Photo预烘烤报警 Hot plate overheating ####  4-4预烘烤单元temp1 固态继电器损坏导致temp1持续加热且和其他8个加热块连接导致整个热板温度异常，其他8个区域无法进行温度调控。 #### 更换新品
+photo设备CO2 感应sensor更换时，对photo设备进行断电后再进行复机，设备报警通讯连接异常:;  board 1/2/3/4/5 system   communication error，设备通讯连接异常 #### 将HCT主机硬盘进行重新系统，coater 软体无法打开，使用新硬盘重装系统软体正常开启，由于CO2灭火器作业断电硬盘损坏导致宕机 #### 将HCT主机进行系统重装后进行软体开启时报异常无法复位，重新更换新硬盘后安装软体正常
+CF执行杜轩28baseline-R实验，array PH执行28-BPS M1需EE，两边共用CV，基板从CV4到CV3报警超时导致CF EXP和CV7 处在交握，强制中断CV信号作原点，EXP关闭contral power中断信号后重新Prepare后OK，开始流片再次出现同样异常，CV请FA处理，曝光机关闭contral power中断信号后重新PrepareNG，报警Unload Robot battery voltage drop has been detected和Unload Robot time is UP for servo on moving #### 控制盒电池异常 #### 清理电池凝聚物更换新电池，手动teching Robot原点
+T1 CF显影机漏液，漏夜sensor感应，机台报警停机 #### 高压pump有震动，使用5年后不锈钢部分有轻微裂缝，导致漏水 #### 更换备品
+工艺电话反馈，EV6 Al坩埚破裂 #### 因人员进行Standby Recipe修改（55%→5%）后，忘记及时改回，导致连续3次因Al源Standby功率过低，坩埚内Al降温凝结且再次升温，使得坩埚承受反复胀缩影响，最终在第3次Al源自动升温时，坩埚内Al膨胀导致坩埚破裂 #### 更换备品
+蒸镀前Oven设备无法到达制程温度230℃ or 220℃，发生Alarm：“加热炉温度过热”，导致机台升温中断，平均每天发生2次。 #### 可能台风断电期间，因排气失效，导致腔体内热气倒灌入进风口，使得进风口风扇变形 #### 制程条件根据机台状况变更
+31寸demo生产前涂布测试无alarm但出现异常pattern，再次测试又恢复正常，生产过程无异常（1/28出现过类似现象） #### Double check实时监控功能导致涂胶停止 #### 每周测试一次，持续2个月以验证将double check实时监控功能bypass不影响涂胶精度
+上午工程师发现UV Cure机台有报警，显示手套箱Cooling异常，查看MBraun TP显示压气机/风机断路器异常 #### Box Cooling1启动电容损坏，工作电流过大导致断路器跳闸 #### 更换备品
+12/4早上7点49分设备突报“Safety Teach Status Error”,设备自动掉电且无法恢复 #### Safety Controller硬体异常导致无输出信号，设备显示Door Open #### 更换备品
+CVD 帮助Dry沉积调机片Passvation时，CHD 发生报警，确认发生原因为CHD FWD 超界限（±200）报警，此种报警与Power有关 #### CHD MatchingBox NG #### 确认AKT 仓库Parts后，对损坏Parts进行更换，CVD 复机；; 确认 MatchingBox 型号规格，送出AKT 进行维修，送出时间待AKT 提供
+Heaterchamber升温至470度时， Heaterchamber上控制箱 SSR Status 显示红灯，加热器跳掉        #### Heaterchamber上下控制箱风扇已运转4年，老化损坏，导致控制箱内固态继电器散热不良，超过温度Sensor的极限值(54度)，加热器跳掉 #### Heaterchamber不使用时Heater关闭，减少负荷；; 风扇使用寿命>3年，1天可购买回来，不做Parts备份
+Heater Chamber升温至240℃时，Power自动Off，无法执行实验货 #### Lid 内侧壁（CHA侧）加热器损坏； #### 备品更换; Heater Chamber 升温操作手法 教育并签字确认
+G4.5IJP打印时需更换墨水，目前存在以下问题：; 1、无IJP打印机更换墨水专用位置，在FAB内直接更换墨水，影响墨水质量和周围环境；; 2、IJP墨水成分含酸性或碱性以及易挥发性芳香类有机物（例如甲苯），人员长期直接接触易致癌，机器设备接触易被腐蚀 #### 无IJP打印机更换墨水专用位置，在FAB内直接更换墨水，影响墨水质量和周围环境 #### 评估通风橱设备，减少更换墨水时人员与墨水的直接接触
+Multi手套箱设备中天平有一Parts遗失于腔室内，有存在硬体干涉风险之可能。基于此考量，决定暂停实验，开腔查找遗漏Parts。 #### 人员在进行手套箱作业时，触碰到作业区域内Fill量测天平，导致天平Parts遗落到腔室内 #### 规范手套箱操作，后续完善操作SOP（稳、防碰撞、防割伤）
+设备端出现Alarm：Chiller22-Warning，Galden（热传导液）Pressure Lower。 #### 旋转动力机构内部密封件or管路老化破损 #### 临时复机生产：确认EV2/3/4（与EV1 共用Chiller）是否可正常使用
+9/26发现设备停机后无法正常开启，电压值偏高，无电流；; 重启Plasma Power Supply，多次点火发现无电压，仅有电流值，点火plasma，Plasma Power Supply 显示Error 003，机台报警电压过低 #### 设备使用时间较长，机台内电流侦测器异常（时灵时不灵），导致点火时电压高，电流低的问题；; 出现电压高，无电流的问题，又多次重启点火，导致Main PCB部分组件损坏。 #### 更换电流侦测器及Main PCB
+6/13 晚班执行Baseline实验封装时，积水Fill材料消耗完毕，更换胶材后无法正常涂布; 2. 胶材涂布过程中无法顺利成滴吐下，胶材异常凝聚在Nozzel处 #### 6/13与6/14使用胶材粘度偏大导致无法涂布；; 因Fill Head使用时间较久，对材料粘度要求范围变窄，使用较高黏度胶材时出现涂布不良 #### 后续使用非热固型材料，可使用Heating功能降低胶材粘度进行涂布
+10月26 日，30日， 11月1日均有在基板进行打印时发现基板表面出现不明液滴。液滴出现较为随机，位置不固定，直径约为1cm，机台没有显示alarm。 #### 目前VCD制程，玻璃表面与condenser之间的空间极易蒸汽压平衡，导致溶剂结露，随着液滴的增多，部分液滴滴落，导致污染发生。 #### 指定clean chamber的频率----- 通过管控频率可达到清洁的作用，每轮打印结束后进行run clean动作（ run clean包含condenser升温至40度，chuck升温至60度及pump down动作），每层打印结束进行pump down动作。; 制定保养手法及规范------制定1个月进行保养一次，TM进行破N2，无尘布清洁VCD，做run clean动作。
+VAS制程中抽真空由Dry pump（包括slow pumping和fast pumping            和TMP共同完成，实际生产中会出现多抽或抽不够，导致工艺气压波动大（>±10%），OLED制程需求气压值为0-ATM,所以气压无法得到较精确的控制。;  #### 软体控制不当，管路较粗 #### 对pump管路改造，增加小size孔径的压力管，精确的控制腔体压力，防止过抽
+在不加电的情况下，能看到斜纹Mura ####       怀疑：1. B色阻轻微残留 2.显影AK风刀卡顿，B色阻表面发生变化 3. 31-TOP-Gate的地形搭配特定B色阻造成； #### 改善方向：; 1）调整显影时间; 2）调整AK风刀压力；; 3）调整显影药段喷洒流量和水洗速度；; 4）只做B色阻进行验证，基底验证；
+ R/B/PS Mask在T侧曝光图形与Array曝光图形无匹配;  #### R/B/PS Mask曝光图形水平反转，与Array侧图形不匹配：; R/B/PS Mask Mapout时原图未反转；; COA/POA 产品R/B/PS Mask与BM应该画成不同Mask，分开Mapout，Layout缺少此环节。 #### 32ENB R/G/B/PS Array侧光罩出错，图形延短边反向，和Array基板图形不匹配，针对mask出图异常，协助对mask review check list修订
+为开发OLED 喷墨打印技术，t1 G4.5 IJP执行印刷工艺技术实验货打印工作。但是由于G4.5 IJP机台执行实验货的run货流程制度不够明确和完善，机台利用率低、人员协调及综合利用率较低，往往会出现实验货投片不及时、实验货投货计划与机台可执行量不匹配等现象。故改善此现象，提升机台稼动率，保证run货制度更为完善，是保证实验货高效正常执行的关键。 #### 由于G4.5 IJP机台执行实验货的run货流程制度不够明确和完善，机台利用率低、人员协调及综合利用率较低，往往会出现实验货投片不及时、实验货投货计划与机台可执行量不匹配等现象 #### 1、分析run货效率低的主要原因和制约因素，并提出解决措施；; 2、向兄弟科室及部门内咨询学习经验，并理论结合实际提出符合机台特点的改善方案；; 3、召开run货制度制定会议，共同修改run货制度执行方案；; 4、线下试运行，完善run货制度，提升机台稼动率。
+本批次(9/6~9/10)生产Baseline,出现3pcs无法点亮问题 #### 根据机台Log确认EV3其中1次（共执行3次），顺序镀反(P-CGL与HTL膜层镀反)，HTL太厚，导致Demo点不亮 #### 流程卡控：EV3 Recipe设计（工程师执行），按照先后顺序进行排列，避免后续人员改动Recipe导致异常；; 人员培训：撰写总结蒸镀做货流程及注意事项，对相关人员进行再次培训，并作为后续上岗教材
+2019/2/27，T1实验线湿蚀刻由Cu线切换Ag线后，在执行ITO/Ag/ITO刻蚀时，出现Ag膜整面未刻蚀状况 #### Cu线换Ag线后，微量残留Cu酸对Ag酸蚀刻有强烈的抑制作用 #### 提升换线时水Flush的频率和时间，设备段适当提升温度解决异常；3/24 ITO/Ag/ITO实验货参照新的换线流程执行，蚀刻效果OK
+MT For材料开发(石龙强/莫超德)ITO STR后发现有白雾状ITO残留 #### ITO残留出现的原因为ITO微晶化 #### ITO白雾与ITO膜厚(CVD层:SiNx)验证：ITO膜厚增加，白雾状残留趋于严重; ITO白雾与PVD成膜H2O流量验证：通入H2O流量增加，白雾状残留趋于轻微; 调试出合适的Recipe进行改善
+T1photo执行王若男IGZO首检刻蚀确认有出现图形缺失.图形缺失聚集在右上板，重复性确认Photo后AOI无图形缺失，WET、STR后有出现图形缺失 #### 1.IGZO缺失异常unit为photo CLN，PM清洁后聚集异常消失，; 2.异常可能原因CLN chamber内脏污或毛刷上脏污导致传送时异物掉落导致; 3.出现整面性少量零星缺失由于photo清洗仅使用纯水清洗，导致未能完全清洗干净 #### 将CLN设备进行PM，tank清洗，filter更换及Brush清洁，PM过程中均无异常，PM完成进行产品流片缺失聚集消失
+1.ITO蚀刻后，玻璃基板上出现白色雾状Mura；; 2.用手或无尘布擦拭，白色雾状可被擦拭掉；; 3.用万用表测试白雾位置导电性，发现其导电，阻值约190~270； #### ITO白雾出现，为CF ITO Run货时污染导致；; 通过Run货前执行Dummy Run货可避免白雾出现 #### 更换新ITO靶材，Chamber Parts并对Chamber进行清洁；; 缩短实验货与首检片之间间隔时间（控制在5min内）
+Al STR无，仅CU STR存在回粘状况；为M&S size defect爆量，爆量defect左侧基板靠下分布密集，为晕状&片状类PR残defect #### 从STR传输至SWR1的过程中STR蒸汽灌入SWR1段并冷凝析出PR碎片粘附在玻璃上造成回粘状况可能性极强 #### 增大排气压力; 增加传送速度
+1.5/30 执行苑甫28baseline-B实验首检时，AOI出现如下图光阻异物，每片四五个位置; 2.在Coater后可看到凸起膜面异常；; 3.确认异物在RG Pixel上面，嵌入B膜层之中 #### H8G光阻溶剂成分新增40%环己酮，环己酮有强氧化性和强溶解性；; 2.  清洗管路时确认Coater管路较之前干净，怀疑H8G光阻溶剂环己酮将管路内部之前凝固的残留的光阻渣溶解，经涂布后造成该异常 #### 新光阻材料测试务必提供材料信息以及和正常材料的差别--ACT; 改版材料测试务必说明改版详细成分和比例,EOP确认对设备的影响-ACT
+CF执行侯俊/王松 MCC BK Bank材料开发的实验，基板为6.6inch CF Cover基板，CF下货前确认不规则气泡 #### 基板放置PP-BOX前制程异常；; 基板放置PP-box太久，经清洗，OC吸水或药液导致起泡； #### 基板切片确认SEM和FIB，确认peeling的物质和成分
+PH 人员在对15寸OLED产品首检做AOI检查时颗粒超量，约1290颗，发现IGZO Pattern上有小黑点，分布无规律。 #### AOI不同recipe对检出结果影响较大，后续AOI Recipe规范化；; 推测为经过长时间（3h，350℃）高温烘烤后膜质发生了变化，产生黑点暴量。 #### 1.怀疑因AOI Recipe参数设置不同导致此次Particle爆量；; 2.怀疑Metal PVD 成膜Particle导致_待实验验证；; 3.IGZO经Anneal后发生膜质变化导致_待实验验证；
+Cu50008000A共五种膜层结构均出现严重Under Cut且有二段角状况。 #### 膜层在水段的腐蚀时间 #### 对于PH段 postbake/Metal后SWR时间/STR后SWR时间/CVD成膜等因子对Cu undercut的影响，Metal段的水洗时间是蚀刻段关键制程因子
+色转换效果较差 #### 材料仍属前期开发阶段，无可参考开发先例 #### 1. 优化墨水体系中固含量；; 2. 增加色转换层的厚度。
+高膜厚Bank出现Undercut #### 材料仍属前期开发阶段，无可参考开发先例 #### 1. 降低颜料浓度；; 2. 优化制程参数，增加曝光时间，减少显影时间。
+工艺稳定性较差，连续打印性欠佳 #### 为了色转换要求，现阶段的设计已经远远超出先前可参考案例 #### 1. 优化墨水粘度、表面张力，以更匹配打印机要求；; 2. 针对不同款墨水，调试打印Waveform.
+成膜均一性不佳，出现皲裂、相分离不良 #### 为了色转换要求，现阶段的设计已经远远超出先前可参考案例 #### 1. 优化VCD、UV制程参数；; 2. 采用分区打印及固化的方式，提升均一性。
+显示亮度不均 #### IR Drop过于严重 #### 优化设计，增加VDD/VSS多点输入，采用Mesh走线设计，减少电阻
+Cu制程后BM残留 #### Cu离子与BM发生反应，导致BM显影失效 #### Cu制程后增加PV制程，隔绝Cu与BM，BM制程后采用整面干刻，露出Cu电极
+水平/垂直线不良 #### 芯片转移时，锡膏助焊剂残留，腐蚀Al走线 #### 转移完成后增加乙醇清晰环节，将助焊剂去除干净
+IGTO残留，刻蚀不完全 #### IGTO发生结晶 #### 增加刻蚀时间，优化成膜条件
+显示Bubble #### 使用W色阻后产生 #### 参考R色阻开孔设计，在W色阻区域增加开孔设计
+垂直线不良及暗点 #### 过孔Undercut #### 调节VIA蚀刻条件
+固定位置十字线不良 #### Cell段ODF制程VAS pin顶到，导致M1/M2 Short #### ; 加大设计的PS密度，降低顶破风险
+Buffer层Peeling #### Buffer层厚度偏高，经高温制程后发生Peeling #### 优化Buffer层膜厚，降低厚度
+PFA被刻蚀到 #### PFA材料被PV2成膜制程干扰，其中的NO与PFA发生氧化反应 #### 改善PV2成膜条件，沉积速度加快
+点屏异常 #### 开关三极管 T2609元器件损坏 #### 更换已损坏元器件：开关三极管 T2609
+MCS档烧录异常 #### Config. Flash Symbol设计错误，未遵守Design Rule；Vivado15.4版本，不支持KU085对该Flash芯片进行mcs档烧录 #### 在v2版原理图中修正Symbol设计；与厂商确认FPGA芯片与工程和仿真软件的匹配性。
+Bist点屏不可控 #### .6.6” QD-CF panel点屏时发现：只接通电源，断开P-L，bist模式无法正常点屏；连接P-L后， bist模式可以正常点屏 #### 断开P-L，切换至Bist点屏模式，可以正常点屏
+Vth & Mobility侦测数据异常 #### 通过OM观察发现面板右侧AA区外存在残留metal导致WR和RD线都与VDD短路 #### 将与VDD短路的WR和RD线通过laser cut修复
+点屏画面闪烁 #### 基于15“Panel B OLED面板进行驱动系统开发时，遇到点屏闪烁问题 #### 短期解决对策:;  end_frame信号由ced_clk直接生成; 长期解决对策:;  信号跨时钟域时，进行跨时钟Delay处理或使用sram进行始终的切换
+Vth & Mobility侦测数据异常 #### Dummy Pixel中WR/RD/Data等信号线直接连接ESD，在对Normal Pixel进行Sensing时，T3状态不确定，可能开启导致Sensing失真。 #### 短期对策：红叉位置切断，红点位置Welding，通过Dummy Line将Dummy Pixel RD Line拉至VGL，确保T3关闭; 长期对策：改版Buffer/IGZO/ILD/M2其中一张光罩，或进行IGZO光罩Repair; 
+PSOC硬件资源溢出 #### 基于PSOC UDB模块实现多功能GOA讯号生成平台设计时，遇到资源溢出问题 #### 短期解决对策;  基于问题解析进行优化处理; 长期解决对策;  进行讯号生成芯片再选型
+点屏画面闪烁 #### 15” FHD Panel D AMOLED模组产出后，点亮时发现：; 面板左下侧显示正常，而右上侧显示异常，亮度暗于左上侧 #### 由仿真所示，修改VGL电压，将VGL电压从-5V改到-8V，观察点屏实验现象
+点屏画面分区 #### 31” AMOLED TG/UD模组产出后，点亮时发现：在纯色画面下，垂直方向上，面板分区8个区域，每个区域由一个条暗线隔开。 水平方向上，存在8条淡淡的分区线 #### 1.与模组讨论，修改laser recipe,将连接shorting bar 的Test pad 一同切掉，在玻璃端不在预留此类test pad,解决目前面板分区问题。2.修改面板光罩，更改Test pad 的连接方式。3..将此类Issue 加入面板设计的check list, 防止再次出现相同的issue 
+VTC1.0侦测功能异常 #### VTC1.0采集侦测的VTC和K值数据时，Sense mapping图需间隔一次侦测数据才显示OK #### 加入参数跟新的仿真code，观察仿真DIO和CPV的搭配波形；更正DIO和CPV的搭配波形，重新仿真确认
+DVT阶段验证Dry第二路径时ESD高发 #### ESD ratio与洗边范围相关 #### 洗边范围加大
+ESD #### 机台静电积累 #### 修改M1，去除LOC pad跨线，机台静电防护加强
+43”Cell暗点修复测试片在RA HTHHO T120发现液晶气泡 #### 现场确认bubble发生在暗点修复的位置，cut能量越高程度越明显（条件1无bubble，条件2轻微bubble，条件3严重bubble）。; 初步怀疑cut量能过大，造成bubble #### by不同能量测试暗点修复
+Type1：Inline LCI 四角Bubble（Ratio100%）; Type2：Cell LOI2 横条Bubble（Ratio 5.2%） #### LCI 四角Bubble：站点排查：进LCI出现，LCI by pass OK，ODF 3# LCI 吸盘吸到短边框胶位置，造成框胶peeling导致空气bubble；; 横条bubble：液晶量不足造成真空Bubble;  #### LCI 四角Bubble：1、需从新评估高黏度框胶的信赖性。; 2、对使用高黏度框胶的UV照射时间，等Recip进行优化。; 3、对LCI的吸盘气压等机构进行评估改善。; 
+ Power on off T24 1/3出现Bubble,横贯panel（图2），TD3发现发生在Source对侧贯穿Gate较多 #### 面内色阻释放气体，导致bubble #### R色阻上PV开孔; 防范：COA产品R色阻上PV需开小孔对组前释放色阻中气体以免出现对组后bubble
+IR #### 过孔附近液晶不易恢复 #### 断开过空处的ITO，去掉像素短边侧的ITO bar; 
+Design 2配向不良在大板上集中在靠近32”的一侧 #### 对应Panel右侧的线路之间阻抗在3kΩ以下，基本确认不同信号之间有; 短路发生 #### LOC Pad处增加Dummy Seal涂布支撑Cell; 
+75D01 design1 出现3种type配相异常 #### type1：HVA Robot Pin顶造成静电累积; type2：UVM440 机台T6板对应位置刮伤; type3：疑与HVA Recipe相关性大，需优化 #### type3：C-com/GOA/A-com均接高点位无配向异常; 
+ORT HTHHO T240  炉内新增垂直串扰; JND2.5~3.6，炉外OK #### 串扰严重区域Vcom偏移严重，Ioff变异严重，; 推测Ioff抬高 #### 无
+黑底白框按压漏光 #### BM shift漏光 #### BM CD双边加大
+黑底白框按压漏光 #### 对组超规 #### 管控上下板对组
+DVT良率改善批纵向串扰ratio 7.2%，01/04膜聚集;  #### 与各膜层mapping图核对，推测AS厚度相关性较高 #### 无
+HTHHO验证出现V-Crosstalk，用小眼睛观察到NG区B色阻亮度相比OK区明显偏暗，导致出现黄色区块，source侧、source对侧位置不固定 #### 漏电、I-V shift #### 无
+ORT HTHHO T500 2/6pcs 垂直串扰炉内JND3.0~3.2/炉外JND2.0;  #### DRY STR制程 Pixel内GI THK降低约0.04um，导致整体Ioff 漏电变大，; 耦合效应增大造成Cross Talk #### 无
+55D08 DVT2 RESD1 H X-talk RA后恶化NG  #### Sub与Share TFT IV差异存在差异，会引起CF Couple差异恶化所致 #### 无
+低灰阶水平串扰JND 3.6 #### 低灰阶GM不对称，CFCOM couple较大 #### 对称code及VCOM feedback
+L128灰底白框水平串扰 #### 大尺寸面板电容耦合较大，com受到耦合导致串扰 #### GM1降低至14.2V，对称code降低com耦合; 采用Decrosstalk功能降低串扰画面耦合
+低灰阶下色斑 #### RA后漏电较严重 #### GI w/o H2电性改善条件无色斑，Repeat T240 出现色斑，制程条件需继续tuning; 
+客诉黄斑，灰画面下偏黄，小眼睛下; B main pixel发暗 #### 无 #### 短期对策：ITO强曝，ITO CD 3.25um较少为ITO CD 2.75um；长期对策：光罩变更; 
+检查发现UI 画面下白场下大视角黄斑;  #### L254及L255灰阶的B WT设置不受Panel IC控制，受到SOC设置影响 #### 建议客户调整SOC WT，增加B比重
+微亮点为L-48 可见之亮点，8月 MOD 微亮点爆量Ratio14.57% #### C down 电容处ITO 与Sub Pixel ITO short，使Gray 画面下无有效分压作用 #### 紧急预防对策：1.更换显影单元循环水洗filter，将两支30um filter更换为30um+4.5um，以增加过滤的作用；2.将高压水洗idle时无流量，改为slow leak，避免管内积累脏污，提高清洗液洁净度，; 设备环境改善：1、设备内particle量测，针对particle异常处检查机构是否有干涉以及间隙密封： 2、将显影单元光阻浓度降低，降低水洗后光阻残留的可能性; 设计修改：将C Down电容处ITO 与Sub Pixel ITO 间距放大(GE/SE为>7um)（RD评估); 检查拦截：Cell Test无法检出ITO残留导致的微亮点，探讨有效拦检手法
+微亮点位置确认集中在Source侧AA区边缘位置，小眼睛观察确认为边缘main-pixel亮度偏高 #### 55D10 CF Non-DBS设计导致 PI dot受井字形BM阻碍无法有效扩散至Main-pixel内;  #### ①.液滴密度调整改善；②设计改善——扩散性地形改善; 
+残影（持续 in ~1S），关机时black pattern 闪烁;  #### CF_VCOM和Source 放电速度不一致，两者压差过大导致的 #### 增加1K电阻可以加速CF_VCOM放电，减小CF_VCOM与Source之间压差; ，从而解决闪烁问题
+32B01 New PT 新增3/6pcs 黑屏无信号 #### 单边点灯确认均为单边异常，OM确认Source侧GOA线路有腐蚀，框胶宽度无异常，阻抗量测确认腐蚀导致对应线路Short，OCP启动出现黑屏 #### PI&Seal非Overlap导入
+RA HTHHO T240新增黑屏;  #### Gn 下拉线路 深孔有明显烧伤现象，Gn下拉无法工作时，Gate output和Q点无法被下拉，会导致CK信号一直会 输入面内，导致大电流，解发OCP #### 4400 taper改善
+RA T720 1/4pcs 黑屏，左上角非可视区上下pol烧伤 #### 烧伤处VIA上没有放置PS，上下板short后烧伤 #### 变更PS 光罩，增加该VIA位置处的PS
+11/15  海信100台阶段，开关机试验，出现概率性开机闪烁 issue #### 在TCON mode change的过程中，会概率性发生错误，若未正确设置OD Block寄存器，则无法进行reset 修正，导致输出异常 #### 升级TCON code，将OD Block 寄存器0x1A31设定为1; 
+海信 TR phase RA 验证 (DVT-3 送样片), 1/24 因灰阶闪烁换 T-con code 问题验证, 客户手动开关机验证 RA 3.5hr ON/0.5hr OFF 40℃/95% RH  42day 24台中拉出 4 台 触发 OCP 导致画面异常 #### 面板电路经过 RA 后 IV shift导致面板漏电流增大, 电流累积产生大电流,触发 C board 过电流保护（OCP）机制启动。; 面板关机放电时间不足, 关机 GOA all high 讯号无法启动 #### EE: 关机设定/OCP限流条件; Process: 降低I-V 漏电流; Design: 降低GOA CK R/C delay
+MOD OQC 要再次确认水平白带 mura ; 发现约 25% 片子 L128 flicker pattern;  闪烁严重, flicker 值远大于规格 30 #### panel静置后best VCOM偏移 #### auto pgamma程序重新调整
+客诉T0 L40纯灰阶 1/100 闪烁 #### CB/BL/SoC交叉现象跟随NG屏，不同批次差异较小，Flicker NG 片Ioff 较大 #### 短期对策：灰阶flicker双低点特性 , 另一点flicker较小,调整gamma code ; 降低风险 ; 长期对策 ： 制程Ioff & U%改善；
+终端客诉POL烧伤，高发于woa VGH走线的固定位置 #### Blue标尺mark压伤VGH走线，导致上下板走线 #### blue光罩涂黑笔，将标尺mark涂满，面板实际图形不再有blue标尺mark
+43D01外观站点检出 46/439pcs POL烧伤，异常ratio 10.47%，无膜品集中 #### 1.偏光片物理损伤：偏光片贴附后到点灯之间的传送或夹持机构造成异常位置的偏光片掀起，嫌疑机构排查发现在LIO2发烫。; 2.偏光片烧伤及线路烧伤：发热产生“烧伤”的发热源为线路短路。 #### metal cross 避开cut line (M1 mask修改); 
+D08-3搭TMT R6 BL出现水平横纹，BLU光照时panel偏亮 #### 光on和off时pixel 电容差异 #### 1+2line驱动可减轻
+VD客诉验证PQ阶段搭配diming backlight出现水平亮暗带 #### 背光的强光照射使得cell内的Cpd变化，背光开启时间对应打开的Pixel的像素电位与关闭时对应打开pixel的像素电位不同，引起亮度差异。 #### 1.As-tail缩减
+local diming backlight出现水平亮暗带,低灰阶固定位置明显可见等间隔水平亮暗带 #### 4Mask制程As tail外凸M2，背光照射时AS导通性增加，Cgs&Cst变大，充电变差。导致背光开启时间对应打开的Pixel全部偏暗，背光关闭时，Pixel全部偏亮 #### 驱动方式：1+2line-->column，同时VAC ratio从100%-->75%
+HTHHO→T500 1/6pcs 十字线NG  #### FIB Top View看为M1成膜异物（异物主要含Cu）导致G/D Short造成RA十字线 #### 工程调查改善M1成膜异物
+MOD垂直淡线不良0.195% #### 长膜能量过大导致M2翘起，搭接不良；部分M2存在undercut，镭射经过使M2受损修复失败;  #### 优化长膜速度、长膜能量、MFC流量、优化长膜质量；; 规范修补作业，T300修补后重测防止漏检
+密集型垂直淡线降等 KCN 0.47% #### ITO与M2存在分离现象且GI Taper大于70°，推测Bonding区ITO; 与金属搭接不良 #### taper 改善
+双驱点灯水平方向贯穿的单根线不良 #### Gate fanout short、AA区GG short导致 #### 改光罩改善（将fanout space增大）
+T500 1/6pcs新增水平渐变 #### CK8线路，PI&Seal Overlap条件，Sealon bus line，高温高湿条件下，通过路径1，PI吸湿后，水汽穿过Seal，CK过孔ITO发生电化学腐蚀 #### PI&Seal 非Overlap
+HTHHO T168 2/6pcs NG #### 发现L侧GOA线路LC1与CK7信号线间发生ESD；PV2截面断开，边缘翘曲， ESD发生在PV2后;  #### 开启所有机台CK5&CK7间short测试，进行长期监控   
+55D11 HTHHO T360后出现水平密集线source侧在下，右侧单驱正常，左侧单驱黑屏 #### channel CD位置GI 受损，为GI 层particle造成M1/M2 short #### 无
+D12-2机种 HTHHO T100 水平渐变线 #### GOA T52过孔烧伤后腐蚀 #### T侧、C侧PI外扩&4400 taper改善
+HTHHO 60°C90%RH T500 1/6pcs 新增水平密集线 #### 上板BM异物（高4.4um），在RA 受热后膨胀，造成CK8信号和上板C_com Short，引起GOA信号异常 #### BM AOI增加frame 区异物检
+严重型：T0的周期性水平渐变线，CFCOM外灌不消失; 角落轻微型：source侧角落轻微的周期性水平渐变线，CFCOM外灌消失;  #### 严重型：长边短边阻抗差异及过孔差异在ACOM AC 时都会引起面内电性差异而导致curing异常; 角落轻微型：source侧角落由于整体阻抗小，CK1到CK8 busline微小的阻抗变化差异将带来更为明显的影响，导致source侧角落出现水平线;  #### 严重型：采用ACCOM DC curing可完全改善; 角落轻微型：外挂电阻; 
+常规IS #### 调整VCOM后，IS正反切换，确认为DC残留导致IS #### L0 Shift、Code调节 ，面内U%改善
+常规IS #### 推测GI和AS remain共同作用下影响TFT I-V特性，大板中间位置Vth偏大，与Von margin测试结果相对应，影响像素电位分布，导致电荷残留; 推测Chanel length更多作用于Cgs，进而导致best Vcom偏差，Best Vcon差异过大引起正负极性电位不平衡，导致电荷残留 #### 制程管控
+RT条件下棋盘格PTN点灯5min切换48、64灰阶出现快速残像 #### 改变Vgl对快速残像有影响，推测原因为TFT Device黑区、白区经历不同条件Stress后，I-V curve shift方向或程度不一致，导致两者Ioff不能稳定工作在Vgl同一区域 #### 调整VGL
+LC 加量-1%→0.5%，Inline Bubble \LTS Bubble ratio 已改善； 低温低压Bubble T96 6/6 Pass; T120  2/6 Fail，仍需优化。 #### LC margin不足，main PS density较大 #### 短期：1、VAS 抽气验证 （VAS 低压及抽气时间）；2、PS CD 减少+LC量增加；; 长期：修改PS光罩
+LC margin厂内测试5%，不足7% #### nonCOA 垫片结果，M2垫片过细 #### 修改PS设计，M2垫片结构-->非垫片的GTM PS设计
+GTM PS光罩面压测试JND 2.8 #### sub PS ratio 偏低，断差过大 #### 修改PS设计，增加sub PS ratio，减小断差
+模拟VD面压手法面压测试，部分区域L128正视仍可见黑斑 #### 1.Main PS被挤压形变，无法回弹造成；2.PFA变形 #### 1.PFA材料改善；
+22B04 面压NG，JND 3.5，水准与量产品22B01相当 #### 22B04 面压NG，从Design开始投入的PS ratio，段差改善方案均NG，过往产品的面压经验不适用于22B04 #### 无
+T24，1/2 NG，垂直暗线 #### .清洁剂液体沿导电胶边界渗入里面，因为GE爬坡处PV、GI断开，导致液体进入GE层，腐蚀GE #### 优化Tuffy胶涂布，增强端子防水汽保护
+ #### 腐蚀VIA附近框胶出现peeling #### 1、延长tuffy胶涂布至玻璃边; 2、框胶材料变更
+现象1：在OCP设定为63mA时进行短路测试，部分面板WOA区温度高达70℃；; 现象2：量产品OCP设定为40mA，部分面板在重载画面会触发OCP #### GOA 电流较大较低电流易出现误触发；OCP设定电流较大WOA区温度较高；;  #### OCP侦测时间修改为6us，避开GOA大电流位置；加宽LC 线宽降低电阻; 
+DVT gamma偏低 #### Cell Gap偏高相关，Gamma 偏低片Cell Gap均值3.63较上批次正常片均值3.56偏高0.07um，差异较大 #### 制程管控
+auto pgamma by pass率偏低 #### 工程私自进行TFT侧PI膜厚变更，未走EC；; PI机台线别差异较大 #### 锁定PI机台，锁定TFT侧PI膜厚；; 待制程稳定后重新调整Gamma Code
+(1) 大视角60° Local gamma值在L118 处偏高与竟手不同, MB改善视角算法无法匹配; (2) 大视角60° gamma 偏黄, 非线性 #### 实际sharging TFT W/L 偏大, 将造成gamma max灰阶偏高 ####  1、管控3rd TFT   2、pixel 3T 设计优化study（中灰阶模拟/LC C-V曲线影响 ）
+6/10pcs  gamma偏高，同时Ton偏高，预倾角均值偏小0.9° #### cell HVA UVM电流有相关性：电流>1.1，Ton异常，电流margin：<0.6，Ton正常。分析为Dummy panel处T/C基板接触&short，拉低75”配向时T/C压差，预倾角异常 #### PS全曝，PI dummy涂布，Loop seal开/闭环
+平均Tr% 5.74%低于评估值6.0%，下降了4.33% #### 因Cell gap偏低、ITO L/S偏差导致液晶效率偏低使穿透率不达；Low color washout performance比较好 #### Cell gap做到规格值可以提高~2.5%; 提高gamma_1电压到16.5V可以提升1.5%; ITO CD达到目标规格可以提高0.5%
+D08 Tr% 由55D02实验结果估算, 但产出后 Tr% loss 10% #### 液晶效率 loss 4.1%-->Cell Tr% loss 4.5%; 暗纹造成  EAR% loss 1.5% #### cell gap提升，HVA recipe调整
+65D02 design3 较design 2 CR从下降921 #### 暗态变亮导致，gate处存在2处漏光；; BM 与漏光位置M1、ITO 与M1 切齐位置漏光 #### BM 加大2um 实验; M1 CD 加大1um; ITO OLY shift -1um
+“Brightness Derating”测试T500 NG，ΔWy 1# -0.0051/ 2# -0.0056; （Spec：T500 ΔWx, Δwy <0.005；T1000 ΔWx, Δwy <0.01） #### 厂内测试数据对BL归一化pass，非归一化NG 与BL强相关; I-V向左shift，B shift最多，B Ion偏高 怀疑B Ion变大Wy降低 #### 无
+4domain无VAC，VD肤色视角不达 #### 无 #### 1、降低Δnd（减小cell gap或更换Δn较小液晶）; 2、调整HVA; 3、ACC调整; 4、通过改变B色阻方位角影响Tr
+OQC全检，均发现Source侧出现一条贯穿的水平红带，ND10%不可见 #### 红带区域在array侧对应Fanout及WOA的金属走线，不同功能及区域的金属走线开口率不同 #### 无
+水平方向同一COF可见中间位置（图中黄色箭头所指）偏白两端位置偏黑 #### M1 CD偏小所致 #### 制程管控
+HTHHO后出现H-block #### fanout阻值差异过大 #### 通过调timing改善H block，调后需重新验RA; 增加M1膜厚
+crosstalk画面漏光及按压漏光 #### 上下板对组超规，BM shift漏光 #### 43 data侧BM双边加大4um，22data侧BM双边加大4um
+黑画面，按压panel出现漏光 #### gate附近的强电场，周围液晶偏转，BM shift后漏光 #### ITO光罩修改，增加gate上方GBS ITO
+L0时双手用力按压面板一侧，出现大块白团，且无法自行恢复；用小眼睛观察白团处像素，gate附近有漏光现象；轻拍白团位置后，后现象可消失； #### 因gate电场影响，gate附近的液晶发生偏转，当面板受到按压上下基板发生位移且无法恢复时，像素发生漏光 #### Gate方向BM加宽
+55B03 H333 DVT-5 TST 6pcs L0 侧视色偏恶化严重 #### 量测RA片 BLU与标准BLU差异，发现两者x无差异，y相差8.1%，因此引起色偏 #### 无
+暗态周边漏光及耳朵漏光 #### AA区外围有部分dummy PS与R/B色阻有堆叠; Dummy PS尺寸较大，PSH超过了AA区的Main PSH，当堆叠到R/B色阻时会导致外围Cell gap过大并影响到AA区 #### 修改PS光罩，去除外围R/G色阻附近的dummy 
+灰阶&黑画面下，可见四周漏光现象，Source侧最明显，宽度约2~3mm， 发生ratio 100% #### 周边PI膜厚不均或Cell Gap偏高导致亮边现象明显 #### 修改PS光罩，去除外围R/G色阻附近的dummy 
+Gate左侧漏光，漏光宽度约为5mm；右侧不漏光;  #### 异常片量测漏光区域Cell Gap 偏大（厂内同批次异常片）；; 漏光侧Seal胶与PS挡墙Overlap；正常侧seal胶与PS挡墙无Overlap；; 异常点框胶精度无异常, 主要为宽度偏上限导致;  #### 每次开线确认框胶宽度ok再run货；0.35mm胶头导入, 提升框胶涂布稳定性
+四周T0低灰阶周边泛白 ，L5~L70较明显;无集中性W≈~5mm，JND2.6~2.9 @L48 。; T-sheet&客诉发现黑阶大视角(~45°/60°)AA区周边偏红，灰阶L5~7灰阶偏红消失;无集中性W≈~2mm，正视JND2.1~2.2 大视角JND2.6~2.7 ####  gap异常跷跷板效应产生mura  #### AA & Dummy 段差 : 0.1~0.3um; ② Dummy PS Ratio : >@AA : 8×M_PS Ratio; ③ Dummy  PS站位:  对顶PS站在中心线附近及中心线至AA区的位置 ; ④Border： Seal内缘→AA> 800um，建议设计Dummy PS支撑
+搭配客户BLU，发现底边发白 #### 初步分析为客户BLU底边侧入式温度升高，客户对比竞手，认为华星产品gamma变异更大；相同POL&厂别，不同LC&gap，表现差异大,确定LC影响 #### 液晶变温特性优化
+画面中心靠左侧,垂直Reddish(L25 可见发红轻微) #### 客返品，确认现象存在，属规格内良品；针对 影响 Mura 相关因子，层别未出现明显差异因子 #### 针对此现象，华星内部宣导，加严管控，同步制程针对GI PI RGB 膜厚监控持续优化，Keep 当前水准不再恶化
+gate右侧偏紫 #### G色阻厚度差异 #### G色阻涂布管控，收严G色阻厚度规格
+灰阶边缘偏浅绿 #### PI精度变更为Panel长边变更，TFT 7000→3200，与异常位置match，; pixel边缘存在PI堆积，PI偏厚约591nm #### PI精度变更
+偏黄或偏蓝现象，相应单一画素低灰阶异常区偏暗;  #### 单一颜色画素预傾角偏小导致偏色现象，重复曝光区HVA curing走线跨线处ESD;  #### 无
+L0 黑阶拼接mura #### 1、RGB拼接两侧CD&OL差异，色阻超过或接近M2，Taper升高恶化; 2、B直拼CF Open偏移及牛角差异影响PSH高度;  #### 设计：M2加大，65E01 Data 4.5um 65D01 为9.5um ;; 制程：65D01 ΔOL±2um ΔCD±1.5um；色阻牛角/Taper降低。; 
+L48灰阶拼接mura #### OLX：Data line上RGB牛角地形差，无PFA平坦化，影响Pixel内液晶排列，G直拼易出现; OLY:Gate line上CF open拼接Y方向OL 两侧位置差异影响Pixel边缘液晶排列差异，G直拼易出现，为Main tft Cfopen影响 #### OLX：RGB:ΔOL±2um；         RGB:ΔCD±1.5um；; 2200 TTP长寸±1.5um；Golden line生产；; Scaling R 2.5um G 1.5um，(720mm基准); OLY：; -1300 For RGB OLY补值; G Hole由20降低为19um; G ΔOL±1.5um
+MOD 1500 灰阶可见清晰水痕状Mura，发生14.95% #### M1 & M2 OVL差异，Cst处M2 AS外露;  #### M2光罩修改
+55D07-1 TMT T-con less搭配CSOT A-屏水平横带Mura不良，不良率约1% #### 低灰阶下，30us CKH CB整面屏出现严重水平黑带；24us CKH CB中间偏上位置出现轻微水平黑带。推测面内膜厚或过孔等异常导致gate侧GOA功能异常——gate关闭电压异常，影响像素holding电位从而出现黑带mura。 #### 无
+低灰阶可见3条水平白带白带2带宽15cm，白带1与白带3宽10mm，间距29.5cm #### 白带位置与HVA制程UVO Stage匹配, 解析成因：白带区预傾角相对正常区稍偏大 #### 由于UVO机台硬体结构限制，难以缩小不同区域温度差异; 可以通过调整UVM制程Recipe来改善该水平白带Mura; 
+一片样品在曲面状态观察到黑阶四角漏光 #### 1、玻璃弯曲时受应力影响导致漏光，玻璃基板在弯曲过程中会。产生应力双折射现象(stress- birefringence)，会对透过的光线产生阻滞作用(retardation)，从而在暗态下形成具有特定分布的漏光区域。 2、偏光片在偏贴、弯曲后也会有应力产生 #### 1、降低玻璃厚度；; 2、偏光片PSA硬胶软胶；; 3、降低对比度；; 
+HTHHO后四角漏光，且面板四角翘曲 #### 偏光片吸湿 #### 更换防水性POL
+55D04 DVT2-1 TMT 客诉 T48h 45℃ Aging后产生蓝色画面斜纹 #### Main PS的压应力作用导致部分B pixel对应的TFT器件电性发生明显变异 #### PS设计变更
+黑階斜纹 #### NG区PI已进入slit, 但未进入孔内, 导致堆积引起斜纹 #### G/B光罩修改，改善过孔
+Spacer异常，即在Panel保护膜表面会出现圆圈状Mura #### 水汽导致，非OC受压导致 #### 在包装箱内加干燥剂
+HTHHO 后出现周边mura #### 1、四角RM残留量高，推测为Seal固化不全释放离子，抑制RM反应; 2、gate侧seal进入低开口区 #### 更换框胶及PI
+HTO后周边mura #### HTO周边Mura区域PI膜厚差异明显~100A #### 无
+D04-3机种在使用摆钟视动态频测试拖尾状况时，发现较D04-2恶化 #### 检测视频自身有噪点，而D04-3比D04-2的低灰阶亮度高，导致D04-3噪点看起来更加严重，进而产生拖尾更严重的错觉,D04-3拖尾更严重的问题不存在 #### 1、光学更改WT code ,降低低灰阶的亮度。; 2、请客户使用SOC降低低灰阶的亮度。
+49B02 pattern边缘噪点、偏黑、偏红、头发变红、动态模糊 #### 无 #### OD调整
+75D01 60Hz&120Hz Vstrip 不同区域pixel 亮暗程度不一致。（V方向显示pattern均有异常，且可见色偏 #### 无 #### 75D01 变更TCON 设置(勾选红色框)问题决解（by Rohan专家）
+搭配客户自制无边框背光后，正视高亮度漏光，侧视有blinking漏光 #### TFT断面漏光，blinking对应切割的chipping处 #### CF玻璃外凸，客户涂黑笔，下POL规格4.2-->3.7mm
+43D01 LOC大板长边 1ST Cut裂片无法自动剥离 #### 整片金属线覆盖裂片困难（Dummy metal是由于glass利用率高，mask shot重复曝光保护层残留） #### 洗边范围加大，修改M1、M2 洗边mark位置
+light on画面整面泛白 #### bonding偏移较大时Test pin（与CFVCOM复用）对地short，CFVCOM电压0V #### COF图面改版，断开T形Pin中横向及纵向连接
+搭配SOC整机搜台发生整面泛白 #### SOC的tuner与二合一PMIC公共I2C bus互相干扰，导致PMIC code被改写，输出异常 #### 在CB上将I2C与外界断开或者加I2C隔离电路
+搭配创维新SOC(Realtek)在低灰阶切换测试画面时,出现闪烁 #### SOC 进来的 Dither 资料, 先经data process，再经过OD压缩/解压缩， 查OD LUT 后输出的数据跳动幅度变大, 造成闪烁 #### 1：修改OD table，将低灰阶切换时的OD强度减弱; 2：修改TCON设定，开启OD Filter<6gray不做OD
+打件厂C/B FCT测试概率性,动态画面颜色异常 #### PLL差动电路power on时为floating状态，极低比例内部正负极作动电压相近，PLL失效，导致OD table读取异常 #### 调整 TCON code PLL reset 流程，将读取OD table步骤置于PLL reset后，并加入Checksum机制
+客户SCBC/海信在验证机芯搭配32A07-2时发现在播放特定视频时会出现噪点现象 #### 问题视频源经过SOC画质算法处理，导致某些区域frame to frame 差异>OD TH，触发了OD功能，引起画面噪点 #### OD TH设置值由2调整为8，改善画面噪点抖动问题
+D04-3在钟摆运动画面（底色0灰）拖尾带噪点 #### WT table低灰阶插值比较大，会抬高低灰阶整体亮度。比较容易在暗阶看到garbage。; 如噪点，水印，其它noise #### 修整1～4灰阶的WT table。以较低幅度递增。; 可改善钟摆画面噪点issue
+厂内RA多次出现水平密集线 #### TCON未正常reset，CK异常，长时间stress，Cell横纹现象固化 #### Tcon改版，优化reset模块
+HTHHO T240 1/6出现垂直暗线 #### COF断线初步推测是面内data line 存在short，瞬间大电流导致 #### Single case
+43FHD在广东长虹 PR投产时，发现1pcs（1/22pcs）垂直多条亮线不良 #### 人员作业导致COF损伤 #### Single case
+白色画面下可见紫色闪烁竖线 #### COF die STI制程刮伤，line buffer模块Fail #### 缩短fab厂CMP研磨平台周期性维护时间间隔
+右侧最后一条line可见弱红色亮线（地侧摆放） #### Flip-pixel下，dummy code Tcon未指定，当最右侧D1 Dummy data与有效R data差异较大时，影响偶数行R充电效果引起亮线 #### 指定dummy 数剧code 设定，使之copy 同一条line前一笔data
+RA垂直暗线 #### COF bonding异常 #### Single case
+搭配整机跌落实验出现水平线 #### COF线路断裂，推测为整机模组结构干涉 #### 请客户改善整机结构
+搭配客户整机RA实验出现横纹 #### 工厂组装前框时折伤COF #### 机构设计做防呆处理 
+RA T120 H_strip pattern出现垂直闪烁暗带      #### PCB线路腐蚀，导致COF VDDA单边供电异常，引起COF相对应的OP推力变弱，H_strip pattern充电不足 #### Single case
+中间COF对应区域Black Block #### GOA_ST couple到Driver TEST信号，造成Flock失锁，造成黑屏 #### XB Layout: GOA signal走bottom layer ；相邻层GOA signal走线区域铺地
+低灰阶时SD3 与 SD4 交界的位置会出现分屏现象，SD9 与 SD10 交界的位置会出现分屏现象 #### FPC上 Gamma 走线的阻抗偏大，导致FPC两端的Gamma电压差异变大，在低灰阶造成分屏现象 #### 增加FPC GAMMA的走线宽度，降低FPC阻抗; 
+搭配TMT P2 SOC开机时概率性先显示bist画面，再显示logo画面 #### OSC输出频率范围过宽，对vbo时钟计数不准确，误进入bist模式 #### 优化OSC输出频率，由52MHz-59MHz修改为54MHz±500KHz
+49B02-3 SONY送样，被反馈残影的消散时间要长于;   竞手产品 #### 像素电极放电速度快于CF_VCOM，存在大于液晶阈值的电场，造成画面Flashing #### 1. 移除VSS电容加速像素电极discharge;; 2. 减少CF_VCOM and  DBS_VOM电容，并增加对GND放电电阻改善断电Flashing
+RA测试T120新增L48轻微水波纹 #### 与充电时间及展频设定相关 #### Charging Time由3.7us调整至3.3us，SSCG MF同步进行优化设定
+G48&R64画面水波纹滚动     #### 推测D10水波纹原因是line与line之间充电差异导致 #### SSCG MF从31.5KHz改为33KHz ,减弱line与line之间充电差异
+TMT客诉-15℃ 整机使用外接ATV信号operating会闪现竖纹画异，fail概率3/5 #### VAA couple VDD18；且受空间限制，COF挂电容较远，稳压差；出现lock失锁 #### 调整TP宽度，使其下降沿落在H-blanking区，避免DVDD的noise干扰到Source Driver的Data处理
+TCL开机logo画面概率性出现闪黑色竖线，可自行恢复 #### Logo画面时出现短暂非标准4K时序，H_Display不符合规格 #### 前端SOC依标准设置
+4~9灰阶轻微闪烁，概率100% #### KIWI Dither table设置不是最优，一个循环内有重复table #### 优化dither table
+255B（蓝色）噪点闪烁 #### ACC Table发现254B到255B差值较大，推测PC output或经过SOC处理后到TCON端已不是纯正的255B。此信号对应较大差值的ACC Table导致255B亮度有差异，形成噪点 #### 调小ACC Table 254B到255B差值，实验可以解决噪点闪烁
+RA重载画面黑屏 #### 12V输出电源线、PG电源输入端子、PG到CB之间导线存在环路阻抗，重载画面下抽电流大导致PWM IC 触发UVP #### 1.12V电源线采用更高规格线材; 2. PG电源输入端子由点接触形式改为面接触; 3.降低RA PG与CB之间的导线阻抗
+终端客户黑屏，CB上fuse开路，螺丝孔旁边1颗电容短路。 #### 工厂锁螺丝造成PCB翘曲，旁边电容受到应力，经过一段时间内部发生bending crack。电容短路导致Fuse熔断 #### 制订了design rule：电容距离螺丝孔至少7mm
+边缘COF对应区域在重载画面下偶发黑屏 #### 测试Driver 1.8V Power 供电仅为1.51V（spec:1.62~1.98V），确认Driver未工作。推测是FPC地线阻抗较大，1.8V电流回流到源端地导致远端XB地电动势被抬高 #### 1. 提升源端设定至1.9V; 2. FPC NC走线改为GND，理论计算改到0.2Ω，降低两段XB地电动势差异至0.03V
+49B02-3 SONY送样,被反馈概率性开机黑屏(概率:1/300),需要改善 #### TCON IC内部的Power on RST 模块工作异常,在异常时TCON无法load code完成初始化,显示黑屏 #### Tcon改版，优化reset模块
+55D07搭配海信SOC恢复出厂设置2.5秒无法启动 #### VSS和VGL压差不满足规格，有概率触发保护，导致Fault 翻转PMIC保护 #### 调整VSS放电电阻为4.7K
+开关机实验时出现概率性黑屏不良(重新开机可恢复正常) #### 开关机间隔时间内，电路内电荷无法完全release; 开机后容易大电流，概率性触发OCP #### 去掉VSS稳压电容， 快速拉高VSS 电压，加快放电速度
+cell制程进行面内短路实验后，出现黑屏，去掉L/S OCP电阻仍会黑屏 #### 1.VGH滤波电容短路；; 2.面内多处短路造成L/S启动OCP，虽已去掉L/S OCP电阻，但由于电流过大，使VGH电压下拉严重，使DCDC进入SCP保护模式，出现黑屏； #### 1、换滤波电容; 2、SCP无法关闭，只能给出黑屏原因
+65D01 crosstalk超出规格 #### / #### 导入De-crosstalk function改善crosstalk
+SDC 32FHD croosstalk超出规格 #### / #### 导入VCOM feedback  电路改善crosstalk
+当观测者在比较大的角度侧视液晶面板时，人眼观测到的颜色会泛白，该现象即color washout #### 侧视gamma曲线偏离正视gamma曲线导致了color washout现象的出现 #### 在正视gamma曲线上寻找一对HL灰阶,满足HL灰阶的亮度平均值与128灰阶的亮度值相等。常用于4dom机种
+55D07客户反馈颗粒感 #### 特殊的像素设计在低灰阶画面下，像素呈亮暗交替排布，所以在对照组的比较下，会感受到颗粒感。 #### 当前VAC版本无法解决，说服客户接受
+55D09评估使用DLS & trigate 架构有色偏风险;  #### DLS & trigate 架构因充电时间缩减，且RC loading加重，容易造成充电率不足，导致像素电压存在差异，而有色偏风险 #### 通过Line OD功能，可改善重载画面下的充电均匀性
+65D01-1 PR样品搭配客户P2整机测试EMI fail #### 1. 整机按键接收线与FFC有信号/结构干涉; 2. XB 接地导电布因重工导致粘性不强，接地不佳 #### 1.固定好按键接收线，避免干涉; 2. 更换新导电布改善接地
+65D01-1 PR样品搭配P2整机测试EMI fail #### 整机组装接地非最佳 #### 在XRR尾端增加导电布接地
+55D13-2 Design产出EMI测试fail #### power 1.8V snuber电路出于costdown考虑，design阶段未上件 #### 1.8V snuber电路RC上件，滤波
+55D13-2 Design产出EMI测试fail #### PMIC 1.8V开关频率非最佳 #### 调整PMIC 1.8V开关频率
+TMT  客诉EMI  226MHz测试Fail #### mini-LVDS眼图设定非最佳 #### 在保证眼图的情况下，减小Mini-LVDS输出信号强度，改善能量辐射
+65D01-1搭配TMT整机P2测试EMI fail #### mini-LVDS展频设定非最佳 #### Mini-LVDS开展频(2%)，调整展频调制频率(90K)。
+TMT客诉整机垂直EMI测试40MHz频点fail #### 洗板厂为管控板子翘曲率，将实铜设计改为网格铜设计，对 EMI影响1-2DB #### 将网格铜改为实铜设计
+65D01 在TMT传导测试9M fail #### 9M频点由CFVCOM feedback引起 #### 在XB上增加12颗CFVCOM 10uF对地电容
+65D01-1搭配TMT整机测试传导7M fail #### CK peak电流过大 #### 1.CK展频打开 ; 2.CK串入47Ω电阻
+EMS测试不达SONY Y20规格，以COF为单位垂直闪烁 #### ; 确认EMS测试时，VDD18 & P2P信号被干扰;  #### 1.P2P信号：眼图优化(VOD：200mV→400mV); 2.VDD18：增加滤波电容
+RA MOD ESD 15KV出现垂直竖线&垂直区块 ####   ESD从COF input VSS2 net 进入Driver IC，-15KV导致IC内部N_MOS Damage #### 1.模组前框边缘使用绝缘胶带贴附; 2.模组中框去除涂层，确保外部导电或中框改为胶条，完全不导电
+32A07 DVT阶段验证ESD出现可恢复性竖线 #### ESD灌入driver，导致driver latch up #### 供Driver的DVDD串入45.3欧姆电阻
+ESD测试时灰阶过渡画面低灰阶位置闪点 #### 信号传输至远端能量衰减，在受到ESD噪点干扰时导致超规产生闪点 #### 开启远端p2p EQ功能
+横向区块，横线 #### GOA Signal ESD fail  #### GOA信号线路加压敏电阻对地，作为防护
+2485客户ESD手法下，COF出现burn out #### ESD导致IC latch up 出现抽大电流，高温引起COF film burn out #### 1.COF增加散热胶与散热贴，散热+隔绝氧气; 2.修改PMIC UVP保护机制，取消散热贴+散热胶
+搭配创维整机COF温升超规 #### 客户整机测试与厂内OC测试规格及条件不同 #### 1.调整VAA电压; 2.加散热贴; 3.EE测试报告中增加：以客户规格摸底测试
+天侧8pixel宽度亮度偏白 #### Demura 补偿Table 配置错误 #### 修改VD MB设定
+串扰 #### Com ripple #### GM调整
+串扰 #### Com ripple #### GM调整
+水波纹 #### LC非对称 #### 光罩修改
+暗线 #### fanout short #### 光罩修改
+周边Mura #### gap不均 #### fiber调整
+; 1.厚铜4Mask制程实验在执行2W2D后，AOI下确认M2边缘有锯齿状现象， 逐站排查，Dry1后Mac下有不规则Mura，20倍镜头下M2边缘为锯齿状 。 #### 1.2W2D制程中DRY1后确认边缘形成副产物；; 2.DRY1蚀刻中的Cl2与Cu界面接触会生成铜副产物CuCl2 层; 3.CuCl2 膜层稀疏多孔，无法阻挡 Cl2/Cl* 的继续腐蚀; 不同位置 Cl2/Cl* 腐蚀深度不同，形成锯齿形貌;  #### 1.新增O2 Ash， O2吸附在Cu表面形成致密CuO保护层 ; 2.CuO 层比较致密，能够阻止后续 1st Dry Cl2  plasma 对 Cu 的腐蚀; 
+1.4Mask IGZO Cell点灯时R画面、白阶、灰阶可见满屏R暗点2.一种为不断闪烁暗点，另一种为满Dot实暗点，OM下确认色阻开孔位置靠近Metal边缘，FIB下确认ITO有断裂现象。;  #### 色阻搭接在M2边缘，在色阻爬坡与M2爬坡之间ITO容易断裂 #### Y方向上Shift 2um，将色阻搭接到M2上方水平区域，避免ITO搭接时形成断线
+PVD M1刻蚀后，Mac抽检到Pin Mura，mura为泛白色圆点，左右chip Mura位置对称，Mura直径为1.5cm，间距为18cm。 #### LL lower pin为塑胶材质，导热性能差，基板和pin接触区域散热较慢，导致基板散热不均，Cu膜晶粒发生变化，会出现mura。 #### PVD成膜后将基板传送至常温的S4 chamber冷却，基板温度由150℃→约30℃时，再传送至LL，pin mura不可见。
+1.TFT 涂布PI后观测到明显满屏斜纹Mura，发生概率100% #### 过孔阻扩散及液滴难以入孔; 0.2um的色阻段差，使液滴在相邻pixel之间扩散困难 #### 1.经过IJP小滴化+2Scan方式可降低斜纹Mura严重程度; 2.搭配色阻CD减小可消除斜纹Mura
+第一次投入时对比度较低3500左右，小于规格需求4000以上 #### 1.CELL 液晶预倾角偏小; 2.RGB色阻Taper异常，色阻Taper S型，Overlap区域为凹槽，液晶受色阻地形影响，液晶倒向不规则，引起漏光。;  #### 1.Curing Time 90s->85s; 预倾角优化：Pre-tilt 88.17->88.515; 2.色阻曝光Focus=40->70,Overlap区域平坦，牛角225~937，spec 1200以下，色阻交叠区形成平坦地形，液晶倒向规则，无漏光
+32B01 Baseline开发第一次投入时点灯聚集暗点&水平暗线&水平密集线爆量 #### 1.暗点：Dry PC2更换为清洗品; PC2电极表面副产物; 2.水平暗线：PV Taper异常导致ITO搭建不上; 3.水平密集线：PV Taper异常导致ITO搭建不上 #### 1.暗点：改用PC3 CHB; 2.水平暗线：PV Dry 两步刻蚀->单步刻蚀; 3.水平密集线：PV Dry 两步刻蚀->单步刻蚀
+PNLC 透明显示 4组 LC Margin（ -15% ~ 15% ）框胶穿刺，发生率 71.4% #### PNLC 液晶粘度较小，框胶固化前液晶将框胶冲破，同时框胶边缘无挡墙设计 #### 1.框胶3次涂布，加大框胶宽度; 2.加大UV固化Dose量，提升固化能力
+1. Bubble按压可移动，确认为角落空气泡；; 2. Main seal穿刺或断胶。 #### 1. 500um Dummy较细，密封保护性差，VAS设备破真空压合时，气体泄露到Main框胶位置，造成局部位置框胶穿刺 #### Dummy胶变化500um->1000um,防止穿刺和防止搬送Peeling的效果不足
+Demux Cell实验CF侧 PI涂布时Mac下可见满屏斜纹Mura #### CF基板BM表面有一定粗糙度500A左右，且Demux产品为FHD高分辨率，PI液在BM表面扩散难度更大，最终导致白点Mura形成 #### 1.通过小滴化+two scan方式可以改善扩散均匀性，减轻斜纹Mura异常; 2.two scan滴入方式通过再次PI滴入对扩散异常位置进行液滴的补充
+1.进行M0 Wet后Macro首检发现贯穿长边的区块状Mura; 2.异常位置的外围区域有一宽约20cm的无线路区，Mura位置恰好与之匹配 #### Fanout区的密集金属线有阻挡药液快速流平的作用。在刻蚀槽传片过程中，无金属线阻挡处的刻蚀药液较非Mura区稀薄，刻蚀量小，CD偏大 #### 尝试减小刻蚀槽传片速度及刻蚀模式进行cover
+1.PV1后VSS1和 Gate ESD 之间 发生ESD; 2.ESD导致部分Gate line断线或有断线的风险 #### 在GI CVD成膜后金属线之间有残留电荷积累，在IGZO 成膜前清洗开EUV的情况下造成ESD #### GI成膜前清洗和IGZO前清洗关闭EUV可改善ESD
+1.28A02 Baseline 点灯亮暗点异常爆量 #### 在COM位置处，NG点色阻搭接在M2边缘，PV膜层断裂导致ITO断裂，Drain信号无法传送到Pixel ITO，形成暗点   #### R色阻孔大小减小2um，使色阻孔在M2线上，减小边缘ITO断线风险
+1.8K4K GI 孔边缘出现鼓包 #### 1.GI DET，在刻蚀SiO2的过程中在过孔底部有含F的生成物; 2.Cu PVD，PVD的Cu膜沿着异物生长，在后续水制程及ANN后氧化 #### 1.PHT：改善 Taper角; 2.刻蚀：分步刻蚀，第一步增加刻蚀压力及在刻蚀过程中增加Ashing; 3.PVD：Power down,可有效改善鼓包及undercut异常
+新材料@65D02产品进行验证，SMO后可见角落有bubble出现 #### 65D02基板较大，在SUV后翻转，应力增加，同时新材料Acryl：Epoxy比例变化，Seal材料SUV后硬度增加，易发生上下基板分离，导致漏液晶 #### 调整dummy seal涂布方式，增加补强胶
+MOD点灯，L0低灰阶可见周边漏光 #### 在开口率较低区域，在搭配PFA材料情况下，seal固化率不足，析出物导致RM bump size较大，进而导致pretilt angle较大； #### seal材料SUV固化时间加长
+配向区域性不亮 #### Cross 区域M1andM2 跨线区域ESD，导致讯号短接；; 讯号H/L short 异常，液晶配向电位异常 #### 取消CFcom pad 讯号及减少不同线路的跨线设计
+周边泛黑/泛白/泛红/泛绿（L0 & L48），Panel四周，无大板集中性; ;  #### ITO CD偏大 #### 调整 ITO显影过程中显影液浓度不均
+在60℃/90湿度Aging出现水平线异常 #### Seal站在CK Busline，Seal阻水性不佳，水汽进入腐蚀CK线路，导致GOA线路异常 #### 1.设计面：CK 站在Com线; 2.材料面：开发低透湿框胶材料
+周边mura #### 周边Gap偏大 #### Spacer Size调整
+R磨角CK腐蚀 #### R角CK外露；; 磨边长时间浸水 #### R角seal 精度提升；; 磨边TT提升+磨边后风干
+1200/3200 不同Depo. Mode 和Idle Time 均有不同程度的Cu 氧化； #### Glass 温度高，与O2接触 ####  SPT 成膜CDA 改造成N2
+TD1实做CD2（Hole CD）比设计值偏大3.5um #### 因厚铜设计+照度&Rinse + EF值估算误差，导致Hole 比设计值偏大3um #### 依据实做EF值修正B Mask
+VFS MuraKC降等         51% ####  VFS  mura区ITO CD3 偏大0.2um #### 1.ITO 线性补值；; 2.监控方式：;   拼接区 ITO CD: CD1&CD3 Range均≤0.1 ; 
+Mod 判出11.7% bubble：四角bubble（4/17）和面内圆型bubble（13/17） #### 1.四角bubble-Seal 局细，导致密封不良，Air进入盒内，形成四角气泡；; 2.面内bubble-与PFA autogas/孔内Air相关;  #### 1.VAB 真空keep time：0s→20s; 2.VAB 底压：0.5Pa→0.3Pa; ; 
+主货4/43sht 固定在GOA busline处peeling #### 制程OL：Dow PFA TD3 Peeling位置OLY均为大板最大值；左上角OLY均超过-1um，左下角OLY正方向偏大，可与via距金属边最小距离方向match; 制程CD：AA区via ADI CD较mask小2um，GOA区via AEI CD较mask小0.7um，外围via距金属边margin小;  #### 制程：4300 OL卡控±1um; 设计：在不影响loading的情况下，外围via CD缩小，via距金属边≥8um; 
+等间距密集细线斜纹mura #### PI  Via hole周围扩散不均 #### Ps by Via hole 设计
+Oven flow浅孔/深孔分别比量产材料偏大1.5um/1um #### 材料问题 #### 材料改版+EUV 减少
+厚铜铜氧化 #### 制程时间长温度升高 #### CDA->N2
+厚铜翘曲 #### 厚铜应力导致四角翘起 #### 曝光机(vaccue-8->-24)可cover
+PV1 SiOx鼓包/破裂 #### Cu与SiOx应力不匹配导致鼓包 #### 降低PV1成膜Power，Cu表面处理等
+接触阻抗偏大，副产物等 #### SiOx与SiNx蚀刻速率差，不同机型气体搭配差异 #### 分开两道蚀刻，GI采用ECCP+NF3，PV采用ICP+SF6/CF4
+M2与M1 Cross处断线 #### Cu酸差异，PPC酸在Cross处易断线 #### 新酸开发
+点灯出现大面积暗纹 #### Vth过大，HVA Recipe与Gate电压过小，TFT打开不够导致 #### HVA配向时提升Gate电压
+点灯出现大量亮暗点 #### 鼓包导致暗点；particle导致亮点 #### 改善鼓包/管控Inline Q-Time/Particle管控
+3T的深浅孔，出现浅孔曝光CD偏大，而深孔曝不开现象 #### PFA流平性好，深孔PFA厚，浅孔PFA薄，再加上PFA弱曝现况，造成深孔曝不开，浅孔CD偏大 #### 1.PFA避免深浅孔设计；2.曝光mask修改，正常曝光，不采用弱曝方案。
+厚CU8000A在3300出现固定位置poor coating #### 厚Cu段差大，coating工艺未最佳化调整 #### 3300 PR加厚降速：1.4um—>1.5um、coating speed 110; 
+5mask GOA在3um做至target时，5um的TFT实际偏大约0.4~0.5um #### 曝光因素导致5um TFT偏大 #### GOA 5um mask 补偿-0.4um，设计4.6um。
+MOD点灯时在panel量测发生漏光，解析确认为ps peeling堆叠影响gap #### AA区以外到GOA区，覆盖sub PS+slit，由于PS材料曝光不足，发生peeling，peeling下的PS堆叠引起gap一场，发生明显的漏光点 #### 设计变更：slit线空比调整；外围sub PS+slit设计改为R色阻覆盖
+ #### 85 8K Pixel空间受限 #### 优化laser cut参数：提升laser cut能量（300->330,脉冲10->30）
+3850 存在严重 GOA 区As 不均现象,集中在大板中间位置 #### 怀疑为中间区域HT 膜厚偏厚，到2401 蚀刻存在PR 残留（2401 无chamber集中性），致使3402 Cu 蚀刻不净所致 #### 1.2401 PR ashing 加秒验证  2.2401 PR loss map 改善  
+55D10 DVT1 PI Macro捡发现Source & Non Source侧存在AA区边缘Dummy区PI流平不均点状发亮;  #### Source侧AA区边缘存在Data BM与Gate BM形成的小方格影响PI 流平，导致流平不均发亮;  #### 加大PI 精度Target，PI2#蜂窝Pattern+涂布10°较好，线别存在差异，By线别设置最佳Recipe参数; 
+Design2 批次8 POL TFT POL边缘气泡导致AA区边缘漏光82.02%，批次7 POL 1.73% #### 55D10 TFT  POL边缘距AA区仅1mm，POL边缘气泡导致AA区边缘漏光风险高 #### 1.临时对策：  POL R/W 重工批次7; 2.长期对策：POL来料改善/制程优化，    TFT POL 边缘据AA 1mm→1.2mm; 
+TD4  HTHHO T500 6/6 周边Mura(JND 2.6~3.0)  #### 解析为 Seal固化不全，引起DC残导致RA恶化出现四周mura #### 1.设计：①增大Seal涂布开口率50%，避开大块金属-done ;              ②UV Mask优化，避免遮挡SUV紫外光-3/E 2. 制程： Seal拐角涂布优化- 17001300 done——T240  source侧角落 NG，Gage 侧及source 对策角落OK; 
+IS Fail Design2 1/6 NG，01 膜，JND 3.5 #### 1、DC残留   2、漏电相关 #### 短期对策：L0 shift
+先行批3855检出ESD（Density：24.6），集中发生于Array Test 走线处 ####  #### 
+厂内部分产品肤色色偏超规，不同架构下色偏表现不同，解析不同架构色偏差异原因 #### 膜层层反射 #### 使用non coa架构色偏较好，改变ITO slit角度可改善色偏
+椭偏仪量测ITO n/k,k值(光吸收系数)明显偏离真实值,调整椭偏仪拟合模型也无法改善。 #### 椭偏仪量测的n值和k值互相耦合，ITO k值（~0.02）相比n值（~1.80）偏小约两个数量级，因此量测误差较大。 #### 使用分光光度计测量ITO单膜样品的透射谱和反射谱，通过数值模拟算法校正n/k值。
+厂内部分产品对比度偏低，缺少有针对性的对策。 #### Panel暗态漏光偏大。 #### 通过延长OM或者单反相机的曝光时间，可以拍摄LCD暗态漏光的分布，通过分析漏光区域的位置特征（如像素边缘、金属线边缘等），可以提出和实施有针对性的对比度提升对策。
+完整铜膜通过吸附性机台（AOH、Photo）时出现down机。 #### 铜膜加厚导致应变增加 #### 1.机台改机（AOH/AOL）2.增加机台吸附力（Photo）；3.调整GI应力cover
+Cu/Mo结构Cu侧出现掏空 #### Cu/Mo金属在stripper中的腐蚀电位差引起接触腐蚀和缝隙腐蚀 #### 1.OE减少/Mo应力优化；2.Mo材料更换；3.铜酸及Stripper液更换
+沿色阻边缘残留ITO导致两孔short； #### ITO PH按on mask ADI标准曝光条件时（Dose 30），GOA孔内有明显ITO连续残留导致short #### 1、当CF open内有超过1个不同信号孔时，需要在设计上考虑short风险；; 2、当空间足够，不同的信号孔需要单独开CF Open；; 3、当空间较小时，不同信号的孔需要间隔一定距离，且CF边缘与过孔ITO边缘间隔一定距离（具体数值待定）；; 4、后续光罩如采用GI Mask，则可避免上述风险；
+4Domain pixel暗态漏光，漏光发生在gate侧 #### Gate高讯号，导致gate侧易发生液晶倾倒产生漏光。; 对组补偿精度单点超规，漏光概率增加。;  #### 对组调整，与工程详细讨论补偿操作细节，进线协助建立recipe，增加首检；; BM CD增加，DOE。; 
+Source右侧第一颗COF分区最明显，剩余COF分区偶尔可见。;  #### Offline量测漏电区域GB覆盖器件Vth较ok区域负偏，造成漏电。; 调整Vgl电压，cover漏电状况。; SiOx减薄，SiNx加厚，H离子增加使得IGZO中O空位减少，电子增加。;  #### 电性优化; 隔水框胶; Cell Q_time调查和改善; 
+左驱仅显示前六级，右驱四六级水平淡线，无级传性不良，双驱正常显示;  #### 电阻量测结果 CK4 及VSSG走线阻抗OL；其余CK讯号阻抗323Ω391Ω，VSSQ讯号430Ω；怀疑bonding处异常;  #### 根据实验现象，推测实验致TFT电性变化引起改善或恶化；; 调查水平亮暗线异常集中发生在STT结构46级区域原因; 
+4domain未发生H-XT；; 3T结构，在规格内，偏高；; 3T+串扰严重，且H-XT集中在面板中间位置。;  #### 正负极性的电流差异导致连接第三个TFT的 Acom或者Sharing com电压存在压降（IR drop），通过电容couple pixel电位影响pixel亮度。另外电压降低拉扯sub pixel，导致亮度变化。;  #### 3T pixel结构，Acom尽量宽，目前设计值都在300um以上。; 3T+ pixel结构优于3T。; 第3个TFT W/L适当减小，减小正负极性电流差异。; 
+发生条件：STD条件 2pcs/低高温SINx条件 1pcs；; RA条件；高温高湿60℃-90% HTHTTO，目标T240；; 点灯测试；现象表现为TFT常开，疑为Vth负偏严重或gate讯号异常；; Vgl/Vgh调节画面仍异常，Vgl低至-14V后画面无法切换；; OM查看bonding区；; Rebonding后可正常点亮:;  #### Bonding存在气泡，RA后气泡恶化，导致gate讯号接触不良；;  #### 理清bonding气泡与条件的关联性，分析是否与鼓包直接相关；; 实验室高温高湿恶化，重复现象。; 
+量测一片高低温STD条件，阻抗无异常; 条件STD SiOx减薄，GOA版CK信号short，RGB之间short；COF版RGB之间阻抗1KΩ左右；; 问题：没有剩余大板可再次确认short情况。;  #### 上下半板阻值差异----无差异; 下半板讯号与上半板差异（short/扎针异常）；; HVA recipe未达到最佳；;  #### HVA绕线量测阻抗上下板差异为100Ω量级，对HVA配向影响较小；; COF之间阻抗差异较小，与COF分区关联性较小；; 
+IS Fail的膜位具有一些的集中性，主要集中在大板短边；线上测量的I-V与Panel实际工作的I-V具有两点差异：I，没有照光，加热等恶化条件。II，不是AA的TFT。  #### 与背光相关联 #### 目前怀疑可能和背光有关，但还没有实际验证数据。; 待找到之前的背光再想办法再现，才能判断之前的漏光是背光问题还是消失了。; 
+30th pattern 温度飙升至79oC #### 通过发热点定位，讯号排查，电流量测锁定发热与COM FB 相关；; FB 后讯号输入ACOM，ACOM 走线集中在面板两测，造成温度升高;  #### FB 电路根据面内Couple情况对COM 讯号进行负向反馈补偿，保证COM 稳定; D10 Disable ACOM FB 功能，保留CF COM FB 功能
+色阻边界到中心距离不等 #### 大小区影响单曝曝光时间; Eg.小区0.9s  大区1.2s #### Panel短边改用大区曝光解决，四角由于TEG位置被shutter遮挡，不能解决。 
+外围Busline等较宽走线处M1 Cu Peeling严重，其他位置/面内轻微。 #### GI-SiOx成膜前的N2O处理及成膜高温条件为Cu氧化致Peeling的主因。 #### GI Normal 制程为SiNx/SiOx叠层结构，SiNx成膜前无N2O处理，主货批无Peeling Issue；; 4200 PV成膜前无N2O处理，且为低温成膜，TD Phase实验无M2 Peeling 发生。
+SF6相对CF4刻蚀副产物轻微，但SF6Cu damage严重，在与Cu接触前必须切换其他气体，搭配CF4副产物问题仍然存在 #### 副产物与CF4刻蚀气体有关 #### ICP使用NF3既可改善副产物又可大幅度减轻ESD，同时GI SiNx undercut调试margin相对较大，可行性高
+先Run的1片有异常：高Power+无Season；   原因推测：高Power？ 无Season？; 后Run的3片有异常：低Power+无Season；   原因推测：已污染？ 无Season？ #### PV1低温成膜条件优化，减少PV SiOx成膜缺陷态，改善PBTS #### 鉴于2201异常，For后制程Risk降低考虑，修正原实验条件如上：GI/PV 高 Power条件剔除；GI 2K/2K条件剔除；PV 330 Oven bypass； CVDF25 须PM后再Run量产。
+全部位于 Data Split进入AA区的ACOM交叉处；; 鼓包Issue沿宽Acom线上下对称延伸约5~6行宽度，程度渐弱。 #### Data Split处上下易形成尖端放电效应，制程过程中累计的静电，容易沿横向窄走线导流至纵向宽Acom走线后，影响此处上层PV1沉膜过程，影响膜质，膜层鼓包，严重可致Peeling，上下分流，纵向导流线相对较宽，故上下远处静电耗散，Issue渐弱。 #### 结合实验结果考虑光罩Laser修补的可行方法；
+VGLL,降低, VGH升高导致OCP不是Vth过正导致; T21 Vth太负，导致CK 一直充放电导致CK大电流 #### (1)Vth正，VGH margin小; (2)VGH低，导致讯号传不下去， ;     Q点电荷积累，启动OCP; (3)VGLL降低可改善Q点放电 #### VGLL升高, OCP延后启动;     (1) CKH-CKL压差变小,电流变小;     (2) P(N)电位升高,Q点被下拉变好; 冷凝剂, OCP延后启动;     低温导致Ion降低,导致漏电变小
+Panel下半屏中间位置泛白，发生率100%；; 泛白区呈渐变状，越靠中间位置泛白越严重；（越靠上泛白亦有越严重趋势，但趋势轻微，不明显）; 在纯色Pattern下泛白现象更明显易观察； #### 横向Pattern化的M1_Acom会在面板中心Delay最大处，电位衰减最大，通过3T Device的分压及Cst电容的耦合作用，影响到Sub-Pixel的压差，RMS电压变大，致使Sub-Pixel发亮，引起泛白；; ; 微观查看：泛白区域的Sub-Pixel异常亮起。 #### ACOM＞CCOM，最好差值在1V以上；; 上下半屏共地，可以进一步改善泛白状况。
+Main/Sub交界处的“八爪暗纹”有所减轻；; Main区靠近CF Open处的“几字暗纹”有所减少。 #### 不固定位置Main区靠近CF Open处的“几字暗纹”；; Main/Sub交界处的“八爪暗纹” 仍存在；; Data/Gate侧“锯齿暗纹”较严重；; 开口区内“Slit暗纹”较严重。 #### ITO 三边封口：改善Data/Gate侧“锯齿暗纹” ；; Main/Sub交界处ITO封闭Bar：改善“八爪暗纹”；; GI浅孔取代3T深浅孔：降低深浅孔不良的配向风险；; HVA Recipe Tunning：改善开口区内暗纹状况。
+C/B外挂电阻 & RA T500; 2pcs/3pcs COF侧出现水平渐变暗线，; 从两端GOA至面板中央逐渐加深 #### C-Board上CK外挂110Ω电阻 → CK loading加重 → gate falling变差；随着RA进行至T500，gate falling进一步恶化，导致面板中央发生错充 #### 续投RA，继续量测GOA margin；; VGH电压降低至26V投RA; Data讯号增加1~2pulse（避开最后两行错充的风险）
+85 8K TD1模组点灯发现耳朵漏光情况，比例5/131 #### 1、OM观测可见外围有明显鼓起，拆片发现PS或PFA peeling；; 2、SEM确认为PS站点发生peeling；; 3、怀疑Sub PS+Slit设计，导致透光量不足，导致peeling风险 #### 85 8K 还原类似75 8K 设计，但Via 过孔上增加Sub PS设计；变更PS slit设计
+大板dummy区PR残 #### 拼接方案限制 #### 增加边曝
+Tr偏低 #### 液晶效率&开口率不足 #### BM对位精度管控，Gamma1拉高
+H crosstalk #### COM不稳 #### COM Feedback，Gamma对称化
+黑底白框 V crosstalk #### DBS屏蔽不足 #### DBS电压调整，像素设计优化
+TD1周边mura #### 超窄边框设计 #### fiber DOE
+fanout short #### mask space breaking rule #### X panel layout工具debug
+ATS多次调试fail #### 3T漏电增加新产品调试难度，机台故障未及时排除 #### 套用相近产品rcp；push厂商及时排除机台故障
+RD line ITO short #### 色阻大孔中ITO残，造成不同信号short #### ITO过曝，色阻开孔设计优化
+gate侧暗态漏光 #### COM未shielding住Vgl #### COM设计优化
+PFA undercut #### PFA 下PV过刻 #### PFA dry rcp优化
+V line defect #### array来料defect #### particle管控，GI孔，ESD改善
+H line defect #### COF side bonding不良 #### side bonding制程改善
+AS过薄至特性Fail #### SEM图片界面失真误判 #### Cu 4PEP制样前沉积PV或加检TEG
+黑底白框V-XT JND=3.6 #### Data逸散电场至M/S交点漏光 #### 增加横向M/S交界6um的ACOM
+三星肤色视角NG #### 小Size的4D画素中竖向Trunk加重 #### 用ACOM遮挡Blue竖向Trunk
+Cell暗态漏光类型 #### 地形与HVA工艺搭配等 #### 控制牛角并保持Domain对称性
+DataBM增加CR #### DBS存在低效率区 #### 相同OVL水准下使用DataBM
+M/S交界处暗纹较宽 #### 点反转相邻像素区压差大 #### 由Flip结构调整为Column结构
+大板周边BPS光阻残留 #### BPS制程margin小 #### 变更光阻材料
+Blue衬垫Peel #### Blue Slit在TFT凸台上不平整 #### 增加Dose或OVEN
+CF Taper处ITO残留 #### CF Taper处PR堆积变厚 #### 强曝或使用Slit设计降低Taper
+暗态细碎亮点漏光 #### Monomer成核异常 #### HVA工艺中降低UV1电压或时间
+BPS AA区域大面积亮点 #### 因BPS地形问题导致PI涂布扩散性不佳 #### DBS设计
+RB载台上PFA膜厚过薄 #### PFA流平性好 #### 更换色阻，PFA材料
+chip周边泛白 #### 周边区BPS膜层厚 #### PFA减薄
+RB堆叠膜厚及段差偏低 #### B色阻材料热流平性高&色阻CD小 #### 增大色阻CD或换成RG堆叠
+Test Key位置色阻堆叠膜厚偏低 #### 色阻载台CD大小对膜厚影响较大 #### 增大色阻CD，改善PS高度
+周边漏光/周边Mura #### 跷跷板效应 & 边缘PI膜厚不均对液晶控制能力差异导致 #### Dummy设计优化及边缘PI膜厚改善
+Cfopen处ITO残留 #### CF孔较深，PR光阻较厚 #### PR减薄 增加Ash工序
+65D02 DVT2 HTHHO T160 出现黑屏 #### Array 镭射cutting source处，经过RA 恶化后，烧溶的M2与M1 short在一起     #### Test优化ALSR 修补手法
+65D02 DVT2 主货批周围漏光，高发生率。 #### 漏光区AA边缘PS膜厚较OK偏大，边缘漏光位置Gap偏大形成漏光 #### PFA remain U%改善
+PFA产品5900后，via处出现ITO鼓包 #### via内残留脏污，ITO成膜加热后脏污分解形成outgas将ITO顶起形成鼓包 #### ITO成膜前，增强基板清洗处理，去除孔内脏污
+PFA产品cell vas抽气采用PV2量产参数发生一定概率OC 空气bubble #### PFA材料透气性与PV2存在差异 #### ODF vas抽气时间split测试，确定最终vas抽气时间延长30s进行量产
+55UD CN 5Mask TG PS 2nd Source小中量验证MOD点灯发现固定点位黑阶黑点 #### PS的VCD Pin Mura导致PSH偏小，Pin附近的局部Cell Gap偏低，导致此位置穿透率降低，产生黑阶黑点 #### 调整溶剂体系，降低PGMEA比例，增加高沸点溶剂EEP
+PFA产品MOD点灯发现暗点 #### 暗点对应位置PFA和PV1 undercut，导致ITO与M2断开 #### Dry RCP调试
+量产PFA产品存在IS fail问题，确认IS fail panel Best Vcom shift较OK panel大 #### 1.PFA材料离子不纯物释放以及PFA材料block能力不佳，不足以阻挡下层离子型污染物; 2.PI与PFA搭配性不佳，PI材料block与release能力不佳 #### 降低PFA材料离子型污染物来源，增强PFA材料block能力
+ENF#7 中量测试过程中出现MOD 水痕mura&猫爪mura 降等 #### Q22 CL元素影响铜酸蚀刻速率，造成蚀刻不均，导致MOD 水痕mura&猫爪mura #### DRY 工艺调整，Q22转N22 改善
+JSR PC880-R2 PFA 在HP之后COA基板出现pin Mura，与HP proximity pin map完全匹配 #### Pin中心peek导热速度较周围空气快，温度高，导致膜厚偏厚，CD偏小 #### 增加官能团数量，降低非曝光区的NQD不易溶解，并降低高沸点溶剂用量
+ ####  #### 
+                      PFA OVEN、ITO Anneal、PS OVEN均未发现刺鼻性气味 #### N22 AS 掏空导致铜酸钻孔形成undercut #### N22 recipe 优化，减小AS 掏空程度
+PPC#7 中量测试taper/CD loss波动大，且出现undercut #### 两剂型添加剂添加精度不佳导致铜酸蚀刻特性异常 #### 重新评估添加剂添加margin，优化添加剂补给方式
+ENF#6 小量测试3402后出现undercut 异常 #### 材料压力margin 不足，在G8.5 喷压下底部蚀刻速率快导致undercut #### 调整配方，增加压力margin
+在10K生产过程中Inline PS量测出现OOC，并出现多点PSH/OL量测跳点异常，PS形状发生明显变形，推测光罩雾化污染Mask，导致PS形状发生变化，无法稳定生产问题。 #### 起始剂分子量小，照光裂解后，溶于相同极性溶剂中挥发，导致光罩雾化 #### 短期对策：调整溶剂极性，减少起始剂溶于溶剂量，达到与量产相当挥发量水准；; 长期对策：避免使用分子量<300的起始剂，例如Irg 907
+客诉bubble issue #### ITO crack #### 材料开发增加有氧环境下TGA测试及规格
+JSR H3G放量7.5K验证时G成膜不稳致THK检出纵Mura #### NG lot光阻更容易干 #### 更换lot后OK 
+DOW PFA实验过程中发现类似水渍脏污状Mura，且Mura区泛白，命名为水渍Mura #### 大极性溶剂用量较少，RGB via设计过多 #### 增加MEDG用量，选择较强的EUV条件，减少RGB via数量
+DOW PFA实验过程中发现磨砂状Mura，命名为Haze Mura #### 溶剂和表面活性剂与树脂的匹配性不良致使树脂聚集导致Haze Mura；表面活性剂数量不足导致Cloudy Mura #### 使用高沸点溶剂和低表面张力的表面活性剂改善Haze Mura；增加表面活性剂用量改善Cloudy Mura
+在基板中间出现团状Mura，命名为Cloudy Mura #### 溶剂和表面活性剂与树脂的匹配性不良致使树脂聚集导致Haze Mura；表面活性剂数量不足导致Cloudy Mura #### 使用高沸点溶剂和低表面张力的表面活性剂改善Haze Mura；增加表面活性剂用量改善Cloudy Mura
+CMC H10G较H7G（SDI）的对比度低20%，主要在于暗态（L0）亮度偏高 #### Millbase Y185团聚 #### 更换匹配性更好的分散助剂
+BM底部undercut #### BM底部附着力差，表面感度强，出现明显undercut #### 降低表面固化，降低表面溶解，抑制undercut
+65D02（PFA机种）大量生产时，于PMO站点发出刺鼻性气味，其余量产PV2机种均未发出该气味； #### PFA经EUV照射后，经过Oven制程散发出烧糊气味，与产线接近，EUV OFF则无类似气味 #### PFA与PI制程前清洗EUV降低，甚至关闭，或以AP Plasma取代EUV，可大幅度减少气味的析出
+JSR H4B较1st B CD偏大1~2um,导致R-B牛角偏高 #### CD值偏大，taper角偏大 #### 管控牛角值，CD和taper角
+55FHD MOD异物暗爆点，不良ratio 为6.85% #### G58易产生-Br，污染液晶 #### 减少G58的用量
+CMC产品G5HC送测SGS，检测报告中，甲苯含量为77.7ppm; ，高于CSOT要求原材料甲苯含量规格<16ppm #### 光阻原料甲苯较高 #### 上游原料供货商加强纯化
+65D02 Design1 H7B 实做EF值比设计值偏小2.7um #### B10曝光机大区照度异常 #### 优化ALN复机处理流程，若校正则大小区均需重新校正
+B的整个pixel pattern 呈现凹型bowl shape；凹陷的幅度超过0.5 um #### 光阻流平性 #### 后续check list 中需加入膜面状况的确认，加入光阻开发流程中
+DFC＆CMC H8B V2 试做3.2um：B/B/B undercut不均爆点 #### 光阻基底undercut不均长度较SiNx普遍更深 #### 在G4.5验证时，尽量使用接近实际情况的R/G基板来进行UC不均的验证
+SMK H7R经过oven之后, 相同条件下rework 会有残留,而SMK H4R不会 #### 树脂交联度较高，光阻感度较高 #### 减少环氧树脂用量
+JSR PFA PC880-R2/R4材料在G8.5 test发现OVEN前后变异大，U%差。深孔设计部分孔oven后被填平 #### 材料体系polymer分子量小，Tg温度低，在oven过程中流动过渡 #### polymer分子量增加：6000→8000→10000
+显影后，大板边缘defect偏多，经验证，加强VCD恶化，与VCD强相关 #### 材料溶剂沸点稍低，VCD margin偏小，大板边缘VCD抽气较强位置溶剂挥发速度过快，出现膜面颜色不均defect #### 提高材料溶剂沸点，降低边缘挥发速度
+量产品放量，背污较量产验证 #### PS光阻在KOH中溶解性存在差异 #### 改善单体酸价及种类以增强溶解性
+SMK H4B/toyo H4R CSP压力持续升高；Defect数量飘升 #### 阻塞物为SMK H4B millbase中的gel和toyo H4R millbase 中的particle #### 原料过滤性强化，统一管控手法和标准
+SMK H7R容易发生M2 Cu腐蚀；经过Rework后再做R制程，腐蚀加剧 #### H7R中硫醇类开始剂m含量偏高，Oven时产生硫蒸汽，透过PV1 缺陷腐蚀M2  #### 导入 toyo H7R，SMK持续改版
+ILD CVD后Gate金属上出现大量小颗黑色点状defect #### GI dry without PR，蚀刻过程中M1 top Mo damage导致Al hillock #### 1.GI dry with PR，防止Mo damage可改善; 2.调节GI&ILD dry条件，降低Mo选择蚀刻比; 3.M1 top Mo加厚至800A
+Dry后基板出现白雾状mura，呈点状或连成平行于长边的线 #### GI dry without PR，M1 top Mo过刻及蚀刻不均匀性差异 #### 1.调节GI和ILD DRY刻蚀条件; 2. GI dry with PR，防止Mo damage可改善
+PFA PH后出现PFA图案缺失 #### PFA与PV表面黏附力差 #### 1. 降低RGB和PFA制程前清洗的EUV强度，降低光积量；; 2. 减少显影时间；
+ITO WET/STR后出现ITO Slit消失或CD Loss过大 #### Dry后PFA表面生成物与ITO附着性不佳 #### 1. 改为ECCP Dry etch；; 2. RIE CF4/O2 Dry后增加O2 ASH处理去除副产物；
+RG制程出现随机点位Pattern缺失 #### 光罩脏污导致 #### 清洗光罩
+GI 2W1D后AOI检测via hole defect爆量，确认为孔蚀刻未净； #### 孔内光阻残留，导致第一道湿刻蚀刻未净 #### 1. 在第一道湿刻前增加O2 ASH；; 2. 调整蚀刻液配方，改善蚀刻液浸润性；
+Dry etch后PV SiNx侧向内缩严重，与PFA形成undercut，导致覆盖的ITO断裂，影响接触电阻 #### 1. PFA Taper大；; 2. PV SiNx侧向蚀刻速率快 #### 1. PFA Mask采用Slit设计，降低PFA taper；; 2. 改善PV SiNx膜质；; 3. 降低Dry Pressure，增加O2 流量；
+M2 3W1D后外围IGZO残 #### 小孔湿蚀刻，药液浸润性不佳 #### 1. Wet段加EUV，改善基板表面状态；; 2. 蚀刻时间延长；
+Cell点灯时R画面、白阶、灰阶可见R暗点，OM下确认色阻开孔位置靠近Metal边缘；FIB下确认ITO有断裂现象。 #### 色阻搭接在M2边缘，在色阻爬坡与M2爬坡之间ITO容易断裂 #### CF open位置shift
+GI CVD后基板上出现数颗直径约5mm的白色圆点状mura，边缘有金属对炸缺角 #### AQ造成Chamber气流紊乱，水滴飞溅至AK Cover 后，造成水滴残留，从而导致CVD Arcing #### PDC AK前AQ关闭
+原PV主条件成膜速率批次差异>14%，Vth批次差异达1.1V #### PV SiOx沉积是SiH4流量较低，流量控制精确度不高，沉积速率稳定性差； #### 1. 提高SiH4流量；; 2. 更换更高精度SiH4控制阀
+GOA级传不良 #### GOA输出波形高准位不足、falling差 #### 1. GOA电路优化检讨(采用LC下拉）；; 2. 器件电性正偏压稳定性改善
+RA后点灯时OCP启动 #### CK short #### 增强水汽防护，减少器件负偏，避免出现大电流；
+ITO  ANN后孔内出现ITO Bubble，导致接触电阻偏大 #### PFA Dry后副产物未清除，经高温烘烤后逸散，导致ITO鼓起 #### 1. PFA Dry后增加Cu STR制程；; 2. Cu STR前EUV照射基板；
+GI CVD后AOI检测小颗黑色Particle新增大于5000颗 #### TOES气体残留 #### 1. 更换中转区TEOS; 2. 修改成膜recipe（减小TEOS gas flow时间，并增加N2 吹扫步骤）
+4400制程中出现M1/M2跨线处ESD炸伤 #### 干刻静电释放困难，且SiOx干蚀刻时间较长，静电积累严重； #### 1. GI厚度增加，SiNx与SiOx膜层比例优化; 2. PV  Dry etch采用ICP刻蚀方式
+IGZO靶材Splash issue #### 靶材局部散热不均, 造成融化滴在基板上 #### 靶材polish
+M1同层ESD，EUV制程高发 #### M1长走线相邻，ESD高发； #### 1. 设计面：通过M2转线减少长走线相邻；增加相邻长走线Space；; 2. 工艺面： 关闭EUV；M1 taper优化；Dry采用ICP mode；
+ITO ANN后出现Bubble，解析发现为PV1 SiOx与M2界面分离导致； #### PV与M2界面应力不匹配 #### 1. 调整PV SiOx沉积条件，改善应力状况；（如降低Power）；; 2. PV CVD前增加N2O PT，改善M2表面应力状态；; 3. M2膜层改为三层金属；; 4. 设计改善；
+RA后Panel漏电严重，降低VGL可改善 #### RA后器件Vth负偏 #### 1. 降低VGL驱动电压；; 2. 提高器件稳定性；; 3. 改善Seal等封装材料，阻隔水汽的进入；
+GOA版点亮棋盘格画面时，面板底部出现显示错误，原本该显示白色的地方显示黑色，黑色显示白色； #### 最后六级GOA电路下拉方式与其它级不同，经历了较长的blanking time #### STV与Reset分离, 避免最后六级的差异性; 
+STT结构GOA电路中T53器件Vth正飘 #### 与其它机种比，STT电路的T53 Vds 最大，受到的PCBTS最大，Vth偏移最严重； #### 1、调整TFT size比例; 2、LC下拉+增加一颗TFT，清Sn节点; 3、增加T53的Cgs电容; 4、LC下拉且LC电压低于VGH
+1. 32IGZO 2255检出外围 M1 ESD，主要集中在chip外围电路；; 2. FIB结果：GI膜层完好，ESD为GI成膜前发生； #### ESD与补清洗设备STR200强相关 #### 后续STR&补清洗避Run STR200
+GI Dry制程SiNx Undercut严重 #### SINx/SiOx蚀刻选择比大 #### 1. 降低Pressure；; 2. 增加O2流量；
+CF4/O2 Dry etch大板中间点位副产物严重 #### 等离子体分布不均，CF4易产生副产物 #### 1. 改为NF3/O2 dry etch；; 2. 调整FRC；
+HTHHO 水平渐变线 #### GOA via 孔腐蚀 #### ITO Rs 管控：t1  ≤170K  t2 ≤110k; GI taper管控：; PR Taper≤50°；; GI taper ：t1 ≤ 55° t2 ≤ 50°  ;   
+侧视色点和正视色点偏移较大，超出客户规格 #### Δnd 增大，RG亮度增大比例高于B，白点黄移，调WT拉低B亮度更多，视角变差 #### Δnd 减小
+侧视色点和正视色点偏移较大，超出客户规格 #### d降低，边界效应增大，RGB亮度较低抵消Δnd增大影响，且B亮度降低最大 #### cell gap降低
+侧视色点和正视色点偏移较大，超出客户规格 #### Pre-tilt增大，RG VT shift左移比B明显，即相对B亮度降低，视角改善 #### Pre-tilt优化
+在L0下，以小眼睛观察Pixel，可发现很多细小的亮点，影响产品品味和对比度 #### UV1 过曝，形成大颗粒bump #### 降低UV1秒数
+在L0下，以小眼睛观察Pixel，可发现很多细小的亮点，影响产品品味和对比度 #### 反应速率过快，UV1制程margin不足 #### 调整液晶配方
+在L0下，以小眼睛观察Pixel，可发现很多细小的亮点，影响产品品味和对比度 #### RM吸收偏右，吸收增强导致反应速率过快 #### 调整RM
+L0下圈状mura&水平黑白带 #### UV2 CDA吹气直接吹到玻璃表面，形成温度差，产生预倾角差异 #### 改变设备，调整CDA吹气方向
+L0下圈状mura&水平黑白带 #### PI侧链偏软，UV2 后Pretilt容易shift，存在温差时，易形成预倾角差异 #### 调整PI材料，使用刚性侧链
+L0下圈状mura&水平黑白带 #### RM对温度敏感，成角时由于温差，产生预倾角差异 #### 调整RM结构
+在HVA照光前可以观察到小黑点 #### 新RM体系，热聚合温度偏低，从而在框胶热固化过程中提前进行预聚合 #### 调整RM材料
+在客户背光下（高温区），在低灰阶下可以观察到底边泛白 #### 液晶材料自身特性在温度升高时，VT Curve会左移，从而相同电压下导致L增加 #### 在搭配客户温度不均匀的背光时，使用VT Curve受温度变化小的液晶材料搭配，
+JNC PI-Less 28A01碎亮点严重 #### JNC PI Less additve在SMO过程中发生热聚合，导致28A01暗态碎亮点，亮态小黑点 #### 调整additive材料结构
+快速响应液晶在55D10 IS NG; #### IS 由DC残所导致 #### 调code使IS pass
+有明显drop mura #### P-type 滴下量大，Additive扩散不均导致 #### IJP滴下量40ng较小可改善
+中心配向OK，边缘配向不良 #### Seal UV 3000mj导致，使Additive提前聚合 #### 降低seal UV积算光亮至1000mj 改善
+水平渐变线 #### LC1/LC2过孔处腐蚀 #### 1.与CK区一致，过孔处PS保护
+Gate侧出现耳朵漏光 #### PI回流堆积在PS Wall上，导致对顶位置Gap偏高 #### PI 精度内缩300um，避开PS Wall堆积
+Gate侧出现耳朵漏光 #### PI回流堆积在PS Wall上，导致对顶位置Gap偏高 #### PS Wall设计站位需避开PI 精度
+实验线银酸蚀刻出现Ag蚀刻速率过慢，甚至无法蚀刻的现象 #### Ag酸换线时残留Cu酸污染 #### 1.利用Al酸进行管道Flush;; 2.升高药液温度蚀刻Ag dummy 
+Cu 与 PV或Cu叠加后很容易 peeling #### Cu 薄膜的应力较大 #### 1.改善器件结构，采用Al作M1;; 2.改善制程条件，减小PV层应力
+CT点灯出现面板随机位置亮线簇不良 #### M2金属异常残留造成Vdd与Data短路 #### 更换Cu靶材
+CT点灯出现面板固定位置亮点环不良 #### IGZO成膜中静电累积导致LS ESD形成M1与LS走线短路 #### 降低L/UL腔室Pin_A高度，避免摩擦静电积累
+MT-PLN制程完成后，ITO成膜，进而在PHOTO-coating工序发现PR破膜 #### Al被TMAH蚀刻造成的undercut引起的 #### Metal后增加一张mask，制作SiO2保护层作为长期对策
+CT点灯出现严重水痕mura #### 水和Stripper液混合后残留在背板上导致mura #### 改善Stripe工艺
+IGZO PH在line2 进行bake，PH后macro下可见bake pin mura，CT点灯时pin mura明显； #### IGZO PH时有pin的位置温度和无pin位置的温度撒热不均，导致电性差异 #### Line 2 Prebake动作改善： 先Lift Pin 下降至4mm预烤45s，后再贴板烘烤；; 
+CT点灯出现严重亮线过多 #### M1/M2短路 #### Buffer孔采用分步蚀刻的方式
+CT点灯出现满屏分布不均的亮点 #### plasma将M1打下来和IGZO导体化区域接触导致Gate和S/D短路 #### 优化GI dry recipe，采用CF4/He气体蚀刻
+demo长时间点灯后黑画面关不断；越点越亮 #### 长时间顶部照光会导致Vth负飘，对IGZO TFT电性影响较大 #### 增大阳极的面积，提升IGZO TFT的可靠性
+31’UD TOP emission背板制作过程中，ITOAgITO wet后首次发生残留。后续相继投入的几款产品也均发生残留。 #### 实验数据表明PHOTO后，Top ITO表面有微量有机物质残留； #### PHOTO后增加O2 ash或Wet前使用EUV均能有效对策残留。根据实际情况选取第一种方案。
+在slim border 1st 投货产出的大板CT点灯的时候，Panel中心大面积的暗区无法点亮 #### PV Dry 对M2 TOP Mo过刻蚀，Al与碱液直接接触并反应，导致Anode与M2搭接异常 #### 通过改善PV膜厚均一性或增加M2 Top Mo的厚度可有效改善M2腐蚀问; 
+双层金属位置发生翘起 #### 氧硅膜层与金属膜层应力不匹配 #### 通过调节ILD成膜参数，适当降低ILD氧硅膜层应力
+GI dry制程后AOI下四角分布密集小黑点 #### GI dry蚀刻气体比列不当导致副产物产生 #### 调节dry蚀刻气体比列，降低O含量，改善副产物的产生
+51.85MHz fail #### PPCC能量集中 #### IC改版
+16KV 水平区块画异 #### VGH ESD clamp burnt out #### 修改VGH ESD Clamp 的Matel走线方式，增加contact 数量，增大VGH ESD CLAMP SIZE
+水平暗线 #### COF LEAD BOND OPEN  #### 样品没有FT测试导致异常品流出
+水平暗线 #### COF 走线太长导致RC delay,从而引起充电不足 #### 修改COF metal走线
+RA HTHHO 水平区块画异 #### 高温下delay time变长导致充电不足 #### gate IC 改版
+固定位置V-line #### IC ESD防护能力弱 #### IC 改版
+V-line #### film 损伤 #### 复测
+V-line #### ESD设备差异 #### 复测
+V-line #### ESD设备差异 #### 复测
+ESD 测试多颗Driver显示画异 #### IC内部watch dog 抗ESD能力弱，ESD noise从预留I2C 线路传入IC #### Watch dog layout补强，切cut断预留I2C对watch dog控制
+系统ESD测试 NG，Class C #### ESD Noise 造成 4UI CLK Gen. 动作异常，产生极高频的 4UI clock 频率，导致 TP 输出异常. #### 加入line reset pulse，确保4UI CLK Gen在enable时能做reset动作
+V-Band #### IC设计缺陷 #### IC 改版
+EOS/ESD导致VGL-GND Short #### 模组制程 #### Test Pad增加绿油，模组组装ESD手法宣导
+GOA信号的OCP回路阻抗较大，在受到VGL-GND的噪声扰动后超过逻辑电路的阈值，Z点会翻转，使最终FLT信号翻转。 #### IC设计缺陷 #### 通过metal change，在OCP模块附近增加2pF对GND的电容滤除Z点的噪声，避免FLT异常翻转
+65D02系统ESD, 胶框pass，铁框NG #### 65D02新铁框BL模组，在XB处与背板未做绝缘处理，ESD从铁背板串入XB裸铜处, 传入Driver input #### XB裸铜接地电阻0—>22ohm，同时在BL上靠近XB处贴绝缘胶带处理
+客户反馈恢复出厂设置时概率性黑屏 #### VSS 放电速度太慢，在恢复出厂设置时，VSS 会低于VGL,level shifter fault pin 翻转 #### 更改VSS 对地放电电阻
+客户反馈A65E项目搭配55D07 开机画异 #### VL 设置太低，reset 异常 #### PMIC VL  电压范围设定更改
+由于VIN异常dip，导致所有Chdischarge后又解除，discharge解除时，经波形量测交叉验证，确认为DCHG这CH在discharge解除时，误触SCP保护，导致所有CHHIZ #### / #### /
+开ODDC后开机概率性画异 ####  PU_lock未与CDR_clock align，导致开机时概率性CDR异常 #### IC改版，加入align电路，使PU_lock与CDR_clock align
+水平暗线 #### COF LEAD BOND OPEN  #### 样品没有FT测试导致异常品流出
+水平暗线 #### COF 走线太长导致RC delay,从而引起充电不足 #### 修改COF metal走线
+RA HTHHO 水平区块画异 #### 高温下delay time变长导致充电不足 #### gate IC 改版
+75D01 在HVAA重载画面下闪烁 #### 在此画面下,HVAA 瞬间电流变化太快，使得HVAA 电压瞬间抬很高，触发OVP #### 打开TCON PDF 功能，在此画面下更改翻转方式，避免出现HVAA 重载
+客户家RA(LT -15℃）出现闪屏画异 #### X/B layout overlap，Driver VDD受VAA干扰出现瞬时drop导致CDR异常 #### 短期: X/B PCB layout改版; 长期: layout rule加强管控和执行力度， layout后需要供应商模拟评估风险
+QCM CS开启后，Driver颗内band mura #### QCM电容不对称，Driver output靠近电容和远离电容存在IR drop #### COF改版拉出对称QCM电容接点，PCB改版满足对称电容
+Driver absolute max power供电时，H-line画异 #### Driver内部BGR模块寄生BJT受高压noise干扰形成电流路径，导致BGR特性改变，进而CDR异常 #### IC改版，all layer change, cut断nosie干扰路劲和寄生BJT电流路径
+ODDC L shift Mode画异 #### ODDC latch2与TPW设置同宽，开ODDC后导致踩到下一line数据 #### IC改版，减小latch2宽度到3 packets
+整面性的高灰阶H-line画异 #### VCO受高压noise干扰，导致CDR状态异常 #### IC改版，cut断noise干扰路径
+75 8K120HZ 灰阶下暗线 #### VAA 作为同步BUCK HVAA 的输入时，没接driver时，轻重载切换会有大的drop,引起gamma drop #### VAA作为同步buck HVAA 输入时，需要接driver 带载
+75D02 120Hz用PC LCD软件点屏发现在R255/G10/B10画面顶端有数行泛白画异。;  #### XB上远端走线压降及undershoot ，以及VADD与GMA1压差设定较小导致 #### 1,PMIC code设定时VAA-VGMA1≥0.8V；; 2,PMIC AVDD boost电路的补偿调快，补偿阻容值选择68K/1nF，使VAA Ripple电压峰峰值＜900mV；; 3,XB上AVDD电压trace走线及两个XB连接的FPC走线要尽量加宽；; 
+ ####  #### 仿真揭示周边Mura产生机理
+无法与他社COF共code, M/O后点灯画异 #### RFQ未定义清楚TPD[7:0]=[00000000]的设定，导致各vendor按照自; 家考量去定义该特定参数， 造成TPD[7:0]=[00000000]时，无法共用code #### 短期对策：; 1. 修改Tcon code，统一TPD设定为default（TPD[7:0]=[00010100]: 20 packet）; Side effect评估OK, Himax/Nova/LSI/SW 都已验证TPD设定为default 时OK; 2. 争对不同Vendor，单独调配Tcon code中的TPD设置; Side effect评估，对不同Driver Vendor单独管控，否则Tcon code容易混乱; Himax CSPI3.0B Nova CSPI3.0B; Model 43D01-1 65D02-2 49D04-2 49D04-3; TPD[7:0] 00010100 00010100 00000000 00000000; 当前应用CSPI3.0B Driver的机种，TPD设定有两种，统计如下;  长期对策：完善Driver开发流程，RFQ与SPEC确认需形成闭环
+TMT客户反馈55D04-3 生产过程画异不良爆量，经CS现场初步确认为ESD/EOS造成COF损伤 #### 量测不同时期PF阻抗：Sumika Y16初批次/客诉批次/LGC/盛波/日东无明显差异; 静电量测量：住华测试6~11月份出货保留样品，数据均<1KV; 剥离力：住华监控剥离力数据，无异常。 #### 阻抗值和静电量关系确认，评估偏光片规格书中，是否加入相关评价参数。; 各家阻抗值调查及测量。; 撕膜手法确认，各家静电量测量。
+55D07/55D04/49D03客户反馈潮热试验(湿度>90%)后出现四角白色漏光;(POL Type: TAC+R02);  #### 1.四角漏光因pol材料吸湿性引起; 2.黑阶云状Mura因Konica K10补偿膜线的光轴控制精度±0.25°过大;  #### 针对大尺寸导入抗湿性更好的偏光片。; (1)、 基材   PET/PMMA >> TAC; (2)、补偿膜 COP > PK3/K10 > R02; 
+TMT R6 TV机种(55D07-2)在美国消费者处，出现四角漏光 ####  POL 采用 TAC+PK3 #### 针对55D07机种，改善措施TAC/PET/PMMA+DCOP、PET+PK3/NR01; 
+22B04对比度不足 #### AG25 引起CR降低 20% @22B04;  #### 1.改小预倾角; 2.改用PE更高的POL，预计CR提升<5%; 
+43B02/49B02 在DVT阶段，TST实验发现测试偏蓝 #### 1.以当前起始色点，TST后皆向蓝移。; 2.蓝移色度变化量存在差别。;  #### 1.提高斜视方向起始色点；; 2.用大补偿值POL，尝试改变色度漂移方向。; （SDI PK3已到料，预约Rework产能中。）; △u’v’为判定参数或者定义初始色度范围。; 标准值：可参考55D08进行定义; 
+       RA后的2pcs不良样品，对应漏光位置的背面偏光片有明显水渍，可确认客户模组结构异常导致OC渗水。 #### 1)、55D07的漏光由 OC bending造成，而OC bending 的主因是偏光片的膨胀引起；; 2)、客户背光结构对漏光(bendign) 有明显的影响;  #### 1)、偏光片方面:;     偏光片吸湿是固有特性，改偏光片涉及成本和产能等,;     不建议改偏光片。; 2)、结构方面建议：     a.中框膜片挂耳处用mylar密封，防止水汽进入;     b.增加压屏的spacer间隙; 
+1、49D04 SDI PET+ATAC,做货未发现云状mura; 2、RA反馈T0出现较严重云状mura(2.5); 3、RA 后变严重（2.8~3.0） #### 1、本次云状mura由BL 经多次RA后变形，引起CELL 漏光造成。;  #### 相关单位先更换 BL 进行 double check; 
+TV整机U/L/R三面pol侧面漏光; (D侧有上盖) ####  DCOP内haze小，内部光散射较弱，出射光较强，表现为漏光严重 #### 1.可选偏光片组配为：PET+NR01/PK3/ATAC  & TAC+PK3/NR01; 2.针对BEZELLESS上片漏光，更新选材RULLER
+TMT TR阶段验证，整机温度循环实验：-5℃~-45℃，各3hrs，T360 OK，T500 新增暗态漏光不良，5/5pcs。 #### POL角落mura; 应力引起的光弹性效应 ####    1. POL角落mura。可通过更改PET或PMMA材料改善。;    2. 应力引起的光弹性效应。与玻璃有直接相关性，POL仅能轻微改善。; 
+此mura只在低灰阶可被发现; Rework上下POL后现象仍然存在 #### 此周边mura与POL无相关性；;  #### /
+65D02-6 LGC AG25 POL样品 CR偏低 #### （1）偏贴角度异常; （2）补偿膜光轴精度差异; （3）高雾度AG25表面处理 #### /
+经过模拟整栈包装 温湿度循环及HTHHS测试：均未复现客诉垂直白条现象 #### 疑似白条现象经rework确认为panel自身存在，与客诉异常不一致 #### /
+RA后大视角漏光;  #### 湿度容易导致补偿膜光学特性发生改变，导致漏光。该型号一直在MP做ORT，并未发现TST后的黑阶漏光。故并非pol制程或材料发生变异，该次试验过程中的湿度异常，导致该批次cell 出现漏光。;  ####        1、短期对策：监控后续是否有该issue发生---Y127.6~Y17.7 都未发生该问题;        2、永久对策：制订偏光片防水性策略，防止已发生POL issue的再次发生--ODD已完成; 
+43B02/49B02 在DVT阶段，TST实验发现测试偏蓝。 #### 1.POL TST后补偿值增加; 2.POL 补偿值与Cell存在搭配性;  #### 1.提高初始色度; 2.改变补偿值变化后，色度变化方向—尝试PK3补偿膜，样品已到料，Rework产能预约中。; 
+1、放置24/48h后变轻微; 2、20天后，1pcs release，1pcs依旧; 3、发生位置不固定; 4、EC前R02 ok，EC(Nitto pk3 100%);  #### 1、包装袋内出现大面积水汽凝结; 2、右边PE袋顶起的位置，水汽没有接触到cell上表面，mura轻微，说明mura与水汽接触有明显的对应关系; 3、保护膜复贴回去的位置，出现于客户反馈类似现象; 4、TC测试R02较PK3 mura更明显；滴水实验表现一致，1hr就开始出现，2hr后明显可见。;  #### /
+t2玻璃 43D01在画面亮度0.9，点亮30min后，COF边出现一条白色mura边 #### 对比rework前后不同组配POL，白色mura依旧存在，且未出现rework后白色mura现象减弱的情况，43D01在点亮后出现白色mura边与POL无关; ;  #### /
+65D02 TST NG，1/3pcs POL断裂 #### 边缘破碎，水汽造成PVA断裂;  #### 本次PVA断裂是偶然性事件
+批次8 POL L2边垂直边缘气泡，发生率82%；批次7,发生率1.7%；;  #### 1、偏贴靠右，导致左边气泡进入AA Area; 2、偏贴精度±0.25mm，在±0.3mm规格内 #### 短期对策:1.POL长度增加0.4m;          2.POL Tuning最佳Recipe; 长期对策:建议改DCOP,导负翘更好PO; ; 针对高对比55D08/55D10等，供应商内控标准：;  偏光轴角 ：上片 0°±0.15°/下片 90° ±0.15°;  偏光度PE : PE(typic)=99.995%,PE(min)=99.993%; 
+55D08搭LG-R02 于1月出现CR偏的状况; 55D10 DVT 阶段CR低于4000( typic :5000, min:4500)；;  #### 1.RTS/RTP相差不明显，CR测试结果与SDI接近; 2.大比例CR 严重偏低; 3.LG 裁切方式中刀模裁切稳定性较差，导致POL轴角精度较低，多次CR偏低集中在刀模裁切POL上; 4.2017年12月起，水胶切换UV胶LG方面制程不稳定，出现明显DS侧PE值变差 #### 3.2月份最新来料显示LG在PE改善方面无效，持续推动LGC改善并跟进3月份生产批数据，并要求RTS生产; ; 4.对比17年8月与18年2月CELL，发现cell 对比差异，CR表现17年8月cell明显优于18年2月cell; ; 5.2nd sourceDCOP材料已经在其他机种上完成验证，有导入基础; 
+DVT1-2 cell做T-sheet，发现三整箱里100%保护白条状，用酒精擦拭后消失，可见无尘布上黄色物残留 #### 1、推测白色条纹是POL外保护膜表面的防污剂脱落，用酒精擦拭后正常区域容易掉渣，条纹消失 ；; 2、白条间距15mm，宽2cm左右很规则，推测为外界物理周期性挤压造成（不排除在特定温湿度环境）。; 3、TFT测与CF同款保护膜，无此不良，推测是制成面导致;  #### 临时对策:厂内以及供应商在库POL确认是否异常，在制品各节点重点监控拦截; 长期对策/预防措施:1.LGC IPC检验手法升级会无尘布加酒精确认来料情况，确保初期防污层表现良好; 2.CSOT周期检1/20且外观检用无尘布擦拭边缘，加强产线拦检
+PVA缺陷线痕明显，上偏较下偏严重 #### 缺陷分析结果确认为PVA Crack #### 1.导入2nd source:SMK TAC+DCOP; 2.导入其它供应商：SDI 高穿PVA POL
+1.MT2751A01-1模组有翘曲现象，T0状态存在; 2.MT2751A01-1模组Bezel 地侧中间Gap过大（1.5mm)，T0状态存在; 3.BLU白块/暗点; 4.垂直黑带：导光板网版设计不良导致本身存在的暗区; ;  #### 1.主要是由于背板强度不足。在背板厂商多次调试未达到要求的情况下，由于赶 design 试做的进度，将强度不足的背板投入实验。; 2.主要是由于Bezel 为PC+10%GF的塑胶材质，刚性比SECC差。Bezel中间有拉模现象，导致出模时折边角度较大，边框向上翻起，锁螺钉更甚。; 3.导光板网点与反射片接触后导致网点出现涂抹、脱落的状况，形成白块、暗点。; 4.(1)waving的主要原因是Diffuser发生waving，由于反射片造成的waving不明显;   (2)垂直黑带的原因为导光板网版设计不良所导致 #### 1.要求供应商修改模具结构，增加凸包的斩筋线,目前已将新背板搭配新的光学架构投入HTHHS RA实验（7/11); 2.(1)要求供应商修改模具结构，控制折边的角度90+/-1度;   (2)Bezel 中间增加一颗螺钉;   (3)增加胶框定位柱限制Bezel外翻;   (4)7/12日样品送到可确认效果; 3.(1)反射片增加beats coating，改善导光板与反射片的接触情况；;   (2)改善网点的印刷制程；;   (3)改善背板的强度。; 4.Waving solution：改善背板的强度，并改善导光板与定位rubber的接触以控制导光板的膨胀拱起；垂直黑带 solution：网版改版，目前此现象已解决。; ; ; 
+产生花屏，液晶玻璃跳脱 #### 1.因模组设计需求，前框与玻璃overlap只有1.8mm; 正常测试条件OK（CSOT RA pass），标准提高跳出风险加大。; 2.由于玻璃在较大的冲击力下跳脱，拉扯到最近的gate IC 位移到非; 正常位置，接着的冲击压到IC使其产生断裂纹，function 失效 。; 3.由于跌落标准为加严到正常标准的1.4倍，面跌落的标准相差多达; 190mm(950-760=190)，对窄边框模组过于苛刻。 #### TMT加严标准：跌落顺序（1角470mm；）-（ 3棱670mm；）- （ 6面950mm；）; 
+人员理线时线材绕过铝挤，增加高度顶住反射片，运输时反射片粗糙面与LGP摩擦导致9区白影 #### 人员作业疲惫漏失; 原材来料不良; 人员对理线方法掌握不到位;  #### 1.对组线材人员教育训练，线材不可组到铝挤上.; 2.对检外观人员进行教育训练，检验时重点检验线材有无组装到位.; 3.要求生产对各岗位作业人员定岗作业，特殊状况需调岗必须通知ME教育训练，且通知IPQC确认稽核。; 4.对OQC人员进行教育训练，成品抬起侧看拦截此不良; 
+MT2751A01-1模组有翘曲现象，T0状态存在，单体和包材的机械测试均pass #### 主要是由于背板强度不足。在背板厂商多次调试未达到要求的情况下，由于赶 design 试做的进度，将强度不足的背板投入实验。;  #### 要求供应商修改模具结构，增加; 凸包的斩筋线等
+Vertical line defect issue #### The COF was corroded & damaged by the cleaner water. #### It will be helpful to add some buffer in the gap between front cover & panel, such as ;                      silicon, so that the cleaner water will not flow down to COF&OLB area to corrode them.;                      The thickness of the buffer should be little greater than the gap.; 
+中心辉度NG，规格为3600 Nits(Min)，抽测8片，有5片辉度为3580，3518，3585，3599，3458，光学普遍较低甚至NG。 #### 1.少数BLU在入光侧有轻微漏光；; 2.入光侧胶框与背板卡合较松，轻轻按压入光侧胶框漏光消失；; 3.拆解BLU确认Film架构及组装无误；; 4.确认LGP与LED Gap为0.2-0.3mm，LGP尺寸在规格内；; 5.反射片组装对BLU辉度有一定影响；; 6.BLU均匀度较高；; 7.LED Rank为最低亮度等级B，低于Typ，存在一定波动；;  #### 1.BLU中心辉度NG是因为LED Bar亮度较低；; 对策：要求L/B厂提高LED Bar亮度规格；; 2.反射片左右移动会导致BLU中心辉度NG；; 对策：在非入光侧反射片与背板之间增加一条Double Tape；; 3.BLU漏光有导致辉度NG的风险，漏光是因为入光侧胶框中间两个卡勾与背板卡合较松；; 对策：胶框入光侧中间两个卡勾加胶0.3mm。; 4.当L/B亮度偏低时LGP均匀度过高会导致BLU中心辉度NG；; 对策：LGP厂商管控均匀度，70%-80%之间，避免大幅波动；; 
+packing solution ####  #### 27.5`OC的放置较特别，由于置放PCB板凹槽设置为15°倾斜，与置放CELL的内腔不处于统一平面，取放时先吸住CELL并略微倾斜至吸盘可吸住PCB板，并顺Z轴方向取出EPP box，可避开BOX中所设突出挡墙，不造成损伤；; 
+璨宇28”模组在做包装 vibration时发生垂直暗线，且位置一致，均在玻璃右侧。 #### 造成垂直暗线的原因为COF受外力 peeling。 #### 减小玻璃定位gap，比如将左右侧gap; 改为0.2~0.3mm,天侧gap改为0.3~0.4mm，; 可先垫一定厚度的spacer来减小gap，待验证; 有效果后修模改善。; 
+解析2pcs中山长虹RA振动测试厚出现画面异常 #### 画面异常为S-COF折伤导致，胶框玻璃挡墙与opencell的gap过大（括号内数值为CSOT28“设计值），振动时玻璃位; 移较大，拉扯到COF，造成peeling。;  #### 减小玻璃定位gap，比如将左右侧gap; 改为0.3~0.4mm,天侧gap改为0.5~0.6mm，; 可先垫一定厚度的spacer来减小gap，待验证; 有效果后修模改善。另外可检查模具精度，确保实际与设计相符。; 
+客户反馈近期49B01-2市场端C/B fail导致黑屏明显升高（不良率约1,000dppm，数量222pcs），经分析92%为 C41 fail和F1 open（分析数量50pcs），集中性高 #### 华星C/B厚度0.8mm, 相较其它家C/B(1.0mm/1.2mm), 抗Bending强度弱；; 客户模组结构设计存在风险 :; a.  中间凸包高度低于螺柱支撑面，且位置靠近天侧，C/B 地侧支撑不足；; b.  C/B 上Connector位置没有支撑结构，作业员插拔FFC时易造成C/B在螺丝位置Bending；;      综合以上，制程操做过程中易造成距离螺孔最近的C41电容crack ;;  #### 短期解决方案：; 1.降低螺丝扭力（从4kg降低至2kg）,以降低螺孔位置PCB局部变形量；; 2.在C/B 插拔工艺过程中，增加CNT 支撑辅助治具，降低C/B变形风险；; 长期解决方案：; 1.增加C/B厚度，提升C/B抗Bending 强度；; 2.电子元件位置远离C/B螺丝孔位置，降低C/B变形造成的原件Crack风险；; 3. C/B Connector 位置设计支撑结构，避免人员插拔FFC使C/B发生变形；; 4.螺丝孔位置尽量设计在C/B中间或者从2孔改为4孔设计，缩短力矩，降低变形量
+ Side Bonding项目1st 工艺验证时，出现Side Printing Pad断线问题，位置发生在Cell Gap处，现象如下：; Ag Pad 发生断线，影响Ag与Metal 的导通性，同时影响COF Bonding后的接触阻抗， 需要分析改善；;  #### 从不良现象分析， 断线的根因为Ag Glue 溢进Cell Gap 导致,  故改善方向需从Ag Glue与Cell Gap两个方面进行：; 1.提高Ag Glue的粘度参数，降低Ag Glue的流动性，降低溢进Gap 风险；; 2.缩小Cell Gap， 降低溢进Gap 风险；;  #### BOE设计, 对Side Printing的改善效果仅次于PBOE, 改善效果符合Side Printing需求，且不存在Side effect；; 综合以上， 选择BOE 设计方案来改善Ag Pad 断线的问题; 
+Side Bonding技术开发初期，Bonding 后阻抗测量过高 #### 1.剖析Panel OLB区线路设计及Side Bonding结构，从导通路径上找出影响阻抗的相关因子; 2.开发32”ENB（Border≤0.9mm） 实验光罩，将以上分析的设计因素执行到新光罩中 #### Ⅰ.  Metal 材质改Cu----提升材料本身的导电性能；; Ⅱ.  Metal 厚度增加到5500----增加印刷银线与Metal 的接触面积；;  Ⅲ .  GI挖孔，使M1&M2重叠导通----减少磨边造成的Peeling风险；;  Ⅳ.  在Cell Edge 增加色组，缩小Edge Gap----提高Ag 印刷品质，降低Ag Pad断线风险；; 
+包装振动画面异常 #### BLU最大时尺寸为716.1mm.panel和胶框单边最大间隙0.75mm,故panel单边位移量; 为0.75mm #### 1.胶框COF 折弯位置单边宽度增加0.5mm（左下图）；; 2.背板定位凸点由4.2mm变更为5mm（右下图）；; 
+MT3151A05-1 纬创 包装 Vibration 出现画面异常 ####     观测COF，无可见摩擦痕迹，在显微镜下发现有Lead Broken现象，位置发生在胶框的弯折处，且COF有折痕。;  #### 对策：尽可能消除组装过程中COF可能受到挤压或拉扯的隐患：; a、将背板PCB定位柱由4.4mm变更为5mm，控制PCB的位移量，避免PCBA偏向极限位;    置拉扯COF造成COF损伤；; b、胶框4周粘贴18um的高摩擦系数的硅胶条,降低panel位移量；   
+MT3151A05-1/2 在白画面下于模组右下角偏暗； ####     由于LGP裁切了定位缺角及连接器避位结构，装配后Light-Bar光线会于缺口处反射回LGP内，无法射到定位柱后面。所以会造成定位柱后面部分变暗，装配完panel后会反映到右下角局部显暗。;  #### 1.减小LGP定位结构及连接器避位结构：缺口尺寸由于10.9*8.6变更为9.6*7.6；; 2.将Light-Bar往地侧方向移，取消连接器缺口；; 彻底改善对策：1.加大LGP 宽度方向尺寸，使避位结构远离可视区视角范围内; 2.改变LGP 定位方式：将LGP 的定位结构设计于模组中间部位，LGP 裁切出定位结构；; ; 
+CSOT 厂内做完240h HTHHS RA后，点亮模组发现出现一颗明显亮斑 #### 1.HTHHS 亮斑原因为lens脱落导致；; 2.Lens 脱落直接原因为反射片高温收缩刮掉透镜；; 3. 55 曲面DVT1反射片lens 开口没有做偏心设计; 4. 反射片整体偏左，没有对准定位柱中心，挤压了左侧反射片的收缩空间，导致反射片与lens之间的的空间预度不够；; 5.脱落lens右侧的骑缝线没有切透，导致骑缝线无法起到部分抵消收缩应力的作用。 #### 1.DVT2后左右和上下偏心设计，为左右和上下的反射片预留足够的收缩空间。; 2.DVT2改小反射片定位孔。; 3.骑缝线切透。; 
+暗影 #### 反射片位置②处备胶未有效贴附在背板上；高温高湿条件下，反射片收缩导致反射片浮起，超出LED高度，影响正常出光； ####     反射片变更：1）侧边添加一条备胶，位置④；2）备胶宽度由5mmà6mm；3）规范组装手法，使位置②处备胶有效贴附背板；;     反射片变更：1）添加角落备胶；2）原备胶宽度由5mm10mm； 
+BLU组装过程中发现，LB锁附至背板后存在明显的板翘问题 #### / #### /
+TMT整机负重冲击，（非source在下的条件下），100min，2000次；非source 6处挂耳prism挂耳出现断裂； #### 1、背板强度不足，负重冲击过程背板受力变形，拉扯film；; 2、挂耳尺寸较薄，R角太小，存在毛边残留不受力；; 3、背板与挂耳中心不对位，组装时候组装人员存在强力按压film导致film存在损伤；且由于不对位导致膜片在受冷热收缩膨胀时候与背板干涉严重；; 4、背板折边对film割伤，导致film挂耳破裂； #### 非source侧做精定位; source侧放宽可移动空间
+来料10pcs包装，发现角落翘曲严重,来料30pcs包装，发现中间位置存在顶伤，灯光下可见；手机无法有效拍摄；组装上BLU后无明显品味问题 ####  #### /
+四周亮带及角落暗影 #### 反射片无印刷 #### 1.通过反射片四个侧边丝印网点改善四边亮带；; 2. 通过角落网点过渡优化设计改善角落暗影；; 3.10月55FHD&UD DVT2后的背光皆采取反射片丝印网点设计。; 
+TPV使用飞利浦包材做振动实验，出现固定7区位置圆形白斑，如下图红色圆圈示；现象比较严重，该白斑用ND 2%无法遮盖住，客户无法接受.;  #### 7区白斑不良属于模组和整机、包材搭配性不良，整体间隙过小.;  #### 长期对策1---模组部分：; 对策动作：背板钣金凸包处修模：增加倒角和压毛边.; 长期对策2---包材部分：; 对策动作：包材对应7区位置的加强肋削掉，同时削去对应天侧1区和3区的2处加强肋.; 
+侧边 Cell CF切边识别mark点漏光 #### 1. 前框呈”S”变形，中间向外凸变形，底部向内凹变形；; 2. Spacer贴附不均匀，设计规格为距前框边缘0.5mm，实际贴附部分位置超规，达到1.0mm；; 3. CF切边识别mark距AA区距离，卡尺粗量尺寸无法作为量测凭据，但此类mark精度一般会控制在0.05mm内，可排除此尺寸异常。; 总结：由前面设计规格可知，Spacer设计压着量距mark点为1.05mm，但由于前框变形超规，Spacer贴附向内偏移，导致压着量减小，mark点漏出；部分地方外漏BM达到1.8mm，且前框有轻微外翻，导致蓝色框胶漏出严重。;  #### 1.控制前框来料变形，允许单侧变形，不可有S变形; 2.控制前框Spacer组装手法，通过治具定位贴附Spacer，严格控制Spacer贴附偏差; 3.利用治具沿前框内壁卡位后，沿外边缘贴附Spacer，即可控制贴附偏差精度。; 
+四角漏光、翘起 #### 1、由于偏光片材质特性，在高温高湿情况下均会引起 cell bending。; 2、在模组设计时，要求模组本身具有一定强度，保证本身具有较好的平整度。; 即要求模组限制cell在高温高湿条件下的bending量。 #### 建议从模组强度、与承载cell相关的gap等方面改善55E5900的四角漏光问题。
+客户TMT反馈55 C2整机 40℃/95%RH 实验条件168h发生2/2 pcs 团状mura，拍打严重，形态变化，集中在模组下半部分，实验结束10天后不良仍不消失。;  #### 1.OC 取出后有bending，拱高约30mm，内凹此原因以解析，主要因偏光板脱水收缩造成; 2.LGP向上拱起约15mm （竖直放置），是OC拱起的原因;  #### 1.改善（加大）LGP膨胀间隙重新投入验证; 2.改善偏光片材质为PET基材，重新投入验证
+四角漏光、翘起 #### 双面胶的粘附限制了OC翘曲后的恢复 #### RA后漏光需要较长的时间恢复到可接受的程度
+客户反馈近期49B01-2市场端C/B fail导致黑屏明显升高（不良率约1,000dppm，数量222pcs），经分析92%为 C41 fail和F1 open（分析数量50pcs），集中性高。;  #### 华星C/B厚度0.8mm, 相较其它家C/B(1.0mm/1.2mm), 抗Bending强度弱；; 客户模组结构设计存在风险 :; a.  中间凸包高度低于螺柱支撑面，且位置靠近天侧，C/B 地侧支撑不足；; b.  C/B 上Connector位置没有支撑结构，作业员插拔FFC时易造成C/B在螺丝位置Bending；;      综合以上，制程操做过程中易造成距离螺孔最近的C41电容crack ;;  #### 短期解决方案（：; 1.降低螺丝扭力（从4kg降低至2kg）,以降低螺孔位置PCB局部变形量；; 2.在C/B 插拔工艺过程中，增加CNT 支撑辅助治具，降低C/B变形风险; 长期解决方案：; 1.增加C/B厚度，提升C/B抗Bending 强度；; 2.电子元件位置远离C/B螺丝孔位置，降低C/B变形造成的原件Crack风险；;  3.C/B Connector 位置设计支撑结构，避免人员插拔FFC使C/B发生变形；; 4.螺丝孔位置尽量设计在C/B中间或者从2孔改为4孔设计，缩短力矩，降低变形量,; 
+漏光正视不可见，大视角可见明显漏光 #### 1.入光量与碎亮点有关联，其影响碎亮点处及其周边的亮度落差，从视觉上影响可见性。; 2.最底层Metal反射率对端面漏光强度有明显影响; 3.切割端面明显存在更大的起伏形貌; 4.切割端面形貌与碎亮点有关联，其对光形成随机散/聚，且随机的影响聚光点可见视角。;  #### 1、CF外延覆盖TFT端面可视角，受限于客户设计，客户只允许CF外凸0.15mm（理论需0.5mm）; 风险：OC需验证Peeling风险; 2、下POL外延，距离TFT边缘3.7mm，避免  ;       Tap与POL端面产生过大的贴附间隙。; 
+漏光CUT断面改善SKDL #### 切割断面改善：轮刀+刀压+tact time+lifetime DOE验证; 侧磨边改善验证：T1 厂内磨边机进行侧磨验证 #### Cut 工程测试轮刀:;  110°*140齿7um/110°*150齿*8um/t6 一体式轮刀 分别搭配不同的刀压及刀速验证，切割断面不佳（其中110°*140齿*7um 搭配压力值：106，速度350 切割断面接近LG 水准 ），上机测试Fail（存在不连续漏光及碎亮点）; 侧磨边Demo 效果：; 1.正视及侧视 连续漏光强度大; 2.碎亮点改善有效
+测漏光油墨笔涂黑验证 #### 利用黑色油墨遮光性能，选择黑色油性笔将油墨涂在漏光端面，进行遮光验证；; 为规范操作手法，制作简易涂黑治具；;  #### RA风险高，HTHHS，TST，TC，机械实验NG;; 油墨笔笔头易损，对涂布效果影响较大。; 人工操作涂油墨，一致性差，效果及良率无法保证；; 
+1.不连续漏光; 2.边缘碎亮点; 3.漏光强度高;  #### 1.CF切割蛇形边; 2.Cell切割端面形貌呈贝壳状起伏; 3.Al/Mo反射率高，光的损耗少;  #### 1.CF外凸缩小视角; 2.Side sealing防止漏光; 3.TFT采用Cu制程减弱漏光; 
+正视不连续漏光; 碎亮点; 大视角斜视漏光;  #### TFT侧面漏光严重，CF侧面相对轻微; TFT凸出CF处漏光效果;  #### 1.CF外延，覆盖TFT端面可视角；; 2.调整下POL尺寸，距离TFT边缘3.7mm；; 3.O/C与中框挡墙设计间隙小于1mm；; 
+正视不连续漏光; 大视角斜视漏光;  #### TFT侧面漏光较CF侧面严重; TFT凸出CF处漏光效果;  #### CF外凸对正视漏光及不连续漏光有改善。; 端面切割对漏光效果影响较大。CF外凸对正视不连续漏光有比较明显改善。; 
+1. TMT HTHHO 在30min后出现1pcs竖线、接着黑屏，另有1pcs在24H后出现竖线; 2.HTHHS在48H后出现1/2pcs竖线，拆开发现IC烧毁; 3. HT Aging 300h 1/10出现竖线;  #### 1.冷凝水积聚,前框在COF处存在凹槽，冷凝水容易积聚在凹槽处，浸泡使COF失效; 2.COF IC 处没有避位设计，刚好压在胶框边缘，有损坏IC的风险;  #### 一、胶框COF IC位置设避位结构，以免压毁IC；; 二、Cover 贴付 Poron 类Spacer，吸收冷凝水避免聚积深入COF，导致COF短路失效；; 三、在背板折墙边缘贴Spacer，阻止水份从内侧进入COF; 四、阻隔冷凝水积聚在COF凹槽; 
+TPV点灯defect #### PCB和背板之间产生较大的间隙，使得COF处于拉紧的状态，运输过程中，产生了cof  lead断裂的现象 ####         1、将定位凸包外移，释放PCB 在模组长度方向的自由度。;         2、PCB固定螺丝改为台阶螺丝，螺丝无螺纹部分比PCB板多0.5mm，使得PCB  ;              有活动的裕度。; 
+模组装配完毕后,前框面地侧弯曲弧度较大;组成电视成品后可能影响到品位 #### 1. 背板及BLU平面度管控未细化至边缘位置,导致模组两端翘曲较弧度较大;;  2. 模组及部材生产、装配过程中搬运及治具不合理,造成模组变形;;  ####  1.背板平面度管控变更;;  2.背板生产工艺改善;;  3.BLU生产工艺改善；;  4.模组生产工艺改善；; 
+客户使用CSOT 55UD模组组成整机后，进行整机单体包装震动测试，出现白斑不良 #### 1.后盖与背板加强筋距离较近，震动时有可能压到背板加强筋，从而使背板支撑面顶起反射片与导光板摩擦，造成白斑; 2.背板支撑反射片边缘有凸边，震动时局部顶到反射片，使其与导光板紧密接触，摩擦产生白点; ;  #### 1.把背盖的棱边和接触平面，增加接触背盖gap; 2.螺丝锁付处垫上spacer，增加背盖与背包的gap; 3.包材部分夹紧挡墙削去，减少对背盖的施压; 4.背盖修改，提前避开加强筋处; 5.用锉刀磨去凸包较高的凸边; 
+55UD ORT测试出现Waving #### 拆解分析,在大理石平台检查膜片本身Waving状况，只有DBEF有Waving，其余OK。;  #### /
+     客户TMT处在进行整机低温跌落试验后，出现了模组天侧漏光的问题，不良率为1/2=50% ####       1、导光板活动间隙过大，加之导光板低温时变脆，跌落后造成破裂，进而造成漏光问题。;       2、随机调查10PCS现有量产模组，导光板活动间隙皆没有出现问题模组的情况，因此判定该问题模组为偶然出现的异常品，非批量性的问题。;  #### 对策：持续进行模组来料的尺寸管控；; ; 建议：针对此类机种采用缓冲性能好的EPE来作为整机的缓冲材料; 
+客户自主设计55寸一体机（使用CSOT 55UD OC），进行整机单体包装震动测试后，画面出现垂直刮伤MURA #### 1.Panel Y方向移动间隙过大（CSOT Design Rule为0.8mm），且使用光滑的承载Spacer，在震动实验中容易晃动与Top Film摩擦，造成刮伤; 2.Panel Y方向移动间隙过大（CSOT Design Rule <0.2mm），在震动实验中容易晃动与Top Film摩擦，造成刮伤; 3.LGP Z方向上未被压紧，在震动实验中容易跳脱顶起Top Film，与下偏摩擦造成刮伤;  #### 1.胶框Panel上下挡墙贴付0.3t Spacer，减少Y方向间隙（长期通过修模减少）; 2.改承载Panel Spacer为18u高摩擦表面，并且用合适的厚度使Panel Z方向上零间隙; 3.在膜片挂耳与挂钩之间贴付Spacer，减少Y方向间隙（长期通过修模减少）; 4.使用合适厚度的Spacer贴在胶框下压膜片，间隙控制在0.2mm以下; 
+1：整机搭配三星MB 复现现象; 2：静态可见 –非OD问题; 3：关ACC 有改善; 4：开VCC 有改善 #### 经过三星MB 处理后，Blue 在210-255灰阶均为255阶，无法均匀过度，导致该异常 #### 1：ACC  Blue 255 code 降低有改善，越接近254 效果越佳; 原因: 降低水印上方亮度，减少与下方差异; 2：ACC  Blue 254及相邻低阶  code 增加有改善; 原因：增加水印下方亮度，减少与上方差异
+55D08搭LG-R02 于1月出现CR偏的状况 #### 1. 测试区域内，CR波动较大。; 2. LG-POL 补偿膜从R02→NR01后，PE能力提升，对应CR能力也提升。另外由于光轴精度提升，产品CR波动减小。; 3. 对比LG之R02&NR01与SDI之COP产品，COP-POL PE更稳定且PE更高;  #### 短期对策; 1、LGC裁切改RTS(角度≤0.15°); 2、LGC按PEPE≥99.993%内控; 中期对策; 改用2nd Source：SDI PET+DCOP(裁切角度≤0.1°,PE(typ) ≥99.996%）; 长期对策; PE作为IQC入料检验项@55D08/55D10; ; 
+Sony、BBY等客诉CSOT产品响应时间偏慢，检查送样数据发现没有太大异常，但发现一段时间内出现response time 波动异常情况。;  ####         1.初步判断，实验手法对测量结果影响较小，排除主要影响因素；;           2.实验环境对测量结果有较大影响，预热与否对结果影响较大;           3.仪器本身存在测量问题，三次测量结果差异达到0.2ms          ;  #### 在测16*16 的数据时用VASA等模式，测5*5的数据时使用Direct+No filter模式
+彩迅反馈22B01-1 1902周期整机低灰阶画面噪点异常，客户生产1000台不良率100%，其他周期生产也存在异常但现象轻微。需解析噪点现象产生原因并提供cover此现象方法。 #### 低灰阶亮度影响画面动态噪点 #### 拉低低灰阶亮度，对噪点现象有明显改善
+20%灰阶红场：正视不明显，侧视明显；单机不明显，正常异常对比明显；不良有程度差异； #### 面板原始Gamma超下限，经过P-Gamma调整后泛白 #### /
+ST3151A05-8  Ver.2.3 绿场有两侧偏暗现象；; 画面确认：有机芯状态，画面不是100%的绿色（其他颜色pixel有亮）；; ST3151A05-8  Ver.2.5 此画面没有两侧偏暗现象。 #### 两侧Pixel充电不足是造成Tri-gate 设计面板两侧色偏的根本原因。 #### Ver.2.5 Tcon中有加入色偏补偿功能（以面板中间位置颜色为目标，补偿面板两侧颜色）；; Ver.2.3没有色偏补偿功能。后续CSOT 将收掉Ver.2.3产品，主要生产Ver.2.5产品。
+Customer：MTC/BBY; Model Name: ST3151A05-8 V2.A; Condition：dynamic picture; Phenomenon： color shift （G）(Fig.1) #### CSOT面板RGB gamma曲线不重合，给其相同电压，CSOT面板RGB亮度变化不一致RGB信号改变易产生偏色。 竞手：BOE 面板3色gamma重合，不易产生偏色。;  #### 建议：; 偏色现象仅在特定画面出现，现象轻微，终端客户未投诉此类问题。; 直接调整OD会造成响应时间变慢，且无法满足所有片间差异，仍会有偏色现象。; 建议按此程度执行。; Long term：持续 study RGB Gamma曲线.差异，保证现有状况不恶化。; 
+When CSOT 32HD tri-gate DCC tuning，somepattern can see below symptom，DCC tuning can’t improve it. #### Greenish improvement cause number pattern “0” dragging #### /
+1.灰阶偏色 ; 2.摆钟 动态拖尾 #### 灰阶偏色原因：送样片 xy 色坐标曲线不平滑，在拐点区域容易产生色偏; 动态拖尾原因：; 1 钟摆摆动速度快，对响应时间要求高，响应时间需加快; 2 LC 粘滞系数 对温度敏感，低温下响应时间慢 #### 灰阶偏色改善方案：; xy 色坐标曲线 可通过白平衡 code 调整 ，43D01 DVT 产品已重调白平衡code; PS： 送样时 -5 cell code 不共用，只修正Gamma曲线; 动态拖尾改善方案：; 1 优化OD code 加快 响应时间（厂内DVT cell低温下现象很轻微或不可见）; 2 建议在25度室温下， BLU 和Cell 充分预热后观看 ; 
+1.海信客诉长拖尾，视觉残留已达1~3s；已超出常规的拖尾定义; 2.B01-5 为3.2um液晶，Ton快于B01-2 JIR（3.5um),现象仍旧存在；;  #### 龙骨处液晶翻转异常 #### 建议从HVA 相关制程进行改善
+OD nosie; DCCcheck pattern 横线拖影; Rise &falling拖绿 #### 1.MB灰阶压缩，OD table 调整灰阶与实际显示灰阶已不是直接对应关系；; 2.MB对图片有算法处理，使图片边缘模糊化 #### LSI修改Tcon设定（与其压缩算法设定相关）
+爱马仕客诉VA屏侧视较IPS屏泛白，通透性差，需要改善。; 爱马仕客诉华星VA屏侧视与正视品味差异较乐视VA屏大，需要改善。;  #### 1.VA屏侧视Gamma曲线较正视差异大。; 2.VA屏侧视亮度上升更快,对比度降低，易泛白。; 3.乐视低阶压低Gamma。;  #### 1.压低低灰阶Gamma可改善色偏; 2.SOC调试也可压低Gamma，且小米后续可升级系统调整Gamma，操作性更强; 改SOC压低gamma后CSOT VA屏侧视泛白及通透性差问题得到改善，;     肤色品味优于未改善前状态，接近IPS屏品味。
+爱马仕CSOT屏在如下图片出现低阶断层现象，图片走的是graphic mode，不做PQ处理。;  #### 断层斜视明显主因是VA屏正视与斜视低灰阶Gamma差异较大导致。; 斜视时低灰阶Gamma斜率大，归一化亮度增加快，低灰阶容易分辨出来。; 所以断层现象斜视明显。 #### 1:提高0阶RGB WT值，拉低3处断层灰阶差。; 2:降低1,2,3阶RGB WT值，拉低3处断层灰阶差。; 3:该图片可否走经SOC处理的mode，SOC拉高0阶或压低1,2,3阶RGB输出灰阶。; 
+搭配长虹机芯板，客户菜单界面约在5灰阶，动态画面下受菜单界面影响会出现画异。;  #### / #### 0-16阶 OD值; 0-低阶OD值; 
+design2主货三星VD定code后客端量测gamma(2.22)与厂内量测(2.11)有0.1左右差异,曲线形状亦有不同 #### 温度偏高时，D08对应gamma降低 #### /
+RA前检查发现UI 画面下白场下大视角黄斑 #### 可知客户SOC是导致黄斑的影响因子 #### 采用Tcon供应商自带的自动Gamma调试软件，控制Tcon直接输出0-1023灰阶，粗调Gamma曲线，ODD再精修。
+1：海信客诉 65D01 暗态正视主观品味 偏蓝偏亮; 2：POL改为Dcop 后偏蓝改善，但依然存在暗态偏亮现象 #### 正视观看暗态品味时Dcop 20度内改善小，与R02 水准接近，大视角会有明显改善;  #### 减小预倾角 可改善近水平视角暗态漏光; 
+1.观察水印出现的位置，上下有明显分界。上边区域偏绿，下边区域偏蓝。; 2.使用PC播放此视频，确认水印位置灰阶，R116附近，G164附近，B232附近。 #### 1.更改对应灰阶WT table，对此现象无影响。推测为搭配SOC后，灰阶有变化导致。; 2.更改WT table，找到SOC处理后对应灰阶。确认改动B 245~255 WT table对此现象有较大影响。; 3.客户明亮模式下，图片本身的Blue亮度敏感性较高。252灰阶以上，B的亮度差异会引起水印问题。但此问题无法完全消除（除非将每个灰阶亮度设置成相同），只能通过更改B灰阶间差异予以减轻。;  #### 更改B table，使得电压变化更加平稳
+Gamma高灰阶偏低 #### CSOT厂内调试光学使用PC，导致客户使用信号发生器测量时呈现差异 #### 使用CSOT PC将255对应的1020灰阶亮度设定为：; L1020=L1023∗"(1020/1023)^2.2"; 按照此方式调整:CSOT 8bit PC，10bit信号发生器Gamma curve均OK。; 
+Vcom shift对gamma变化量影响 #### 1.液晶种类对vcom shift所引起的gamma变化基本无影响; 2.cell gap的大小对vcom shift所引起的gamma变化基本无影响; 3.31灰阶处，预倾角越大，越接近90度，vcom shift所引起的gamma变化量越大 #### /
+灰阶过度画面graybar中，在中间灰阶128灰阶附近±10区域大视角严重偏黄，此外，200灰阶以上也存在明显的偏黄现象。 #### 1.大视角色度x和y翘起，造成大视角中间灰阶偏黄。; 2.LCS效果对RGB的处理并不同步，红色转折点之前，B亮度较高，整体偏蓝；而在转折点之后，B的亮度反而是最低，因此，造成中间灰阶的大视角偏黄现象。; 3.高灰阶B亮度较低，大视角也存在偏黄的现象。; 中间灰阶偏黄由LCS引起 #### /
+T6 43D01-3 较 T2 白点偏蓝 #### x由 Tr 影响，y 一半由Tr 影响 #### 已改善Tr 提升色度
+ 46inch 60HZ模组搭载TCL多媒体的机芯板后，出现灰阶过渡不均、水印、灰阶反转问题。; 从量测结果上来看，发现在100阶时，R、G、B已经饱和，W在高灰阶波动很明显 #### 使用新的机芯板和PVT1阶段的code，在客户模组上已没有灰阶过度不均、灰阶饱和和水印等不良。唯一出现的水波纹不良，是因为客户实验所用模组和Control Board不匹配导致。; 所以，46inch 光学量产code无问题。;  #### /
+1、22B02与22B01对比，正视情况下22B02比22B01更白。; 2、22B02与32A05相比，22B02出现大视角泛白现象。 #### 1、B01相较B02而言，低灰阶gamma偏高，高灰阶偏低。将造成B01低灰阶更暗。; 2、两者255灰阶色坐标存在差异，B02偏蓝，B01偏黄。 #### 1.调整B01低灰阶曲线，使B01低灰阶gamma偏高。会出现与B02相同现象。; 色度可视角数据显示，B01、B02、32A05-3.5um色度可视角相似， 32A05-3.2um色度可视角更好。
+32A07 DVT定code后光学量测发现色度By较之前定的规格偏低0.007，超规光学规格，光学判定NG。 #### 确认By的变化与white tracking相关 #### By超规与初版规格及white tracking砍阶相关,光学code本身无异常，可通过修改规格解决; 
+左侧为CSOT的屏，右侧为BOE的屏，正视的话，两者差异不大，但是侧视看，CSOT屏大视角画面泛白，比BOE严重。 #### CSOT屏为VA屏，BOE屏为IPS屏，VA屏在大视角方面天生比IPS差，两则不具有可比性，但是IPS屏CR较低且宜漏光。 #### 方案1：直接通过拉高Gamma的手法进行改善，效果明显。; 方案2：通过拉较低灰阶亮度，拉高高灰阶亮度的方法，提高画面整体的对比度和层次感，改善效果更佳，但是这样更改以后，肤色画面看起来偏红，再通过SOC降低 R 饱和度Gain值的手法，使画面看起来更加自然。; 
+画面大视角高灰阶（95%以上）偏粉红;  #### 侧视的情况下，随着灰阶的增加，液晶逐渐“躺下”，Δnd增加，透过率T增加，但是由于透过率T是波长相关的函数，R透过率增加的更多，因此占比增加，呈现粉红色。 #### /
+DOT BLINKING / MOVING SCENE GREENISH EFFECT NOISE PROBLEM现象 #### TCON判定为动态画面启动OD Function ,从而导致增强Noise效果。; Side effect:低灰阶部分的OD强度被降低，其他模式下由低到高灰阶切换有拖尾现象，导致其他画面品味问题 #### 由于DOT BLINKING 现象比较轻微，客户不易发现，建议向后有EC时再更改。; MOVING SCENE GREENISH EFFECT NOISE PROBLEM现象，建议后续有EC时再同步验证更改,且CSOT增加暗态相关动态画面检查。; 
+Sony 新定义的色域标准范围大于常规的SRGB& DCI-P3，对屏幕的色再现性提出更高的需求  #### 搭配 normal 背光下，色域和RED u’标准均无法达到；; 搭配 SEC MU600（KSF）背光，DCI-P3 均可达到，RED U’接近标准或在标准之上；; D08 H777 可达到Normal WCG要求；; Deep WCG 均无法满足；;  #### 1.55D08要实现Sony CG>92%,对背光设计的要求比较严格，需要采用短波芯片440-444nm，且蓝光的FWHM要选择<19nm,此外LCM的色温最好控制在>9500K以上；; 2.55D04容易实现sony CG>92%,蓝光选择450nm即可，选择一般的蓝光chip即可；; 3.采用H666实现Sony CG>99%,BLU用Gn =527nm很难实现该目标，除了对芯片需提出特别选择外，色温至少>13000K以上才有机会勉强达到；采用NewGn则很容易实现Sony CG>99%；
+1.red noise；; 2.LC slow; 3.Bright tailing——客户为cover Blur，有意调整过OD; 4.鬓角拖红; 5.静态下棕色,moving 为红色 #### 问题根因在于LC slow，sony 对我司提出更高的Ton 要求 #### 1.原Od table为17*17，改为19*19 ，增加8&24灰阶，调整无明显改善；; 2.LC slow
+Tri-Gate灰阶色偏; 模组拦截不良率:20%;; 影响客户：TPV、Orion、长虹；; 28”/1A05都有类似客诉发生； #### Issue根本原因在于Tri-Gate设计导致的Data Trension和两侧data delay; #### 针对R、G之间电压差过大，导致Green充电不足的问题，提高R的电压到3灰阶左右；; 通过修改模组段的Tcon code或修改客户端的系统板设定，均可实现这一方法；
+1.在低灰阶纯绿色pattern下，会观察到类似于Moiré的水波纹; 2.只有在特定的低灰阶会观察到，其WT code为2的奇数倍 #### 1.Dot Inversion的Flicker Pattern; 2.仅显示绿画面时的Inversion state; 3.对应Frame的FRC Pattern; 4.Flicker和FRC同时动作，data讯号对Vcom的Couple方向会不同，负压向下，正压向上; 5.Frame的变化，没有消除这种Vcom Couple的不对称现象。因此就会观察到水波纹的Issue #### 1.红色框中的Pattern，为WT code为2的奇数倍时用到的FRC Pattern；; 2.更改为New FRC pattern,可以消除水波纹现象。
+左右单独驱动，发现XR异常，XC半边OK #### 1.XR第一个cof被腐蚀; 2.背光/COF有明显污染物，为清洁剂残留 #### 单独管控清洁剂测试等有污染物的背光
+主货批共判出5pcs液晶气泡，Ratio 2.34%. 随线确认异常集中边角位置，膜品不集中 #### ODF VAS对组完成后，在CHB打开时，外部空气沿Loopseal open 处冲击main seal边缘，main seal穿刺导致Bubble产生 #### loop seal变更
+在R1500背光下，弯曲曲率较大位置出现暗团 #### 1.下板错位:0.5+0.4t>0.4+0.4t; 2.曲面后上下板错位较大，预倾角错位，导致Pixel暗纹 #### 1.PI Less方案；; 2.Demura功能启动；; 
+调OD时移动Block边缘拖影，暂停后再跑动拖影颜色会改变(红绿交替) #### 正负极性差异大 #### 调整为对称Gamma 电压; 
+Design 1 RA 测试 HTHHO 1/2PCS 垂直区块暗带issue #### COF tie 边角破损，COF烧坏 ####  1.供应商加严检查出货，华星严控入料检;  2.模组组装和搬运过程中，小心避免碰撞导致部件破损; 
+低灰阶（30灰以下）出现V-Block，与S-COF fan-out区域对应，panel中间位置明显，向两侧过渡，两侧几乎不可见。 #### 各COF之间GMA6存在不同的压差，亮度差异产生V-Block现象 #### Design2 已将S-IC改版为CSOT Gamma R-string
+整机在纯低灰阶画面有闪烁 #### 中心点bestvom和周边不一致 #### 1.127灰阶调整BestVcom; 2.更改COF驱动
+面内色偏较竞手严重 #### 色坐标差异 #### 色坐标白点坐标从（0.28,0.29）调整到（0.27,0.28）
+HTHHO T500 出现垂直暗线 #### COF6 第113&114根外力造成破损，RA时腐蚀导致无信号输入                   #### 重新Bonding后可正常输出信号。
+55UNB Design3 HTHHS T120 新增1/6pcs垂直暗线 #### 切割后产生玻璃碎屑，手动清洁时存在异物撞伤几率 #### 导入磨边+水洗+吹干工站       
+  DVT1 T240新增 2/12 HTHHO水平线 Fail，点灯确认低灰阶可见满屏等间距水平线,  Pixel确认未见异常 #### OM确认T22第四级过孔，发现 孔内有小白点，FIB切片确认发白位置ITO有翘起（鼓包）, 确认5200前孔内水汽或异物经过5900 Oven 造成高温鼓起 #### 1.新建AOH扫描外围GOA区域T22拦截站点;; 2. Strip制程优化： a. 更换清洗能力好的机台Str100 b.药液段速度原来的16000/6000/16000/5000降为    12000/5000/12000/5000 
+Design IS Fail，表现为快残NG #### TFT Ioff不满足需求（Ioff过抖） #### PV2工艺调整(二次成膜为一次成膜)
+同一批次片子出现Gamma偏高0.2现象 #### 中心片挑选有误 #### 重新挑选中心片进行定code
+曲面状态下存在模组漏光现象 #### 曲面状态下，Cell Glass存在内应力，产生光弹性效应，从而造成应力漏光 #### 1.采用三段式背光设计方案，优化设计; 2.玻璃减薄
+黑阶画面出现拼接mura，且拼接线明显 #### Array侧采用Nikon VFS拼接，shot时重叠拼缝处可能膜厚存在差异，出现过度不均现象 #### 1.制程管控; 2.Demura; 3.建议：Array侧采用mosaic拼接，CF/Array错开拼接位置
+Source对侧低灰阶周边不均 #### 1.FreeSync模式负载过大，引起VAA 与VREF压差过小。; 2.VREF变动影响gamma与sharecom，但share com code未做变更，导致其电压超规 #### 增大VAA和VREF电压差
+在无边框设计中，OC靠胶带贴附在曲面背光上，易出现脱胶情况 #### 1.AGC 玻璃弯曲应力高于竞手5%；; 2.胶带受法向力和切向力大于胶带粘附强度，发生脱胶。 #### 1.下Pol内缩；; 2.采用特定组装手法；; 3.胶带宽度增加；; 4.更换粘性更好的胶带。
+在无边框设计中，OC靠胶带贴附在曲面背光上，易出现脱胶情况 #### 1.AGC 玻璃弯曲应力高于竞手5%；; 2.胶带受法向力和切向力大于胶带粘附强度，发生脱胶。 #### 1.下Pol内缩；; 2.采用特定组装手法；; 3.胶带宽度增加；; 4.更换粘性更好的胶带。
+55 UNB实验批次在MAI检出第四个拐角偶发大头胶，无固定head #### 位于涂布方向背面的nozzle管壁会不断积胶，在涂布到最后一个拐角时积胶增多且涂布方向变更，涂布第三笔时原先在涂布方向背面的nozzle管壁部分变为正面，积胶被带出，导致涂布大头胶 #### 涂布参数优化; 拐角位置CF侧 PS挡墙加长
+Designe1 /2 PII AOI检出均有via hole爆点，存在漏放风险； #### / #### 55UNB via hole由19um改为17um
+框胶拉力测试NG #### 1.BM 膜层Peeling; 2.0.5+0.4玻璃强度整体弱于0.5+0.5水准 #### 建议：1.BM新光阻导入; 2.框胶加宽; 3.与竟手对比相当
+未有外力时，出现自然穿屏破裂 #### OC玻璃边缘的微裂纹在弯曲产生的应力作用下逐渐恶化，最终导致破片 #### 1.侧磨工艺可提高弯曲强度28%；; 2.Bonding后新增压弯检测可淘汰破片风险高片子，R900进行拦捡。; 
+盐雾测试后，OC无法立即点亮 #### PCBA腐蚀严重，COF无明显腐蚀。 #### 和客户手法Align，测试通过; 
+EMI测试48MHz的11倍频超标 #### T+C板保护罩存在天线效应，EMI测试fail，去除&将保护罩接地，EMI测试均可通过 #### 短期给保护罩天线位置接地，并产出SOP文件 
+黑屏 #### level shift 经ESD打挂 #### GOA输出串电阻
+65寸无边框模组空气放电厂内规格±12KV PASS，加严测试±15KV fail #### 按厂内手法测试±15KV只能到classC ，视睿需要class B，无法满足 #### 调研客户测试手法，按客户手法测试PASS
+27B01-2 投RA测试1 PCS黑屏不良 #### Driver IC受外力撞击导致破裂，IC内部VDD33电压对地短路，触发PMIC启动短路保护，无电压输出，形成黑屏。 #### 曲面模组与source driver存在机构干涉，有damage风险
+86UD项目在画面切换到V1+2line（H dot on/off )瞬间，Panel 异常Shut down #### 画面切换瞬间VGH抽载异常（60mA→189mA），导致前端VGH_CS Peak电流过高超出OCP的设定值3.2A，PMIC OCP保护 #### 通过调整Comp补偿RC值，Peak电流明显减小，OCP现象不再出现，初步确定可调整Comp补偿设定解决
+HTHHO 实验T240检验出现半边画异显示不良 #### 检查XB上SHL下拉电阻位置，发现下拉电阻R23与SHL走线开路，初步分析为SHL未有效下拉，Driver IC内部处于floating 状态，工作异常出现画异不良;  #### XB上SHL下拉电阻线路开路，造成Driver IC工作异常出现画异; 
+出现六条暗线 #### COF chanel设定有误 #### 重新设定，更改layout
+L48灰阶下，最右侧出现红亮竖线不良;  #### Dummy pixel与R pixel 电位不同，导致D1写入数据后信号有异常Toggle，这样会造成R pixel电荷充不到准确电位的问题发生，出现R pixel 偏亮不良;  #### 将Dummy pixel 维持与相邻的R pixel 相同电位，如右侧改善图所示，维持相同电位后，由于D1上电压不会Toggle，R pixel 电位电荷充电到准确电位，R pixel 偏亮不良消失; 
+黑屏 #### 盐雾堆积导致短路 #### 酒精清洁

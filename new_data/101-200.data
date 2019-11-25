@@ -1,0 +1,91 @@
+T1photo执行王若男IGZO首检刻蚀确认有出现图形缺失.图形缺失聚集在右上板，重复性确认Photo后AOI无图形缺失，WET、STR后有出现图形缺失 ## T1photo执行王若男IGZO首检刻蚀确认在右上板处有图形缺失。在重复性确认后，WET、STR后有出现图形缺失，AOI无图形缺失 ## 王若男在T1photo上确认在右上板除有图形缺失，再次确认后，发现图片AOI无图形缺失，WET、STR后有出现图形缺失
+1.ITO蚀刻后，玻璃基板上出现白色雾状Mura；; 2.用手或无尘布擦拭，白色雾状可被擦拭掉；; 3.用万用表测试白雾位置导电性，发现其导电，阻值约190~270； ## 1.玻璃基板在经过ITO蚀刻后会出现白色雾状Mura；经无尘布或手可以擦拭掉白色雾状；3.白色雾状位置具有导电性，万用表测起阻值约190~270； ## 1.对玻璃基板进行ITO时刻后，会出现白色雾状Mura;2.用无尘布可以擦拭掉；3.白色位置具有导电性，阻值约为190~270；
+1.5/30 执行苑甫28baseline-B实验首检时，AOI出现如下图光阻异物，每片四五个位置; 2.在Coater后可看到凸起膜面异常；; 3.确认异物在RG Pixel上面，嵌入B膜层之中 ## 1.5/30 执行苑甫28baseline-B实验首检时，每片四五个位置处AOI出现如下图光阻异物; 2.在Coater后可看到凸起膜面异常；; 3.确认异物在RG Pixel上面，嵌入B膜层之中 ## 1.5/30 执行苑甫28baseline-B实验首检时，每片四五个位置处AOI出现如下图光阻异物; 2.在Coater后可看到凸起膜面异常；; 3.发现异物位置在RG Pixel上面，并且嵌入B膜层之中 
+PH 人员在对15寸OLED产品首检做AOI检查时颗粒超量，约1290颗，发现IGZO Pattern上有小黑点，分布无规律。 ## 15寸OLED产品首检经PH 人员做AOI检查时有颗粒超重的的情况，并且发现IGZO Pattern上有分布无规律的小黑点。 ## 15寸OLED产品首检做AOI检查时发现有超过1290颗的颗粒超重，并且发现IGZO Pattern上有分布无规律的小黑点。
+Cu50008000A共五种膜层结构均出现严重Under Cut且有二段角状况。 ## Cu50008000A五中膜层结构中，每层都出现了严重的Under Cut，并伴随着二段角状况。 ## Cu50008000A共有五种膜层结构，每层结果都出现了严重Under Cut且有二段角状况。
+色转换效果较差 ## 色转换效果比较差 ## 色转换效果不理想
+高膜厚Bank出现Undercut ## 高膜厚Bank发现Undercut ## 高膜厚Bank有Undercut
+工艺稳定性较差，连续打印性欠佳 ## 工艺稳定性一半，连续打印性较差 ## 工艺稳定性不好，连续打印性不理想
+成膜均一性不佳，出现皲裂、相分离不良 ## 成膜均一性较差，出现相分离不良、皲裂 ## 成膜均一性不佳，出现皲裂、相分离不良
+显示亮度不均 ## 显示亮度分布不均 ## 亮度显示不均匀
+Cu制程后BM残留 ## Cu制程后有BM残留 ## Cu制程后含有BM残留
+水平/垂直线不良 ## 垂直/水平线不良 ## 水平线和垂直线不良
+IGTO残留，刻蚀不完全 ## 刻蚀不完全，IGTO残留 ## 含有IGTO残留，并且刻蚀不完全
+显示Bubble
+垂直线不良及暗点 ## 垂直线不良并且有暗点 
+固定位置十字线不良 ## 固定位置十字线存在着不良 ## 固定位置十字线品质不佳
+Buffer层Peeling
+PFA被刻蚀到 ## PFA被刻蚀 ## PFA被刻蚀到
+点屏异常 ## 点屏发生异常 ## 点屏伴随异常
+MCS档烧录异常 ## MCS档烧录发生异常 ## MCS档烧录存在异常 
+Bist点屏不可控 ## Bist点屏存在不可控
+点屏画面闪烁 ## 点屏画面发现闪烁 ## 点屏画面存在闪烁 
+Vth & Mobility侦测数据异常 ## Vth & Mobility侦测数据发现异常 ## Vth & Mobility侦测数据存在异常 
+PSOC硬件资源溢出 ## PSOC硬件资源发现溢出 ## PSOC硬件资源存在溢出
+点屏画面闪烁 ## 点屏画面存在闪烁 ## 点屏画面有闪烁 
+点屏画面分区 ## 点屏画面分区存在问题 ## 点屏画面含有分区 
+VTC1.0侦测功能异常 ## VTC1.0侦测功能发现异常 ## VTC1.0侦测功能存在异常
+DVT阶段验证Dry第二路径时ESD高发 ## 在DVT阶段验证Dry第二路径时，发现ESD高发 ## DVT阶段验证Dry第二路径时伴随ESD高发
+ESD
+43”Cell暗点修复测试片在RA HTHHO T120发现液晶气泡 ## 43”Cell暗点修复测试片在RA HTHHO T120发现存在液晶气泡 ## 43”Cell暗点修复测试片在RA HTHHO T120发现有液晶气泡
+Type1：Inline LCI 四角Bubble（Ratio100%）; Type2：Cell LOI2 横条Bubble（Ratio 5.2%）
+Power on off T24 1/3出现Bubble,横贯panel（图2），TD3发现发生在Source对侧贯穿Gate较多 
+IR
+Design 2配向不良在大板上集中在靠近32”的一侧 ## 在大板上Design 2配向不良主要集中在靠近32”的一侧 ## Design 2配向不良在大板上聚焦在靠近32”的一侧
+75D01 design1 出现3种type配相异常 ## 75D01 design1 发现了3中类型的配相异常 ## 75D01 design1 存在3种type配相异常
+ORT HTHHO T240  炉内新增垂直串扰; JND2.5~3.6，炉外OK ## ORT HTHHO T240 炉内新增加垂直串扰; JND2.5~3.6，炉外OK ## ORT HTHHO T240 炉内新增垂直串扰; JND2.5~3.6，炉外一切正常
+黑底白框按压漏光
+DVT良率改善批纵向串扰ratio 7.2%，01/04膜聚集;
+HTHHO验证出现V-Crosstalk，用小眼睛观察到NG区B色阻亮度相比OK区明显偏暗，导致出现黄色区块，source侧、source对侧位置不固定 ## 进行HTHHO验证时出现V-Crosstalk，用小眼睛观察到NG区B色阻亮度相比OK区明显偏暗，导致出现黄色区块，source侧、source对侧位置不固定 ## HTHHO验证出现V-Crosstalk，用小眼睛观察到OK区B色阻亮度相比NG区明显偏亮，导致出现黄色区块，source侧、source对侧位置不固定
+ORT HTHHO T500 2/6pcs 垂直串扰炉内JND3.0~3.2/炉外JND2.0
+55D08 DVT2 RESD1 H X-talk RA后恶化NG
+低灰阶水平串扰JND 3.6
+L128灰底白框水平串扰
+低灰阶下色斑 ## 低灰阶下存在色斑 ## 低灰阶下发现色斑
+客诉黄斑，灰画面下偏黄，小眼睛下; B main pixel发暗 ## 客诉黄斑，灰画面下颜色偏黄，小眼睛下; B main pixel发暗 ## 客诉黄斑，灰画面下存在偏黄，小眼睛下; B main pixel发暗
+检查发现UI 画面下白场下大视角黄斑;  ## 检查发现UI 画面下白场下存在大视角黄斑;  ## 在检查发现UI画面下白场下大视角黄斑;
+微亮点为L-48 可见之亮点，8月 MOD 微亮点爆量Ratio14.57%
+微亮点位置确认集中在Source侧AA区边缘位置，小眼睛观察确认为边缘main-pixel亮度偏高 ## 微亮点位置确认主要集中在Source侧AA区边缘位置，小眼睛观察确认为边缘main-pixel亮度偏高 ## 微亮点位置确认集中在Source侧AA区边缘位置，小眼睛观察确认为边缘main-pixel存在亮度偏高
+残影（持续 in ~1S），关机时black pattern 闪烁;  ## 残影（持续 in ~1S），关机时发现black pattern 闪烁;  ## 残影（持续 in ~1S），关机时存在black pattern 闪烁;
+32B01 New PT 新增3/6pcs 黑屏无信号 ## 32B01 New PT 新增3/6pcs 黑屏且无信号 ## 32B01 New PT 新增3/6pcs 黑屏无并且信号 
+RA HTHHO T240新增黑屏;  ## ## Gn 下拉线路 深孔有明显烧伤现象，Gn下拉无法工作时，Gate output和Q点无法被下拉，会导致CK信号一直会 输入面内，导致大电流，解发OCP ## RA HTHHO T240发现黑屏;  ## ## Gn 下拉线路 深孔有明显烧伤现象，Gn下拉无法工作时，Gate output和Q点无法被下拉，会导致CK信号一直会 输入面内，导致大电流，解发OCP ## RA HTHHO T240新增加黑屏;  ## ## Gn 下拉线路 深孔有明显烧伤现象，Gn下拉无法工作时，Gate output和Q点无法被下拉，会导致CK信号一直会 输入面内，导致大电流，解发OCP
+11/15  海信100台阶段，开关机试验，出现概率性开机闪烁 issue ## 11/15 海信100台阶段，在进行开关机试验，发现概率性开机闪烁 issue ## 11/15 在海信100台阶段，进行开关机试验时，出现概率性开机闪烁 issue
+海信 TR phase RA 验证 (DVT-3 送样片), 1/24 因灰阶闪烁换 T-con code 问题验证, 客户手动开关机验证 RA 3.5hr ON/0.5hr OFF 40℃/95% RH 42day 24台中拉出 4 台 触发 OCP 导致画面异常 ## 海信 TR phase RA 验证 (DVT-3 送样片), 1/24 由于灰阶闪烁换 T-con code 问题验证, 客户手动进行了开关机验证 RA 3.5hr ON/0.5hr OFF 40℃/95% RH 42day 24台中拉出 4 台 触发 OCP 导致画面异常 ## 海信 TR phase RA 验证 (DVT-3 送样片), 1/24 因灰阶闪烁换 T-con code 问题验证, 客户手动开关机验证 RA 3.5hr ON/0.5hr OFF 40℃/95% RH  42day 24台中拉出 4 台 触发 OCP 结果出现画面异常
+MOD OQC 要再次确认水平白带 mura ; 发现约 25% 片子 L128 flicker pattern; 闪烁严重, flicker 值远大于规格 30 ## ## panel静置后best VCOM偏移 ## MOD OQC 要再次确认水平白带 mura ; 发现约四分之一片子 L128 flicker pattern; 闪烁严重, flicker 值远大于规格 30 ## ## panel静置后best VCOM偏移 ## MOD OQC 要再次确认水平白带 mura ; 发现约 25% 片子 L128 flicker pattern;  闪烁严重, flicker 值远远高于规格 30 ## ## panel静置后best VCOM偏移
+终端客诉POL烧伤，高发于woa VGH走线的固定位置 ## 终端客诉POL烧伤，在woa VGH走线的固定位置高发
+43D01外观站点检出 46/439pcs POL烧伤，异常ratio 10.47%，无膜品集中 ## 43D01外观站点检测出 46/439pcs POL烧伤，异常ratio 10.47%，无膜品集中 ## 43D01外观站点检出 46/439pcs POL烧伤，异常比率为10.47%，无膜品集中
+D08-3搭TMT R6 BL出现水平横纹，BLU光照时panel偏亮 ## D08-3搭TMT R6 BL出现水平横纹，在BLU光照时panel偏亮 ## D08-3搭TMT R6 BL出现水平横纹，BLU光照时存在panel偏亮
+VD客诉验证PQ阶段搭配diming backlight出现水平亮暗带 ## VD客诉验证PQ阶段搭配diming backlight的时候导致水平亮暗带 ## 在VD客诉验证PQ阶段，搭配diming backlight出现水平亮暗带 
+local diming backlight出现水平亮暗带,低灰阶固定位置明显可见等间隔水平亮暗带 ## local diming backlight出现水平亮暗带,低灰阶固定位置很明显返现等间隔水平亮暗带 ## 当local diming backlight出现水平亮暗带,低灰阶固定位置可以明显可见等间隔水平亮暗带
+HTHHO→T500 1/6pcs 十字线NG
+MOD垂直淡线不良0.195% ## MOD垂直淡线不良比率0.195%
+密集型垂直淡线降等 KCN 0.47%
+双驱点灯水平方向贯穿的单根线不良 ## 双驱点灯水平方向贯穿的单根线不佳
+T500 1/6pcs新增水平渐变
+55D11 HTHHO T360后出现水平密集线source侧在下，右侧单驱正常，左侧单驱黑屏
+D12-2机种 HTHHO T100 水平渐变线
+HTHHO 60°C90%RH T500 1/6pcs 新增水平密集线
+严重型：T0的周期性水平渐变线，CFCOM外灌不消失; 角落轻微型：source侧角落轻微的周期性水平渐变线，CFCOM外灌消失;  ## 严重型：T0的周期性水平渐变线，CFCOM外灌不消失; 角落轻微型：source侧角落轻微的周期性水平渐变线，CFCOM外灌消失;  ## 严重型：T0的周期性水平渐变线，CFCOM外灌不消失; 角落轻微型：source侧角落轻微的周期性水平渐变线，CFCOM外灌消失; 
+常规IS 
+常规IS
+RT条件下棋盘格PTN点灯5min切换48、64灰阶出现快速残像
+LC 加量-1%→0.5%，Inline Bubble \LTS Bubble ratio 已改善； 低温低压Bubble T96 6/6 Pass; T120  2/6 Fail，仍需优化。 ## LC 加量-1%→0.5%，Inline Bubble \LTS Bubble ratio 已经改善； 低温低压Bubble T96 6/6 Pass; T120 2/6 Fail，还得需要优化
+LC margin厂内测试5%，不足7% ## LC margin厂内测试5%，不到7% 
+GTM PS光罩面压测试JND 2.8 
+模拟VD面压手法面压测试，部分区域L128正视仍可见黑斑 ## 模拟VD面压手法面压测试时，部分区域L128正视仍旧可以见黑斑
+22B04 面压NG，JND 3.5，水准与量产品22B01相当 ## 22B04 面压NG，JND 3.5，水准可以和量产品22B01相提并论
+T24，1/2 NG，垂直暗线
+现象1：在OCP设定为63mA时进行短路测试，部分面板WOA区温度高达70℃；; 现象2：量产品OCP设定为40mA，部分面板在重载画面会触发OCP
+DVT gamma偏低 ## DVT gamma有点低 ## DVT gamma较低
+auto pgamma by pass率偏低 ## auto pgamma by pass率较低 ## auto pgamma by pass比较低
+(1) 大视角60° Local gamma值在L118 处偏高与竟手不同, MB改善视角算法无法匹配; (2) 大视角60° gamma 偏黄, 非线性 
+6/10pcs  gamma偏高，同时Ton偏高，预倾角均值偏小0.9°
+平均Tr% 5.74%低于评估值6.0%，下降了4.33% ## 平均Tr% 值为5.74%，相比较于评估值6.0%，下降了4.33% 
+D08 Tr% 由55D02实验结果估算, 但产出后 Tr% loss 10% 
+65D02 design3 较design 2 CR从下降921 ## design 2 CR总体上较65D02 design3 从高921
+4domain无VAC，VD肤色视角不达 ## 4domain无VAC，VD肤色视角无法到达
+OQC全检，均发现Source侧出现一条贯穿的水平红带，ND10%不可见 ## 当OQC全检，均发现Source侧会出现一条贯穿的水平红带，ND10%是不可见的
+水平方向同一COF可见中间位置（图中黄色箭头所指）偏白两端位置偏黑 ## 水平方向同一COF，可发现中间位置（图中黄色箭头所指）偏白并且两端位置偏黑
+HTHHO后出现H-block
+crosstalk画面漏光及按压漏光 ## crosstalk画面出现漏光和按压漏光 ## 
+黑画面，按压panel出现漏光 ## 黑画面的时候，按压panel导致出现漏光

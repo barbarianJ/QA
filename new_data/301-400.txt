@@ -1,0 +1,390 @@
+﻿301:
+新材料@65D02产品进行验证，SMO后可见角落有bubble出现
+验证新材料产品@65D02，SMO后在角落出现bubble
+新材料@65D0验证发现SMO后角落有气泡
+对@65D0新材料验证发现SMO后有角落bubble
+验证@65D0，SMO后可以在角落看见气泡
+302:
+MOD点灯，L0低灰阶可见周边漏光
+在MOD点灯后L0低灰阶周围漏光
+MOD点灯后L0低灰阶可以看到周围漏光
+MOD点亮，L0低灰阶发现周围漏光
+点灯MOD，可以看到L0低灰阶周边有漏光现象
+303:
+配向区域性不亮
+发现配向区域性不亮
+出现配向区域性不亮问题
+有配向区域性不明亮
+304:
+周边泛黑/泛白/泛红/泛绿（L0 & L48），Panel四周，无大板集中性; 
+周围泛白，面板周围，没有大板集中性
+周边泛绿，panel周围，无大板集中性
+305:
+在60℃/90湿度Aging出现水平线异常
+在60摄氏度湿度Aging存在水平线异常现象
+当处于60摄氏度湿度的时候，Aging出现水平线异常
+温度60℃，湿度90，Aging出现水平线异常
+湿度环境90 ，温度60，Aging出现水平线异常
+306:
+周边mura #### 周边Gap偏大 #### Spacer Size调整
+旁边mura
+出现周边mura现象
+存在周边mura
+有周围mura
+307:
+R磨角CK腐蚀
+R有磨角CK有腐蚀
+R出现磨角CK存在腐蚀
+308:
+1200/3200 不同Depo. Mode 和Idle Time 均有不同程度的Cu 氧化；
+1200/3200 不同的Depo. Mode和Idle Time都有Cu 氧化
+1200/3200不同Depo. Mode 以及Idle Time都存在不同程度的Cu 氧化
+1200/3200 不同的Depo. Mode和Idle Time均存在不同程度的Cu 氧化
+309:
+TD1实做CD2（Hole CD）比设计值偏大3.5um
+TD1实做CD2 结果比设计的值大3.5um
+TD1实做CD2（Hole CD）发现结果设计值偏大3.5um
+在TD1实做CD2（Hole CD）的实验结果发现比设计值偏大3.5um
+310:
+VFS MuraKC降等         51%
+VFS MuraKC降等了51%
+311:
+Mod 判出11.7% bubble：四角bubble（4/17）和面内圆型bubble（13/17）
+Mod 判出11.7% 气泡：四角bubble（4/17）和面内圆型bubble（13/17）
+Mod 判出11.7% bubble：四角气泡（4/17）和面内圆型bubble（13/17）
+Mod 判出11.7% bubble：四角bubble（4/17）和面内圆型气泡（13/17）
+Mod 判出11.7%气泡：四角气泡（4/17）和面内圆型气泡（13/17）
+312:
+主货4/43sht 固定在GOA busline处peeling
+在主货4/43sht 固定在GOA busline的时候peeling
+当主货4/43sht 固定在GOA busline处peeling
+313:
+等间距密集细线斜纹mura
+等间距密集细线斜纹存在mura
+等间距密集细线斜纹有mura
+mura出现在等间距密集细线斜纹
+相等间距密集细纹mura
+314:
+Oven flow浅孔/深孔分别比量产材料偏大1.5um/1um
+Oven flow浅孔和深孔分别比量产材料偏大1.5um和1um
+Oven flow浅孔比量产材料偏大1.5um，深孔比量产材料偏1um
+315:
+厚铜铜氧化
+厚铜有铜氧化
+厚铜出现铜氧化
+厚铜存在铜氧化
+316:
+厚铜翘曲
+厚铜有翘曲
+厚铜存在翘曲
+厚铜有翘曲现象
+厚铜存在翘曲现象
+317:
+PV1 SiOx鼓包/破裂
+PV1 SiOx出现鼓包/破裂
+PV1 SiOx有鼓包和破裂
+PV1 SiOx出现了鼓包以及破裂
+PV1 SiOx发现鼓包/破裂
+318:
+接触阻抗偏大，副产物等 #
+接触阻抗有些偏大，并伴随副产物等
+接触阻抗存在副产物，并且偏大
+319:
+M2与M1 Cross处断线
+M1 Cross与M2处断线
+断线在M2与M1 Cross处
+M2与M1 Cross处有断线
+M1 Cross与M2处存在断线
+320:
+点灯出现大面积暗纹
+点灯有大面积暗纹
+大面积暗纹出现在点灯
+点灯发现大面积暗纹
+点灯存在大面积暗纹
+321:
+点灯出现大量亮暗点
+点灯发现大量亮暗点
+点灯存在大量亮暗点
+大量亮暗点出现在点灯
+321:
+3T的深浅孔，出现浅孔曝光CD偏大，而深孔曝不开现象
+3T的深浅孔有浅孔曝光CD偏大，而深孔曝不开现象
+3T的深浅孔发现浅孔曝光CD偏大，而深孔曝不开现象
+3T的深浅存在浅孔曝光CD偏大而深孔曝不开现象
+323:
+厚CU8000A在3300出现固定位置poor coating
+厚CU8000A在3300发现固定位置poor coating
+厚CU8000A在3300有固定位置poor coating现象
+324:
+5mask GOA在3um做至target时，5um的TFT实际偏大约0.4~0.5um
+5mask GOA在3um做至target时，5um的TFT比实际大约0.4~0.5um
+5mask GOA在3um做至target时，发现5um的TFT实际偏大约0.4~0.5um
+5mask GOA在3um做至target时，遇到5um的TFT实际偏大约0.4~0.5um
+5mask GOA在3um做至target时，存在5um的TFT实际偏大约0.4~0.5um
+325:
+MOD点灯时在panel量测发生漏光，解析确认为ps peeling堆叠影响gap
+MOD点灯时在panel量测发生漏光现象，解析确认为ps peeling堆叠影响gap
+MOD点灯时在panel量测发生漏光，解析确认为ps peeling堆叠从而影响gap
+MOD点灯时在panel量测有漏光，解析确认为ps peeling堆叠导致影响gap
+326:
+####
+327:
+3850 存在严重 GOA 区As 不均现象,集中在大板中间位置 
+集中在大板中间位置， 3850 存在严重 GOA 区As 不均现象
+3850 发现存在严重 GOA 区As 不均现象,集中在大板中间位置
+3850 存在严重 GOA 区As 不均集中在大板中间位置 
+328:
+55D10 DVT1 PI Macro捡发现Source & Non Source侧存在AA区边缘Dummy区PI流平不均点状发亮;
+对55D10 DVT1 PI Macro捡发现Source & Non Source侧存在AA区边缘Dummy区PI流平不均点状发亮;
+55D10 DVT1 PI Macro捡发现Source & Non Source侧存在AA区边缘Dummy区PI流平不均点状发亮的现象;
+329:
+Design2 批次8 POL TFT POL边缘气泡导致AA区边缘漏光82.02%，批次7 POL 1.73%
+Design2 批次8 POL TFT POL由于边缘气泡导致AA区边缘漏光82.02%，批次7 POL 1.73%
+330:
+TD4  HTHHO T500 6/6 周边Mura(JND 2.6~3.0)
+TD4  HTHHO T500 6/6 周边出现Mura(JND 2.6~3.0)
+TD4  HTHHO T500 6/6 周围Mura(JND 2.6~3.0)
+331:
+IS Fail Design2 1/6 NG，01 膜，JND 3.5
+332:
+先行批3855检出ESD（Density：24.6），集中发生于Array Test 走线处
+先行批3855检出ESD（Density：24.6），全部发生于Array Test 走线处
+先行批3855检出ESD（Density：24.6），都发生于Array Test 走线处
+333:
+厂内部分产品肤色色偏超规，不同架构下色偏表现不同，解析不同架构色偏差异原因
+部分产品肤色色偏超过规定，不同架构下色偏表现不同，解析不同架构色偏差异原因
+厂内部分产品肤色色偏超规，不同架构下色偏表现也不一样，解析不同架构色偏差异原因
+334:
+椭偏仪量测ITO n/k,k值(光吸收系数)明显偏离真实值,调整椭偏仪拟合模型也无法改善
+椭偏仪量测ITO n/k,k值(光吸收系数)偏离真实值,调整椭偏仪拟合模型也无法改善
+椭偏仪量测ITO n/k,k值(光吸收系数)明显偏离真实值,对整椭偏仪进行调整拟合模型也无法改善
+椭偏仪量测ITO n/k,k值(光吸收系数)偏离真实值,调整椭偏仪拟合模型也没有改善
+335:
+厂内部分产品对比度偏低，缺少有针对性的对策。
+部分产品对比度有些低， 没有针对性的对策
+厂内部分产品对比度偏低，缺少有针对性的办法
+厂内部分产品对比度偏低，拿不出有针对性的对策
+336:
+完整铜膜通过吸附性机台（AOH、Photo）时出现down机
+当完整铜膜通过吸附性机台（AOH、Photo）的时候出现down机
+down机出现在完整铜膜通过吸附性机台（AOH、Photo）时
+337:
+Cu/Mo结构Cu侧出现掏空
+掏空出现在Cu/Mo结构Cu侧
+Cu/Mo结构Cu侧有掏空
+338:
+沿色阻边缘残留ITO导致两孔short；
+由于色阻边缘残留ITO导致两孔short；
+两孔short由于色阻边缘残留ITO导致
+339:
+4Domain pixel暗态漏光，漏光发生在gate侧
+4Domain pixel出现暗态漏光，漏光发生在gate侧
+4Domain pixel有暗态漏光，并且漏光发生在gate侧
+4Domain pixel暗态漏光，而且漏光发生在gate侧
+340:
+Source右侧第一颗COF分区最明显，剩余COF分区偶尔可见。
+除了Source右侧第一颗COF分区最明显，剩余COF分区偶尔可见。
+只有Source右侧第一颗COF分区最明显，其他COF分区偶尔可见。
+341:
+左驱仅显示前六级，右驱四六级水平淡线，无级传性不良，双驱正常显示;
+左驱只显示到前六级，右驱四六级水平淡线，无级传性不良，双驱正常显示;
+左驱仅仅显示了前六级右驱四六级水平淡线没有级传性不良并且双驱正常显示;
+342:
+4domain未发生H-XT；; 3T结构，在规格内，偏高；; 3T+串扰严重，且H-XT集中在面板中间位置。;
+4domain没有发生H-XT；; 3T结构在规格内，而且偏高；; 3T+串扰严重，且H-XT集中在面板中间位置。;
+4domain没有发生H-XT；; 3T结构在规格内偏高；; 3T+出现串扰严重而且H-XT集中在面板中间位置。
+4domain未发生H-XT；; 3T结构，在规格内，有些偏高； 3T+串扰严重，且H-XT集中在面板中间位置。;
+343:
+发生条件：STD条件 2pcs/低高温SINx条件 1pcs；; RA条件；高温高湿60℃-90% HTHTTO，目标T240；; 点灯测试；现象表现为TFT常开，疑为Vth负偏严重或gate讯号异常；; Vgl/Vgh调节画面仍异常，Vgl低至-14V后画面无法切换；; OM查看bonding区；; Rebonding后可正常点亮:;
+发生条件：STD条件 2pcs/低高温SINx条件 1pcs；; RA条件；高温高湿60℃-90% HTHTTO，目标T240；; 点灯测试；现象表现为TFT可以常开，怀疑由于为Vth负偏严重或gate讯号异常；; Vgl/Vgh调节画面仍异常，Vgl低至-14V后画面不能切换；; OM查看bonding区；; Rebonding后可正常点亮:;
+344:
+量测一片高低温STD条件，阻抗无异常; 条件STD SiOx减薄，GOA版CK信号short，RGB之间short；COF版RGB之间阻抗1KΩ左右；; 问题：没有剩余大板可再次确认short情况。;
+量测一片高低温STD条件，阻抗没有异常; 条件STD SiOx减薄，GOA版CK信号short，RGB之间short；COF版RGB之间阻抗1KΩ左右；; 问题：没有多余大板可再次确认short情况。;
+345:
+IS Fail的膜位具有一些的集中性，主要集中在大板短边；线上测量的I-V与Panel实际工作的I-V具有两点差异：I，没有照光，加热等恶化条件。II，不是AA的TFT
+IS Fail的膜位具有的集中性，而且集中在大板短边；线上测量的I-V与Panel实际工作的I-V具有两点差异：I，没有照光，加热等恶化条件。II，不是AA的TFT
+346:
+30th pattern 温度飙升至79oC
+30th pattern 温度飙升至79摄氏度
+30th pattern 温度提高到至79oC
+30th pattern 温度上升至79oC
+347:
+色阻边界到中心距离不等
+色阻边界到中心的距离不想等
+色阻边界到中心距离不一样
+348:
+外围Busline等较宽走线处M1 Cu Peeling严重，其他位置/面内轻微。
+外围Busline等较宽走线处发现M1 Cu Peeling严重，其他位置/面内轻微。
+349:
+SF6相对CF4刻蚀副产物轻微，但SF6Cu damage严重，在与Cu接触前必须切换其他气体，搭配CF4副产物问题仍然存在
+SF6相对CF4刻蚀副产物较轻微，但SF6Cu damage发生严重，在与Cu接触前必须切换其他气体，搭配CF4副产物问题仍然存在
+SF6相对CF4刻蚀副产物轻微，但SF6Cu damage严重，在与Cu接触前必须切换其他气体，而且仍然存在搭配CF4副产物问题
+350:
+先Run的1片有异常：高Power+无Season；   原因推测：高Power？ 无Season？; 后Run的3片有异常：低Power+无Season；   原因推测：已污染？ 无Season？
+351:
+全部位于 Data Split进入AA区的ACOM交叉处；; 鼓包Issue沿宽Acom线上下对称延伸约5~6行宽度，程度渐弱。
+所有位于 Data Split进入AA区的ACOM交叉处；; 而且鼓包Issue沿宽Acom线上下对称延伸约5~6行宽度，程度渐弱。
+位于 Data Split进入AA区的ACOM交叉处；; 并且鼓包Issue沿宽Acom线上下对称延伸约5~6行宽度，并且程度渐弱。
+352:
+VGLL,降低, VGH升高导致OCP不是Vth过正导致; T21 Vth太负，导致CK 一直充放电导致CK大电流
+353:
+Panel下半屏中间位置泛白，发生率100%；; 泛白区呈渐变状，越靠中间位置泛白越严重；（越靠上泛白亦有越严重趋势，但趋势轻微，不明显）; 在纯色Pattern下泛白现象更明显易观察；
+面板下半屏中间位置泛白，而且发生率100%；; 泛白区呈渐变状，越靠中间位置泛白越严重；（越靠上泛白亦有越严重趋势，但趋势轻微，不明显）; 在纯色Pattern下泛白现象更明显易观察；
+面板下半屏中间位置泛白，并且发生率100%；; 而且泛白区呈渐变状，越靠中间位置泛白越严重；（越靠上泛白亦有越严重趋势，但趋势轻微，不太明显）; 在纯色面板下泛白现象更明显易观察；
+354:
+Main/Sub交界处的“八爪暗纹”有所减轻；; Main区靠近CF Open处的“几字暗纹”有所减少。
+Main/Sub交界处的“八爪暗纹”开始减轻；; Main区靠近CF Open处的“几字暗纹”逐渐减少。
+355:
+C/B外挂电阻 & RA T500; 2pcs/3pcs COF侧明显出现水平渐变暗线，; 从两端GOA至面板中央开始逐渐加深
+C/B外挂电阻 & RA T500; 2pcs/3pcs COF侧存在水平渐变暗线，并且从两端GOA至面板中央逐渐加深
+C/B外挂电阻 & RA T500; 2pcs/3pcs COF侧出现水平渐变暗线，而从两端GOA至面板中央逐渐加深
+356:
+85 8K TD1模组点灯发现耳朵漏光情况，比例5/131
+85 8K TD1模组点灯出现耳朵漏光现象，比例5/131
+85 8K TD1模组点灯发现耳朵漏光现象，例如5/131
+357:
+大板dummy区PR残
+358:
+Tr偏低
+Tr较低
+Tr有点低
+Tr比较低
+359:
+H crosstalk
+360:
+黑底白框 V crosstalk
+白框黑底 V crosstalk
+361:
+TD1周边mura
+TD1周围mura
+TD1周边存在mura
+TD1周围有mura
+362:
+fanout short
+363:
+ATS多次调试fail
+ATS多次调试失败
+多次调试ATS失败
+多次调试ATSfail
+364:
+RD line ITO short
+365:
+gate侧出现暗态漏光
+门侧暗态漏光
+门侧有暗态漏光
+gate侧存在暗态漏光
+366:
+PFA undercut
+367:
+V line defect
+368:
+H line defect
+369:
+AS太薄至特性Fail
+AS过薄至特性失败
+AS过薄从而特性Fail
+特性Fail由于AS过薄导致
+370:
+黑底白框V-XT JND=3.6
+白框黑底V-XT JND=3.6
+371:
+三星肤色视角NG
+372:
+Cell暗态漏光类型
+Cell出现暗态漏光类型
+373:
+DataBM增加CR
+374:
+M/S交界处暗纹比较宽
+M/S交界地方暗纹较宽
+M/S交界处暗纹出现较宽现象
+375:
+大板周边BPS光阻有残留
+大板周边BPS存在光阻残留
+光阻残留出现大板周边BPS
+376:
+Blue衬垫Peel
+377:
+CF Taper处ITO残留
+CF Taper处有ITO残留
+378:
+暗态细碎亮点漏光
+暗态细碎亮点有漏光
+暗态细碎亮点出现漏光
+379:
+BPS AA区域大面积亮点
+BPS AA区域出现大面积亮点
+BPS AA区域有大面积亮点
+BPS AA区域较多亮点
+380:
+RB载台上PFA膜厚过薄
+RB载台上PFA膜厚太薄
+RB载台上PFA膜厚有些薄
+381:
+chip周边泛白
+chip周围泛白
+chip旁边泛白
+382:
+RB堆叠膜厚及段差偏低
+RB堆叠膜厚并且段差偏低
+383:
+Test Key位置色阻堆叠膜厚有点偏低
+Test Key位置色阻堆叠膜厚比较低
+Test Key位置的色阻堆叠膜厚偏低
+
+384:
+周边漏光/周边Mura
+周围漏光/周围Mura
+周边漏光
+周围出现漏光
+385:
+Cfopen处ITO残留
+Cfopen处存在ITO残留
+Cfopen处有ITO残留
+386:
+65D02 DVT2 HTHHO T160 出现黑屏
+65D02 DVT2 HTHHO T160 黑屏
+387:
+65D02 DVT2 出现主货批周围漏光，高发生率
+65D02 DVT2 主货批周围漏光，而且高发生率
+65D02 DVT2 主货批周围漏光，发生率较高
+388:
+PFA产品5900后，via处存在ITO鼓包
+PFA产品5900后，via处有ITO鼓包
+PFA产品5900后，via处出现ITO鼓包现象
+389:
+PFA产品cell vas抽气采用PV2量产参数发生一定概率OC 空气气泡
+PFA产品cell vas抽气采用PV2量产参数存在概率OC 空气bubble
+PFA产品cell vas抽气采用PV2量产参数发生概率OC 空气气泡
+390:
+55UD CN 5Mask TG PS 2nd Source小中量验证MOD点灯发现固定点位黑阶黑点
+55UD CN 5Mask TG PS 2nd Source小中量验证MOD点灯发现固定点位出现黑阶黑点
+391:
+PFA产品MOD点灯有暗点
+PFA产品MOD点灯存在暗点
+PFA产品MOD点灯出现暗点
+392:
+量产PFA产品存在IS 失败问题，确认IS fail panel Best Vcom shift较OK panel大
+量产PFA产品存在IS fail问题，并且比较确认IS fail panel Best Vcom shift较OK panel大
+393:
+ENF#7 中量测试过程中出现MOD 水痕mura&猫爪漏光降等
+ENF#7 中量测试过程中出现MOD 水痕漏光&猫爪mura 降等
+394:
+JSR PC880-R2 PFA 在HP之后COA基板出现pin Mura，与HP proximity pin map完全匹配
+395:
+####
+396:
+PFA OVEN、ITO Anneal、PS OVEN均未发现刺鼻性气味
+PFA OVEN、ITO Anneal、PS OVEN都没有发现刺鼻性气味
+397:
+PPC
+398:
+ENF
+399:
+在10K生产过程中Inline PS量测存在OOC，并出现多点PSH/OL量测跳点异常现象，而且PS形状发生明显变形，推测光罩雾化污染Mask，从而导致PS形状发生变化，无法稳定生产问题。
+在10K生产过程中Inline PS量测出现OOC，并出现多点PSH/OL量测跳点异常，PS形状发生明显变形，推测存在光罩雾化污染Mask，进而导致PS形状发生变化，无法稳定生产问题。
+400:
+客诉bubble issue
+客诉气泡issue
+客诉bubble 问题
+客诉气泡问题

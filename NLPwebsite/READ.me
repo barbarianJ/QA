@@ -1,0 +1,15 @@
+runserver:
+	./start.sh
+dependency:
+	pip install -r requirements.txt
+
+WebBrowser way:
+	$server_ip:$portnum
+	(default portnum:18800)
+
+using url way:
+	$server_ip:$portnum/?process_data/?task=qa&seq='ENTER HERE'
+
+
+港研所 关键字 url 设置地址:
+    sentence/NLP/config.py 内 KEYWORD_URL 变量。

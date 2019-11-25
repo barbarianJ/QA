@@ -1,0 +1,5 @@
+{"ᐅ":"attach $number",
+"ᐁᐁ":"attach ( $object $object )",
+"ᐁ的ᐁ":"attach $object relate = $object",
+"ᐁ唱的ᐁ":"attach $object singer = $object"
+}

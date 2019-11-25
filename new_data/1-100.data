@@ -1,0 +1,100 @@
+面板中发现存在有黑斑##panel点亮屏幕时候有黑斑存在怎么办##板子有黑斑怎么办
+panel有肉眼可见的黑色斑块存在
+暗点爆量且黑像素有白色斑点，中部还有黑点。##暗点超级多，拆开后看到有白斑存在##白斑上有暗点##暗点像素白斑中间有小黑点。
+暗点很多，各种颜色画面下都可以看到，发生率百分之百##点亮屏的时候能看见很多暗点##点亮屏幕的时候可以看见超级大量的黑点，暗点，复现率很高。
+暗点很多，但是两边多，中间少，暗点像素里有小黑点。##存在爆量的四周多中间少的暗点情况##暗点像素中间有小黑点。
+暗点呈现出两边多中间少的去世，四周多但是中间少。
+ra之后面板有亮斑，中间还有小黑点，随着ra时间的增加，亮斑呈椭圆状。##亮斑慢慢变成椭圆形；##有亮斑，而且ra时间越长，变成椭圆形；
+部分block的暗线出现爆量##ra开始后部分块与块上的黑色线状很多##开始ra以后有暗线，黑色线条，很多##暗线爆量
+ct黑色画面点亮屏幕后有亮线产生##黑屏点亮后有白线##黑屏上有白线产生##ct各种黑色画面时能看到亮线存在
+面板上出现水滴状亮点，而且有点带亮线簇##能看到drop亮点存在，还有点带白线呈现簇状。##panel水滴状亮点，一群一群，伴有白色亮线。
+pixel两侧漏光##像素两边会存在漏光##点像素周围漏光现象。
+面板不同地方出现不相同的漏光情况##面板出现与tft基板shift相关的漏光##panel的cf基板和tft的shift出现漏光。
+面板rgbw的线性区域ct点亮及黑色画面都存在##panel的rgbw饱和区域和线性区还有sense的tft的ct点灯有黑画面
+有环状暗色区域出现，位置相对固定##有位置总是固定的黑色环状区域##面板上总是在相同位置出现环状黑色mura
+panel中间部分存在有分隔距离均匀的点位##面板中部存在对称分布的点位
+左右距离10厘米，上下15公分##左右10厘米上下15厘米，完整版约15cm
+有对称的圆环黑色mura存在，a半板比b半板更明显##黑色的环状mura
+电性飘逸的分区mura##出现由电性漂移导致的不同区域出现mura
+halftone验证片点屏的时候周围有黑色mura
+GOA第一级输出幅值低于输入幅值的一半##GOA第一级输出幅值低于输入的百分之五十
+goa级传只能传92行并且只有goa这边才能点亮
+横向有块状而且有不良黑线存在
+面板在显示棋盘有闪烁##panel在画面为纯白画面会出现闪烁情况##屏幕板子出现闪烁问题
+pg点屏的时候，会出现按块分区不良的问题##分block点屏不良当面板在PG点屏时##分block点屏不良
+面板暗点过多，爆量，无法点亮，加大电压时才能点亮##常规电压无法点亮Panel，得加电压。
+vdd上没有电流##vss接线异常有错误##vdd没电##vdd不带电##因为vss异常导致的vdd没有电流通过
+TFT Vth侦测实验异常##Vth侦测实验存在问题且同一列子像素的侦测回传数据相同
+te模组均匀性差##Cu WOLED T/E模组九点量测不均匀
+AOI设备黑屏而且主机重复开机。##AOI设备黑屏无显示，主机异常，无法进行正常测试##AOI设备黑屏无显示，主机异常
+Slot14 玻璃与其他Slot颜色不同##Slot14 玻璃与其他的颜色不一样##玻璃与其他的颜色不一致
+31寸薄膜封装出现报警Peripherals任务停止，把手伸入CVD 腔体后动作停止##薄膜封装出现报警，Peripherals停止
+低位取篮中止，界面显示提升伺服故障报警信息，机械臂无法移动##低位取篮时突然停止，机器显示伺服故障的信息，robot机械臂无法移动，无法手动取出
+Plasma导轨运动有异响##Plasma导轨产生异音##plasma轨道会出现异常声响
+PC与Tester连接异常，打不开测量软件##Tester与Pro连接异常，测量电性曲线错误
+设备异常断电后TEG复机过程中发现PC电脑与tester及Pro无法连接##设备异常断电之后电脑与tester及Pro无法建立通信，自动量测失败错误有异常
+ACTIVELAYER D的AH时，出现警报，提示Pressure Deviation##cvd在进行ACTIVELAYER-D时候错误，报警压力偏差，成膜失败；##cvd进行中，报警压力数值异常，无法成膜
+CVD 区域的地面有大面积液体泄漏##CVD 区域的地面有大面积液体泄漏，可能为diw##PH试纸和管道检查疑似DIW
+药液副槽与药液主槽以及设备下方的盛液盘有大量积液##副槽与主槽之间的Pump下方有大量药液##设备下方的盛液盘有大量留存药液积液
+曝光机报警UM Error##报警UM Error##出现UM错误的警报##UM异常##UM错误
+曝光机复机异常，提示The set value is out of the range##曝光机的mask压力超出范围##曝光机重启的时候报警mask压力超出阀值##曝光机复机重启时警报响起，并提示蒙版压力超过标准范围
+设备因断电，导致TFE Scrubber发生漏水##tfe的刷子漏水##tfe洗涤器出现漏水
+cvd重启复机al沉积完毕后，tc取片子时报警##CHD和TC之间气压差大于600mttor引起报警##CHD和TC的压力超过600mttor导致取片时警报
+用新版bottom MT 基板时，S4发生警报##新bottom MT 基板蒸镀执行Slot1、Slot2时PVD时机台S4出现警报
+TFT执行Slot20时PVD时机台S4发生警报##CHB电性验证时PVD时机台S4发生警报
+执行A33M6时发送S4 DC Set Point警报##执行A33M6出现了S4 DC Set Point Alarm
+IJP基板制作执行Slot7时PVD时机台S5发生警报##IJP基板制作执行Slot7时时机台发生alarm
+CVD PM完成后，重启复机显示成膜均匀性超出范围##PM完成后，重启复机显示成膜out of spec
+设备断电后IJP 复机时发现分子泵触摸板警告，无法上电通电##IJP 复机时发现分子泵Touch Panel发生警报，也无法启动HPB。
+执行MT Slot4基板的EV3 对位时失败，发现基板缺块，slot1到3有固定位置的缺块现象##EV3 对位fail，基板缺块而且有固定位置的缺块现象。
+执行完成蒸镀后发现破角，同步确认其余4pcs同一位置出现破角##同一位置出现破角##蒸镀后发现破角
+EV3破片##ev3存在有破片##破片现象##有破片存在
+破片存在##破片
+基板发生固定角裂纹##蒸镀完成后发现基板固定角裂纹##基板固定脚有裂纹##有裂纹存在
+TC Robot手臂上有破片##CHD靠近V/W的地方均有破片##CHD执行PV成膜到PL2时，发生压力pressure波动报警##PL2时pressure波动报警且有破片存在
+FA Robot未探测到玻璃而报警，交换片动作停止##未探测到玻璃##取出slot时未探测到玻璃发生警报
+printer机台无法对位，传入buffer4，从buffer4再取片时，发生破片##再取片时，发生破片##无法对位，再取片时，发生破片问题
+玻璃基板从buffer4取出传入HPB过程中机器人机械臂路径偏移撞击腔壁发生破片##发生破片##撞击腔壁发生破片##robot路径偏移，撞击腔壁发生破片
+IJP发生破片，每片玻璃破口共两处，破口在玻璃730边，破口均距玻璃460边约7.5毫米，破口状况一致。##IJP发生破片，破口状况一致##IJP发生破片
+UD IJP Demo时ST传片报警接收失败，发现有玻璃破碎在ST腔体内##发现玻璃破碎在ST腔体##ST传片报警接收失败
+首片发现破角问题，有7片全部同一位置出现破角##存在破角问题且全部同一位置出现破角
+基板D角破片，约5乘10厘米##基板ST Flip时TFE 报警破片##TFE 报警破片
+Bottom Top基板制作，M1后发现划痕，划痕形状不固定##PVD M1后发现划痕。划痕形状不固定##有划痕存在
+VCD的盖板有粘片，显影光阻残留##显影时间加长到200S后，显影有光阻残留##显影光阻残留
+Robot搬送Mask期间报警##EV2 Mask搬送异常##Mask搬送异常##Mask搬送出错
+TM1手臂因有料无帐，且无Alarm，半自动取片时Robot撞击腔体##Mask撞击腔体##Mask呗撞碎##mask被robot撞烂
+执行蒸镀时，在ITO或AG制程前，预SPUTTER时，出现S4 mask short 警报，不能重置，ag ch宕机##执行蒸镀时，出现S4的mask短缺警报，AG宕机##蒸镀时AG CH宕机
+空度无法下降且没有alarm信息，操作手柄开闭HPB腔门后仍存在此问题##空度无法下降且没有警报##空度无法下降
+TM 1 O2值异常跳动
+TFE Chamber发现干泵管路真空度异常，无法抽到冷泵开启真空度的所需条件数值之下##干泵管路真空度异常，冷泵无法开启##干泵管路真空度错误##冷泵无法开启
+VAS压合完成Unloading过程中RB出现Lo Glass Sen和Vac错误的报警，设备无法停止，玻璃停留在手臂上##Unloading过程中RB出现Lo Glass Sen和Vac错误的报警，设备无法停止##RB出现Lo Glass Sen报警
+Plasma导轨运动过程中停止并无异常alarm##Plasma导轨运动停止且无警告##plasma在无任何警告情况下停止##plasma异常停止运行
+基板传进Head涂布时出现报警，Gap follow Error##基板传进Head涂布时出现Gap follow错误的警告##Gap follow Error##Gap follow警告
+EV6 腔体执行tooling MT测试准备时，腔体机构无法移动，且机台有报警，ARM2 AXIS Controller Alarm##执行tooling MT测试准备时，腔体不能移动，报警ARM2 AXIS Controller警报##腔体不能移动，报警ARM2 AXIS Controller alrm##AXIS Controller alrm##腔体无法移动##chamber不能移动##chamber无法移动且有警报
+曝光机玻璃进入机台后，无法感知内部玻璃，输入PU 代码后出现位置同步错误， Stage无法做出正确动作，更换电源模块后，初始化过程中报X Y Axis laser Power Not Ready警报，初始化无法通过##无法感知玻璃，且出现位置同步错误， Stage无法做出正确动作，更换电源重启复位后，初始化报X Y 轴激光电源没有准备好，无法初始化##出现位置同步错误， 出现位置错误的警报##Axis laser Power Not Ready##X Y 轴激光电源没有准备好，无法初始化
+Axis laser Power Not Ready警报，初始化无法通过##xy轴激光电源未初始化##激光电源不能就绪，初始化失败##激光电源初始化失败##laser Power Not Ready##laser power
+Photo预烘烤报警##Hot plate overheating##热盘过热警告##热盘过热##烤盘过热##片子烤盘过热##热盘热量超标
+更换photo设备CO2 sensor时，photo设备断电后再复机，设备报警连接异常，system   communication error##更换sensor时，photo设备复机时报警连接异常，system communication 错误##photo设备重启时报警连接异常##photo设备重新启动复机时报警连接异常 
+array PH执行28-BPS M1需EE，两边共用CV，基板从CV4到CV3报警超时，导致CF EXP和CV7 处在交握，强制中断CV信号作原点，EXP关闭control  power，中断信号后重新准备后OK，开始流片时再次出现同样异常，CV请FA处理，曝光机关闭control power中断信号后重新Prepare NG，报警Unload Robot battery voltage drop has been detected和Unload Robot time is UP for servo on moving##共用CV，基板从CV4到CV3报警超时，强制中断CV信号作原点，关闭control  power，再开始流片时同样出现异常，曝光机关闭控制电源中断信号后重新准备失败，报警Unload Robot battery voltage drop has been detected和Unload Robot time is UP for servo on moving##重新准备失败，报警Unload Robot battery voltage drop has been detected和Unload Robot time is UP for servo on moving##Unload Robot battery voltage drop has been detected##Unload Robot time is UP for servo on moving##检测到未载入的机器人电池电压下降 
+CF显影机漏液，漏夜sensor感应，机台报警停机##发生显影机漏液导致机台停机##因漏液导致机台停机##因漏液停机##漏液停机
+EV6 Al坩埚破裂##Al坩埚破裂##坩埚破裂 
+Oven设备无法到达制程温度230度或220摄氏度，就出现加热炉温度过热的警报，导致机台升温中断##Oven设备在到达额定温度之前就出现加热炉温度过高的警报，导致升温中断##Oven设备未能升至230度就报警温度过高##Oven设备不能升温##Oven设备不能达到制定温度##加热炉温度过高##加热炉温度过热##加热炉过热##Oven加热炉过热
+无alarm但出现异常pattern，再次测试又恢复正常##没有发生警告但出现异常模式##没有警报但是pattern错误，再试又恢复正常##无alarm但偶尔出现异常pattern##前涂布测试无alarm但出现异常pattern
+UV Cure机台有报警，手套箱Cooling异常，压气机/风机断路器异常##手套箱Cooling异常，压气机/风机断路器异常##压气机/风机断路器异常
+设备警报Safety Teach Status Error，设备自动掉电且无法恢复##Safety Teach Status Error##设备自动掉电且无法恢复##设备自动掉电##安全教导状态错误
+Dry沉积调机片Passvation时，CHD报警##Dry沉积时，CHD报警##沉积时，CHD发生alarm
+Heaterchamber上控制箱 SSR Status 显示红灯，加热器跳闸##Heaterchamber上控制箱 SSR Status 显示红灯，加热器关闭##控制箱 SSR Status 显示警报##加热器显示警报并跳掉##加热器显示警报并自动关闭##加热器显示红灯
+加热器电源自动关闭##Heater Chamber power自动off##Heater Chamber电源自动关闭##Heater Chamber电源关闭##加热器电源异常关闭
+IJP打印存在以下问题，无IJP打印机更换墨水专用位置，IJP墨水成分易致癌##IJP打印墨水成分易致癌##致癌
+天平中有东西遗漏在腔室内，有硬体干涉风险##有东西遗漏在天平中##硬体干涉
+设备端出现警告，热传导液压力过低；##Chiller22-Warning##Galden（热传导液）Pressure Lower。##热传导液压力低##传导液压力低
+设备停机后无法正常开启，电压值偏高，无电流，重启Plasma Power Supply，多次点火发现无电压，仅有电流值，点火plasma显示Error 003，机台报警电压过低##重启Plasma Power Supply，多次点火发现无电压##点火plasma显示Error 003##错误003##多次点火发现无电压##机台报警电压过低
+执行Baseline实验封装时，积水Fill材料消耗完毕，更换胶材后无法正常涂布##胶材涂布过程中无法顺利成滴吐下，胶材异常凝聚在Nozzel处##更换胶材后无法正常涂布##胶材涂布过程中无法顺利成滴吐下##胶材异常凝聚在Nozzel处
+在基板进行打印时发现基板表面出现不明液滴，液滴出现较为随机，直径约为1厘米，无警告##基板进行打印时发现基板表面出现不明液滴##出现随机不明液滴，直径约为1厘米##无警告的情况下基板表面出现不明液滴
+工艺气压波动大，气压无法得到较精确的控制##工艺气压波动大##气压波动大##无法精确控制气压##无法精确控制压力##精确控制气压的问题
+不加电时可以看到斜纹mura##不通电可以看到斜纹mura##未点亮屏幕时就能看到斜纹mura##斜纹mura##黑屏的斜纹mura##黑屏时就有mura##不开屏有斜纹状的mura现象
+R/B/PS##Mask在T侧曝光图形与Array曝光图形无匹配##曝光图形无匹配##侧曝光图形与Array曝光图形不同##侧曝光图形与Array曝光图形不一样##侧曝光与Array不一致
+run货流程制度不够明确和完善，机台利用率低、人员协调及综合利用率较低，往往会出现实验货投片不及时、实验货投货计划与机台可执行量不匹配等现象##怎么提升机台稼动率，保证run货制度更为完善。##run货流程制度不够明确和完善##机台利用率低##人员协调及综合利用率较低##利用率较低##投片不及时##投货计划与机台可执行量不匹配
+出现3pcs无法点亮问题##3pcs无法点亮问题##无法点亮
+T1实验线湿蚀刻由Cu线切换Ag线后，在执行ITO/Ag/ITO刻蚀时，出现Ag膜整面未刻蚀##Cu线切换Ag线后出现Ag膜整面未刻蚀##切换Ag线后Ag膜整面未刻蚀##执行ITO/Ag/ITO刻蚀时，出现Ag膜整面未刻蚀状况##Ag膜整面未刻蚀##Ag膜未刻蚀##Ag膜没有刻蚀
+MT For材料开发ITO STR后发现有白雾状ITO残留##STR后发现有白雾状ITO残留##白雾状ITO残留##ITO残留##白雾状ITO

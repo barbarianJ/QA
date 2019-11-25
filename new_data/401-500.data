@@ -1,0 +1,100 @@
+JSR H3G放量7.5K验证时G成膜不稳致THK检出纵Mura$$$$检出纵Mura$$$$H3G放量7.5K验证发现G成膜不稳 #### NG lot光阻更容易干 #### 更换lot后OK
+DOW PFA实验过程中发现类似水渍脏污状Mura，且Mura区泛白，命名为水渍Mura$$$$发现水渍脏污状Mura #### 大极性溶剂用量较少，RGB via设计过多 #### 增加MEDG用量，选择较强的EUV条件，减少RGB via数量
+DOW PFA实验过程中发现磨砂状Mura，命名为Haze Mura$$$$颗粒状Mura被发现，命名为Haze Mura$$$$PFA实验过程中发现磨砂状颗粒物 #### 溶剂和表面活性剂与树脂的匹配性不良致使树脂聚集导致Haze Mura；表面活性剂数量不足导致Cloudy Mura #### 使用高沸点溶剂和低表面张力的表面活性剂改善Haze Mura；增加表面活性剂用量改善Cloudy Mura
+在基板中间出现团状Mura，命名为Cloudy Mura$$$$panel中间发现Mura，命名为Cloudy Mura$$$$团状物在基板被发现 #### 溶剂和表面活性剂与树脂的匹配性不良致使树脂聚集导致Haze Mura；表面活性剂数量不足导致Cloudy Mura #### 使用高沸点溶剂和低表面张力的表面活性剂改善Haze Mura；增加表面活性剂用量改善Cloudy Mura
+CMC H10G较H7G（SDI）的对比度低20%，主要在于暗态（L0）亮度偏高$$$$过爆$$$$太亮 #### Millbase Y185团聚 #### 更换匹配性更好的分散助剂
+BM底部undercut$$$$BM底部消弱 #### BM底部附着力差，表面感度强，出现明显undercut #### 降低表面固化，降低表面溶解，抑制undercut
+65D02（PFA机种）大量生产时，于PMO站点发出刺鼻性气味，其余量产PV2机种均未发出该气味；$$$$PMO产生刺激气味，其余PV2未出现此症状 #### PFA经EUV照射后，经过Oven制程散发出烧糊气味，与产线接近，EUV OFF则无类似气味 #### PFA与PI制程前清洗EUV降低，甚至关闭，或以AP Plasma取代EUV，可大幅度减少气味的析出
+JSR H4B较1st B CD偏大1~2um,导致R-B牛角偏高$$$$R-B牛角偏高，因为CD偏大1~2um #### CD值偏大，taper角偏大 #### 管控牛角值，CD和taper角
+55FHD MOD异物暗爆点，不良ratio 为6.85%$$$$MOD发生暗爆点，不良率为6.85% #### G58易产生-Br，污染液晶 #### 减少G58的用量
+CMC产品G5HC送测SGS，检测报告中，甲苯含量为77.7ppm; ，高于CSOT要求原材料甲苯含量规格<16ppm$$$$高于华星光电要求原材料甲苯含量规格<16ppm #### 光阻原料甲苯较高 #### 上游原料供货商加强纯化
+65D02 Design1 H7B 实做EF值比设计值偏小2.7um$$$$65D02 Design1 H7B EF偏小2.7um #### B10曝光机大区照度异常 #### 优化ALN复机处理流程，若校正则大小区均需重新校正
+B的整个pixel pattern 呈现凹型bowl shape；凹陷的幅度超过0.5 um$$$$B的整个像素模式呈凹形碗状形，幅度超过0.5 #### 光阻流平性 #### 后续check list 中需加入膜面状况的确认，加入光阻开发流程中
+DFC＆CMC H8B V2 试做3.2um：B/B/B undercut不均爆点$$$$DFC＆CMC H8B V2 试做3.2um：B/B/B 去除不均爆点 #### 光阻基底undercut不均长度较SiNx普遍更深 #### 在G4.5验证时，尽量使用接近实际情况的R/G基板来进行UC不均的验证
+SMK H7R经过oven之后, 相同条件下rework 会有残留,而SMK H4R不会$$$$SMK H7R经过烤制之后, 同等条件下rework 会有残留,而SMK H4R不会 #### 树脂交联度较高，光阻感度较高 #### 减少环氧树脂用量
+JSR PFA PC880-R2/R4材料在G8.5 test发现OVEN前后变异大，U%差。深孔设计部分孔oven后被填平$$$$JSR PFA PC880-R2/R4材料在G8.5 测试发现OVEN前后变大，U%差。深孔设计部分烤制后水平 #### 材料体系polymer分子量小，Tg温度低，在oven过程中流动过渡 #### polymer分子量增加：6000→8000→10000
+显影后，大板边缘defect偏多，经验证，加强VCD恶化，与VCD强相关$$$$显影后，大板边缘瑕疵偏多，经查证，加强VCD恶化，与VCD关系密切 #### 材料溶剂沸点稍低，VCD margin偏小，大板边缘VCD抽气较强位置溶剂挥发速度过快，出现膜面颜色不均defect #### 提高材料溶剂沸点，降低边缘挥发速度
+量产品放量，背污较量产验证$$$$量产加量，背污较量产验证 #### PS光阻在KOH中溶解性存在差异 #### 改善单体酸价及种类以增强溶解性
+SMK H4B/toyo H4R CSP压力持续升高；Defect数量飘升$$$$SMK H4B/toyo H4R CSP压力持续升高；瑕疵率飙升 #### 阻塞物为SMK H4B millbase中的gel和toyo H4R millbase 中的particle #### 原料过滤性强化，统一管控手法和标准
+SMK H7R容易发生M2 Cu腐蚀；经过Rework后再做R制程，腐蚀加剧$$$$SMK H7R容易发生M2 Cu腐蚀；经过返工后再做R制程，腐蚀加剧 #### H7R中硫醇类开始剂m含量偏高，Oven时产生硫蒸汽，透过PV1 缺陷腐蚀M2  #### 导入 toyo H7R，SMK持续改版
+ILD CVD后Gate金属上出现大量小颗黑色点状defect$$$$ILD CVD后Gate金属上出现密集点状黑色瑕疵 #### GI dry without PR，蚀刻过程中M1 top Mo damage导致Al hillock #### 1.GI dry with PR，防止Mo damage可改善; 2.调节GI&ILD dry条件，降低Mo选择蚀刻比; 3.M1 top Mo加厚至800A
+Dry后基板出现白雾状mura，呈点状或连成平行于长边的线$$$$晾干后panel出现白雾状mura，呈点状或平行线 #### GI dry without PR，M1 top Mo过刻及蚀刻不均匀性差异 #### 1.调节GI和ILD DRY刻蚀条件; 2. GI dry with PR，防止Mo damage可改善
+PFA PH后出现PFA图案缺失$$$$PFA PH导致缺失PFA图案 #### PFA与PV表面黏附力差 #### 1. 降低RGB和PFA制程前清洗的EUV强度，降低光积量；; 2. 减少显影时间；
+ITO WET/STR后出现ITO Slit消失或CD Loss过大$$$$ITO WET/STR后出现ITO Slit消失或CD 损失过大 #### Dry后PFA表面生成物与ITO附着性不佳 #### 1. 改为ECCP Dry etch；; 2. RIE CF4/O2 Dry后增加O2 ASH处理去除副产物；
+RG制程出现随机点位Pattern缺失$$$$RG制程发现任意点位Pattern消失 #### 光罩脏污导致 #### 清洗光罩
+GI 2W1D后AOI检测via hole defect爆量，确认为孔蚀刻未净；$$$$GI 2W1D后AOI检测via hole defect爆量，确认为孔蚀刻未净； #### 孔内光阻残留，导致第一道湿刻蚀刻未净 #### 1. 在第一道湿刻前增加O2 ASH；; 2. 调整蚀刻液配方，改善蚀刻液浸润性；
+Dry etch后PV SiNx侧向内缩严重，与PFA形成undercut，导致覆盖的ITO断裂，影响接触电阻$$$$Dry etch后PV SiNx异常侧向内缩，与PFA形成undercut，导致覆盖的ITO断裂，接触电阻受影响 #### 1. PFA Taper大；; 2. PV SiNx侧向蚀刻速率快 #### 1. PFA Mask采用Slit设计，降低PFA taper；; 2. 改善PV SiNx膜质；; 3. 降低Dry Pressure，增加O2 流量；
+M2 3W1D后外围IGZO残$$$$M2 3W1D后外围IGZO残缺 #### 小孔湿蚀刻，药液浸润性不佳 #### 1. Wet段加EUV，改善基板表面状态；; 2. 蚀刻时间延长；
+Cell点灯时R画面、白阶、灰阶可见R暗点，OM下确认色阻开孔位置靠近Metal边缘；FIB下确认ITO有断裂现象。$$$$Cell点灯时R画面、白阶、灰阶可见R暗点，OM下确认色阻开孔位置靠近Metal边缘；FIB下确认ITO出现断裂。 #### 色阻搭接在M2边缘，在色阻爬坡与M2爬坡之间ITO容易断裂 #### CF open位置shift
+GI CVD后基板上出现数颗直径约5mm的白色圆点状mura，边缘有金属对炸缺角$$$$GI CVD后panel上出现直径约5mm的mura，呈白色圆点状，边缘有金属对炸缺角 #### AQ造成Chamber气流紊乱，水滴飞溅至AK Cover 后，造成水滴残留，从而导致CVD Arcing #### PDC AK前AQ关闭
+原PV主条件成膜速率批次差异>14%，Vth批次差异达1.1V$$$$原PV主条件成膜速率批次差异大于14%，Vth批次差异达1.1V #### PV SiOx沉积是SiH4流量较低，流量控制精确度不高，沉积速率稳定性差； #### 1. 提高SiH4流量；; 2. 更换更高精度SiH4控制阀
+GOA级传不良$$$$GOA级传不通顺 #### GOA输出波形高准位不足、falling差 #### 1. GOA电路优化检讨(采用LC下拉）；; 2. 器件电性正偏压稳定性改善
+RA后点灯时OCP启动$$$$OCP在RA后点灯时启动 #### CK short #### 增强水汽防护，减少器件负偏，避免出现大电流；
+ITO  ANN后孔内出现ITO Bubble，导致接触电阻偏大$$$$ITO  ANN后孔内出现ITO 气泡，导致接触电阻偏大 #### PFA Dry后副产物未清除，经高温烘烤后逸散，导致ITO鼓起 #### 1. PFA Dry后增加Cu STR制程；; 2. Cu STR前EUV照射基板；
+GI CVD后AOI检测小颗黑色Particle新增大于5000颗$$$$GI CVD后AOI检测新增大于5000颗小颗黑色Particle #### TOES气体残留 #### 1. 更换中转区TEOS; 2. 修改成膜recipe（减小TEOS gas flow时间，并增加N2 吹扫步骤）
+4400制程中出现M1/M2跨线处ESD炸伤$$$$4400制程中发生M1/M2跨线处ESD炸伤 #### 干刻静电释放困难，且SiOx干蚀刻时间较长，静电积累严重； #### 1. GI厚度增加，SiNx与SiOx膜层比例优化; 2. PV  Dry etch采用ICP刻蚀方式
+IGZO靶材Splash issue$$$$IGZO靶材Splash 问题 #### 靶材局部散热不均, 造成融化滴在基板上 #### 靶材polish
+M1同层ESD，EUV制程高发$$$$M1同层ESD，EUV高发制程 #### M1长走线相邻，ESD高发； #### 1. 设计面：通过M2转线减少长走线相邻；增加相邻长走线Space；; 2. 工艺面： 关闭EUV；M1 taper优化；Dry采用ICP mode；
+ITO ANN后出现Bubble，解析发现为PV1 SiOx与M2界面分离导致；$$$$ITO ANN后出现气泡，分析发现为PV1 SiOx与M2界面分离导致； #### PV与M2界面应力不匹配 #### 1. 调整PV SiOx沉积条件，改善应力状况；（如降低Power）；; 2. PV CVD前增加N2O PT，改善M2表面应力状态；; 3. M2膜层改为三层金属；; 4. 设计改善；
+RA后Panel漏电严重，降低VGL可改善$$$$RA后m面板漏电严重，可通过降低VGL解决 #### RA后器件Vth负偏 #### 1. 降低VGL驱动电压；; 2. 提高器件稳定性；; 3. 改善Seal等封装材料，阻隔水汽的进入；
+GOA版点亮棋盘格画面时，面板底部出现显示错误，原本该显示白色的地方显示黑色，黑色显示白色；$$$$GOA版点亮棋盘格画面时，panel出现白色显示为黑色，黑色显示为白色； #### 最后六级GOA电路下拉方式与其它级不同，经历了较长的blanking time #### STV与Reset分离, 避免最后六级的差异性; 
+STT结构GOA电路中T53器件Vth正飘$$$$STT结构GOA电路中T53器件Vth发生正飘 #### 与其它机种比，STT电路的T53 Vds 最大，受到的PCBTS最大，Vth偏移最严重； #### 1、调整TFT size比例; 2、LC下拉+增加一颗TFT，清Sn节点; 3、增加T53的Cgs电容; 4、LC下拉且LC电压低于VGH
+1. 32IGZO 2255检出外围 M1 ESD，主要集中在chip外围电路；; 2. FIB结果：GI膜层完好，ESD为GI成膜前发生；$$$$ 32IGZO 2255检出外围 M1 ESD，主要集中在芯片外围电路；; 2. FIB结果：GI膜层完好，ESD发生在GI成膜前 #### ESD与补清洗设备STR200强相关 #### 后续STR&补清洗避Run STR200
+GI Dry制程SiNx Undercut严重$$$$GI 干燥制程SiNx 缺损严重 #### SINx/SiOx蚀刻选择比大 #### 1. 降低Pressure；; 2. 增加O2流量；
+CF4/O2 Dry etch大板中间点位副产物严重$$$$CF4/O2 Dry etch大板中间点位副产物过多 #### 等离子体分布不均，CF4易产生副产物 #### 1. 改为NF3/O2 dry etch；; 2. 调整FRC；
+HTHHO 水平渐变线$$$$HTHHO 出现渐变的水平线段 #### GOA via 孔腐蚀 #### ITO Rs 管控：t1  ≤170K  t2 ≤110k; GI taper管控：; PR Taper≤50°；; GI taper ：t1 ≤ 55° t2 ≤ 50°  ;   
+侧视色点和正视色点偏移较大，超出客户规格$$$$侧视色点和正视色点出现较大p偏移 #### Δnd 增大，RG亮度增大比例高于B，白点黄移，调WT拉低B亮度更多，视角变差 #### Δnd 减小
+侧视色点和正视色点偏移较大，超出客户规格$$$$侧视色点和正视色点出现较大p偏移 #### d降低，边界效应增大，RGB亮度较低抵消Δnd增大影响，且B亮度降低最大 #### cell gap降低
+侧视色点和正视色点偏移较大，超出客户规格$$$$侧视色点和正视色点出现较大p偏移 #### Pre-tilt增大，RG VT shift左移比B明显，即相对B亮度降低，视角改善 #### Pre-tilt优化
+在L0下，以小眼睛观察Pixel，可发现很多细小的亮点，影响产品品味和对比度$$$$在L0下，像素点出现大量细小的亮点，影响产品品味和对比度 #### UV1 过曝，形成大颗粒bump #### 降低UV1秒数
+在L0下，以小眼睛观察Pixel，可发现很多细小的亮点，影响产品品味和对比度$$$$在L0下，像素点出现大量细小的亮点，影响产品品味和对比度 #### 反应速率过快，UV1制程margin不足 #### 调整液晶配方
+在L0下，以小眼睛观察Pixel，可发现很多细小的亮点，影响产品品味和对比度$$$$在L0下，像素点出现大量细小的亮点，影响产品品味和对比度 #### RM吸收偏右，吸收增强导致反应速率过快 #### 调整RM
+L0下圈状mura&水平黑白带$$$$L0下圈状mura出现水平黑白带 #### UV2 CDA吹气直接吹到玻璃表面，形成温度差，产生预倾角差异 #### 改变设备，调整CDA吹气方向
+L0下圈状mura&水平黑白带$$$$L0下圈状mura出现水平黑白带 #### PI侧链偏软，UV2 后Pretilt容易shift，存在温差时，易形成预倾角差异 #### 调整PI材料，使用刚性侧链
+L0下圈状mura&水平黑白带$$$$L0下圈状mura出现水平黑白带 #### RM对温度敏感，成角时由于温差，产生预倾角差异 #### 调整RM结构
+在HVA照光前可以观察到小黑点$$$$在HVA照光前出现小黑点 #### 新RM体系，热聚合温度偏低，从而在框胶热固化过程中提前进行预聚合 #### 调整RM材料
+在客户背光下（高温区），在低灰阶下可以观察到底边泛白$$$$客户背光下，高温条件下低灰阶下出现底边泛白 #### 液晶材料自身特性在温度升高时，VT Curve会左移，从而相同电压下导致L增加 #### 在搭配客户温度不均匀的背光时，使用VT Curve受温度变化小的液晶材料搭配，
+JNC PI-Less 28A01碎亮点严重$$$$JNC PI-Less 28A01碎亮点情况严重 #### JNC PI Less additve在SMO过程中发生热聚合，导致28A01暗态碎亮点，亮态小黑点 #### 调整additive材料结构
+快速响应液晶在55D10 IS NG;$$$$快速响应液晶发生在55D10 IS NG; #### IS 由DC残所导致 #### 调code使IS pass
+有明显drop mura$$$$有明显滴落 mura #### P-type 滴下量大，Additive扩散不均导致 #### IJP滴下量40ng较小可改善
+中心配向OK，边缘配向不良$$$$中心配向良好，边缘配向不良 #### Seal UV 3000mj导致，使Additive提前聚合 #### 降低seal UV积算光亮至1000mj 改善
+水平渐变线$$$$有渐变的水平线 #### LC1/LC2过孔处腐蚀 #### 1.与CK区一致，过孔处PS保护
+Gate侧出现耳朵漏光$$$$Gate侧漏光 #### PI回流堆积在PS Wall上，导致对顶位置Gap偏高 #### PI 精度内缩300um，避开PS Wall堆积
+Gate侧出现耳朵漏光$$$$Gate侧漏光 #### PI回流堆积在PS Wall上，导致对顶位置Gap偏高 #### PS Wall设计站位需避开PI 精度
+实验线银酸蚀刻出现Ag蚀刻速率过慢，甚至无法蚀刻的现象$$$$实验线银酸蚀刻发现Ag蚀刻速率过缓甚至无法蚀刻 #### Ag酸换线时残留Cu酸污染 #### 1.利用Al酸进行管道Flush;; 2.升高药液温度蚀刻Ag dummy 
+Cu 与 PV或Cu叠加后很容易 peeling$$$$Cu 与 PV或自己叠加后容易 peeling #### Cu 薄膜的应力较大 #### 1.改善器件结构，采用Al作M1;; 2.改善制程条件，减小PV层应力
+CT点灯出现面板随机位置亮线簇不良$$$$CT点灯出现panel随机位置亮线簇不良 #### M2金属异常残留造成Vdd与Data短路 #### 更换Cu靶材
+CT点灯出现面板固定位置亮点环不良$$$$CT点灯出现panel随机位置亮线簇不良 #### IGZO成膜中静电累积导致LS ESD形成M1与LS走线短路 #### 降低L/UL腔室Pin_A高度，避免摩擦静电积累
+MT-PLN制程完成后，ITO成膜，进而在PHOTO-coating工序发现PR破膜$$$$T-PLN制程完成后，ITO成膜，在PHOTO-coating工序发现PR破膜 #### Al被TMAH蚀刻造成的undercut引起的 #### Metal后增加一张mask，制作SiO2保护层作为长期对策
+CT点灯出现严重水痕mura$$$$CT点灯出现水痕mura #### 水和Stripper液混合后残留在背板上导致mura #### 改善Stripe工艺
+IGZO PH在line2 进行bake，PH后macro下可见bake pin mura，CT点灯时pin mura明显；$$$$IGZO PH在line2 进行bake，PH后显微下可见bake pin mura，CT点灯时出现明显pin mura； #### IGZO PH时有pin的位置温度和无pin位置的温度撒热不均，导致电性差异 #### Line 2 Prebake动作改善： 先Lift Pin 下降至4mm预烤45s，后再贴板烘烤；; 
+CT点灯出现严重亮线过多$$$$CT点灯时亮线过多 #### M1/M2短路 #### Buffer孔采用分步蚀刻的方式
+CT点灯出现满屏分布不均的亮点$$$$CT点灯屏幕出现满屏不均匀的亮点 #### plasma将M1打下来和IGZO导体化区域接触导致Gate和S/D短路 #### 优化GI dry recipe，采用CF4/He气体蚀刻
+demo长时间点灯后黑画面关不断；越点越亮$$$$demo长时间点灯后黑画面无法关闭；从而亮度越来越亮 #### 长时间顶部照光会导致Vth负飘，对IGZO TFT电性影响较大 #### 增大阳极的面积，提升IGZO TFT的可靠性
+31’UD TOP emission背板制作过程中，ITOAgITO wet后首次发生残留。后续相继投入的几款产品也均发生残留。$$$$31’UD TOP emission背板制作过程中，ITOAgITO wet后首次发生残留。后续相继投入的产品也发生残留。 #### 实验数据表明PHOTO后，Top ITO表面有微量有机物质残留； #### PHOTO后增加O2 ash或Wet前使用EUV均能有效对策残留。根据实际情况选取第一种方案。
+在slim border 1st 投货产出的大板CT点灯的时候，Panel中心大面积的暗区无法点亮$$$$在slim border 第一次投货产出的大板CT点灯的时候，面板中心出现暗区无法点亮 #### PV Dry 对M2 TOP Mo过刻蚀，Al与碱液直接接触并反应，导致Anode与M2搭接异常 #### 通过改善PV膜厚均一性或增加M2 Top Mo的厚度可有效改善M2腐蚀问; 
+双层金属位置发生翘起$$$$双层金属位置翘起 #### 氧硅膜层与金属膜层应力不匹配 #### 通过调节ILD成膜参数，适当降低ILD氧硅膜层应力
+GI dry制程后AOI下四角分布密集小黑点$$$$GI dry制程后AOI下四角出现大量小黑点 #### GI dry蚀刻气体比列不当导致副产物产生 #### 调节dry蚀刻气体比列，降低O含量，改善副产物的产生
+51.85MHz fail$$$$51.85MHz 失败 #### PPCC能量集中 #### IC改版
+16KV 水平区块画异$$$$16KV 水平区块出现画面异常 #### VGH ESD clamp burnt out #### 修改VGH ESD Clamp 的Matel走线方式，增加contact 数量，增大VGH ESD CLAMP SIZE
+水平暗线$$$$发现水平暗线 #### COF LEAD BOND OPEN  #### 样品没有FT测试导致异常品流出
+水平暗线$$$$发现水平暗线 #### COF 走线太长导致RC delay,从而引起充电不足 #### 修改COF metal走线
+RA HTHHO 水平区块画异$$$$RA HTHHO 水平区块出现画面异常 #### 高温下delay time变长导致充电不足 #### gate IC 改版
+固定位置V-line$$$$V-line固定位置 #### IC ESD防护能力弱 #### IC 改版
+V-line$$$$出现V-line #### film 损伤 #### 复测
+V-line$$$$出现V-line #### ESD设备差异 #### 复测
+V-line$$$$出现V-line #### ESD设备差异 #### 复测
+ESD 测试多颗Driver显示画异$$$$ESD 测试多颗Driver显示画面异常 #### IC内部watch dog 抗ESD能力弱，ESD noise从预留I2C 线路传入IC #### Watch dog layout补强，切cut断预留I2C对watch dog控制
+系统ESD测试 NG，Class C$$$$系统ESD测试 失败，Class C #### ESD Noise 造成 4UI CLK Gen. 动作异常，产生极高频的 4UI clock 频率，导致 TP 输出异常. #### 加入line reset pulse，确保4UI CLK Gen在enable时能做reset动作
+V-Band$$$$出现V-line #### IC设计缺陷 #### IC 改版
+EOS/ESD导致VGL-GND Short$$$$EOS/ESD问题导致VGL-GND Short #### 模组制程 #### Test Pad增加绿油，模组组装ESD手法宣导
+GOA信号的OCP回路阻抗较大，在受到VGL-GND的噪声扰动后超过逻辑电路的阈值，Z点会翻转，使最终FLT信号翻转。$$$$GOA信号的OCP回路阻抗较大，受到VGL-GND的噪声干扰后越过逻辑电路的阈值，Z点会翻转，使最终FLT信号翻转。 #### IC设计缺陷 #### 通过metal change，在OCP模块附近增加2pF对GND的电容滤除Z点的噪声，避免FLT异常翻转
+65D02系统ESD, 胶框pass，铁框NG$$$$65D02系统ESD, 胶框通过测试，铁框失败 #### 65D02新铁框BL模组，在XB处与背板未做绝缘处理，ESD从铁背板串入XB裸铜处, 传入Driver input #### XB裸铜接地电阻0—>22ohm，同时在BL上靠近XB处贴绝缘胶带处理
+客户反馈恢复出厂设置时概率性黑屏$$$$客户反馈恢复出厂设置时，会有一定几率出现黑屏 #### VSS 放电速度太慢，在恢复出厂设置时，VSS 会低于VGL,level shifter fault pin 翻转 #### 更改VSS 对地放电电阻
+客户反馈A65E项目搭配55D07 开机画异$$$$客户反馈A65E项目搭配55D07 开机画面异常 #### VL 设置太低，reset 异常 #### PMIC VL  电压范围设定更改
+由于VIN异常dip，导致所有Chdischarge后又解除，discharge解除时，经波形量测交叉验证，确认为DCHG这CH在discharge解除时，误触SCP保护，导致所有CHHIZ$$$$由于VIN异常dip，导致所有Chdischarge后又消失，discharge解除时，通过波形量测交叉验证，确认为DCHG这CH在discharge解除时，误触SCP保护，导致所有CHHIZ #### / #### /
+开ODDC后开机概率性画异$$$$开ODDC后开机一定几率出现画面异常 ####  PU_lock未与CDR_clock align，导致开机时概率性CDR异常 #### IC改版，加入align电路，使PU_lock与CDR_clock align
+水平暗线$$$$出现水平暗线 #### COF LEAD BOND OPEN  #### 样品没有FT测试导致异常品流出
+水平暗线$$$$出现水平暗线 #### COF 走线太长导致RC delay,从而引起充电不足 #### 修改COF metal走线
+RA HTHHO 水平区块画异$$$$RA HTHHO 水平区块画面异常 #### 高温下delay time变长导致充电不足 #### gate IC 改版
+75D01 在HVAA重载画面下闪烁$$$$75D01 在HVAA重载闪屏 #### 在此画面下,HVAA 瞬间电流变化太快，使得HVAA 电压瞬间抬很高，触发OVP #### 打开TCON PDF 功能，在此画面下更改翻转方式，避免出现HVAA 重载

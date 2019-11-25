@@ -1,0 +1,101 @@
+2019-11-19 09:42:22,248 [save:89] [models:__call__] : mura
+2019-11-19 09:42:23,869 [save:466] [nlp_web_module:__call__] : QA cost: 1.621092 seconds
+2019-11-19 09:42:23,870 [save:105] [models:__call__] : qa model cost: 1.621959 seconds
+2019-11-19 09:42:23,879 [save:89] [models:__call__] : mura
+2019-11-19 09:42:24,151 [save:466] [nlp_web_module:__call__] : QA cost: 0.271939 seconds
+2019-11-19 09:42:24,152 [save:105] [models:__call__] : qa model cost: 0.272762 seconds
+2019-11-19 09:42:24,161 [save:89] [models:__call__] : mura
+2019-11-19 09:42:24,422 [save:466] [nlp_web_module:__call__] : QA cost: 0.260812 seconds
+2019-11-19 09:42:24,422 [save:105] [models:__call__] : qa model cost: 0.261673 seconds
+2019-11-19 09:43:12,834 [save:89] [models:__call__] : mura
+2019-11-19 09:43:15,604 [save:89] [models:__call__] : mura
+2019-11-19 09:43:17,207 [save:466] [nlp_web_module:__call__] : QA cost: 1.602633 seconds
+2019-11-19 09:43:17,208 [save:105] [models:__call__] : qa model cost: 1.603919 seconds
+2019-11-19 09:43:17,217 [save:89] [models:__call__] : mura
+2019-11-19 09:43:17,476 [save:466] [nlp_web_module:__call__] : QA cost: 0.258444 seconds
+2019-11-19 09:43:17,477 [save:105] [models:__call__] : qa model cost: 0.259770 seconds
+2019-11-19 09:43:17,486 [save:89] [models:__call__] : mura
+2019-11-19 09:43:18,772 [save:466] [nlp_web_module:__call__] : QA cost: 1.285618 seconds
+2019-11-19 09:43:18,773 [save:105] [models:__call__] : qa model cost: 1.286880 seconds
+2019-11-19 09:43:21,926 [save:89] [models:__call__] : mk
+2019-11-19 09:43:22,148 [save:466] [nlp_web_module:__call__] : QA cost: 0.221967 seconds
+2019-11-19 09:43:22,150 [save:105] [models:__call__] : qa model cost: 0.223383 seconds
+2019-11-19 09:44:31,853 [save:89] [models:__call__] : mk
+2019-11-19 09:44:34,288 [save:89] [models:__call__] : mk
+2019-11-19 09:44:36,086 [save:466] [nlp_web_module:__call__] : QA cost: 1.797496 seconds
+2019-11-19 09:44:36,087 [save:105] [models:__call__] : qa model cost: 1.798850 seconds
+2019-11-19 09:44:36,100 [save:89] [models:__call__] : mk
+2019-11-19 09:44:36,322 [save:466] [nlp_web_module:__call__] : QA cost: 0.221534 seconds
+2019-11-19 09:44:36,323 [save:105] [models:__call__] : qa model cost: 0.222891 seconds
+2019-11-19 09:44:36,336 [save:89] [models:__call__] : mk
+2019-11-19 09:44:36,563 [save:466] [nlp_web_module:__call__] : QA cost: 0.226139 seconds
+2019-11-19 09:44:36,564 [save:105] [models:__call__] : qa model cost: 0.227499 seconds
+2019-11-19 09:44:52,340 [save:89] [models:__call__] : mk
+2019-11-19 09:44:53,896 [save:466] [nlp_web_module:__call__] : QA cost: 1.555491 seconds
+2019-11-19 09:44:53,897 [save:105] [models:__call__] : qa model cost: 1.556813 seconds
+2019-11-19 09:44:53,910 [save:89] [models:__call__] : mk
+2019-11-19 09:44:54,127 [save:466] [nlp_web_module:__call__] : QA cost: 0.216661 seconds
+2019-11-19 09:44:54,128 [save:105] [models:__call__] : qa model cost: 0.218010 seconds
+2019-11-19 09:44:54,142 [save:89] [models:__call__] : mk
+2019-11-19 09:44:54,363 [save:466] [nlp_web_module:__call__] : QA cost: 0.221632 seconds
+2019-11-19 09:44:54,365 [save:105] [models:__call__] : qa model cost: 0.222967 seconds
+2019-11-19 09:44:57,645 [save:89] [models:__call__] : mura
+2019-11-19 09:44:57,990 [save:466] [nlp_web_module:__call__] : QA cost: 0.344517 seconds
+2019-11-19 09:44:57,991 [save:105] [models:__call__] : qa model cost: 0.345783 seconds
+2019-11-19 09:45:03,487 [save:89] [models:__call__] : mura
+2019-11-19 09:45:03,790 [save:466] [nlp_web_module:__call__] : QA cost: 0.303131 seconds
+2019-11-19 09:45:03,792 [save:105] [models:__call__] : qa model cost: 0.304518 seconds
+2019-11-19 09:49:19,884 [save:89] [models:__call__] : mura
+2019-11-19 09:49:21,536 [save:466] [nlp_web_module:__call__] : QA cost: 1.652214 seconds
+2019-11-19 09:49:21,536 [save:105] [models:__call__] : qa model cost: 1.652418 seconds
+2019-11-19 09:49:21,542 [save:89] [models:__call__] : mura
+2019-11-19 09:49:21,875 [save:466] [nlp_web_module:__call__] : QA cost: 0.332253 seconds
+2019-11-19 09:49:21,875 [save:105] [models:__call__] : qa model cost: 0.332475 seconds
+2019-11-19 09:49:21,880 [save:89] [models:__call__] : mura
+2019-11-19 09:49:22,155 [save:466] [nlp_web_module:__call__] : QA cost: 0.274430 seconds
+2019-11-19 09:49:22,155 [save:105] [models:__call__] : qa model cost: 0.274631 seconds
+2019-11-19 09:49:22,160 [save:89] [models:__call__] : mura
+2019-11-19 09:49:22,419 [save:466] [nlp_web_module:__call__] : QA cost: 0.258717 seconds
+2019-11-19 09:49:22,419 [save:105] [models:__call__] : qa model cost: 0.258917 seconds
+2019-11-19 09:49:22,423 [save:89] [models:__call__] : mura
+2019-11-19 09:49:22,697 [save:466] [nlp_web_module:__call__] : QA cost: 0.272910 seconds
+2019-11-19 09:49:22,697 [save:105] [models:__call__] : qa model cost: 0.273114 seconds
+2019-11-19 09:49:22,703 [save:89] [models:__call__] : mura
+2019-11-19 09:49:22,985 [save:466] [nlp_web_module:__call__] : QA cost: 0.281382 seconds
+2019-11-19 09:49:22,985 [save:105] [models:__call__] : qa model cost: 0.281569 seconds
+2019-11-19 09:49:22,989 [save:89] [models:__call__] : mura
+2019-11-19 09:49:23,303 [save:466] [nlp_web_module:__call__] : QA cost: 0.313440 seconds
+2019-11-19 09:49:23,303 [save:105] [models:__call__] : qa model cost: 0.313646 seconds
+2019-11-19 10:08:34,035 [save:89] [models:__call__] : mura
+2019-11-19 10:08:36,717 [save:466] [nlp_web_module:__call__] : QA cost: 2.656069 seconds
+2019-11-19 10:08:36,717 [save:105] [models:__call__] : qa model cost: 2.656303 seconds
+2019-11-19 10:08:36,785 [save:89] [models:__call__] : mura
+2019-11-19 10:08:37,045 [save:466] [nlp_web_module:__call__] : QA cost: 0.259261 seconds
+2019-11-19 10:08:37,045 [save:105] [models:__call__] : qa model cost: 0.259484 seconds
+2019-11-19 10:08:37,050 [save:89] [models:__call__] : mura
+2019-11-19 10:08:37,392 [save:466] [nlp_web_module:__call__] : QA cost: 0.342626 seconds
+2019-11-19 10:08:37,393 [save:105] [models:__call__] : qa model cost: 0.342845 seconds
+2019-11-19 10:08:37,397 [save:89] [models:__call__] : mura
+2019-11-19 10:08:37,659 [save:466] [nlp_web_module:__call__] : QA cost: 0.261591 seconds
+2019-11-19 10:08:37,659 [save:105] [models:__call__] : qa model cost: 0.261811 seconds
+2019-11-19 10:08:37,664 [save:89] [models:__call__] : mura
+2019-11-19 10:08:37,916 [save:466] [nlp_web_module:__call__] : QA cost: 0.252428 seconds
+2019-11-19 10:08:37,917 [save:105] [models:__call__] : qa model cost: 0.252631 seconds
+2019-11-19 10:08:40,271 [save:89] [models:__call__] : mura
+2019-11-19 10:08:40,517 [save:466] [nlp_web_module:__call__] : QA cost: 0.245726 seconds
+2019-11-19 10:08:40,517 [save:105] [models:__call__] : qa model cost: 0.245934 seconds
+2019-11-19 10:08:41,295 [save:89] [models:__call__] : mura
+2019-11-19 10:08:41,562 [save:466] [nlp_web_module:__call__] : QA cost: 0.266535 seconds
+2019-11-19 10:08:41,562 [save:105] [models:__call__] : qa model cost: 0.266753 seconds
+2019-11-19 10:08:42,102 [save:89] [models:__call__] : mura
+2019-11-19 10:08:42,385 [save:466] [nlp_web_module:__call__] : QA cost: 0.281840 seconds
+2019-11-19 10:08:42,385 [save:105] [models:__call__] : qa model cost: 0.282062 seconds
+2019-11-19 10:14:55,160 [save:89] [models:__call__] : mura
+2019-11-19 10:14:55,437 [save:466] [nlp_web_module:__call__] : QA cost: 0.276662 seconds
+2019-11-19 10:14:55,437 [save:105] [models:__call__] : qa model cost: 0.276900 seconds
+2019-11-19 10:14:55,442 [save:89] [models:__call__] : mura
+2019-11-19 10:14:55,695 [save:466] [nlp_web_module:__call__] : QA cost: 0.253027 seconds
+2019-11-19 10:14:55,696 [save:105] [models:__call__] : qa model cost: 0.253224 seconds
+2019-11-19 10:14:56,862 [save:89] [models:__call__] : mura
+2019-11-19 10:14:57,125 [save:466] [nlp_web_module:__call__] : QA cost: 0.262195 seconds
+2019-11-19 10:14:57,125 [save:105] [models:__call__] : qa model cost: 0.262400 seconds

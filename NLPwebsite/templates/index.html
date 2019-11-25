@@ -1,0 +1,93 @@
+<!DOCTYPE html>  
+<html>
+<body style="background-color:rgba(0,0,0,0.9)">
+<title>NLP Web Test</title>
+<link rel="stylesheet" type="text/css" href="../static/css/mainpage.css" />
+<div class="head_style">
+<h1>自然语言处理测试系统</h1>
+</div>
+<div class="text_style">
+<form id='cls_ner_nmt' action="/process_data/" method="get">
+    NLP任务使能:
+    <select name="task" id="task">
+    <option value="qa" selected = "selected">qa</option>
+    </select>
+    <br>测试样例输入,回车返回结果: 
+    <input type="text" id="seq" name="seq" style="width:800px;height:15px"><br>
+        <button type="button" id='process'><div class="botton_style">提交</div>
+    </button>
+    <p>
+    <b>NLP服务器返回结果:</b>
+        <div class="data_return"><span id='nlp_res'>Data from Server</span></div>
+    </p>
+</form>
+<br>
+<script src="../static/js/jquery.min.js" ></script>
+<script>  
+    jQuery(document).ready(
+        function()
+        {
+            $("#process").click(function()
+            {
+                var a = $("#seq").val();
+                var b_temp = document.getElementById("task");
+                var b = b_temp.value;
+                $.get("/process_data/",{'seq':a,'task':b},function(ret)
+                {
+                    $('#nlp_res').html(ret)
+                })
+            })
+
+            $("#chat_submit").click(function()
+            {
+                var a = $("#chat_input").val();
+                $("#chat_area").html($("#chat_area").html() + "user:" + a + "</br>");
+                $("#chat_area")[0].scrollTop = $("#chat_area")[0].scrollHeight;
+                $.get("/dev_chat/",{'sentence':a},function(ret)
+                {
+                    if (ret.search("Ṅ") > -1) {
+                        ret = ret.replace("Ṅ", " ISABEL ");
+                    }
+                    if (ret.search("Ḁ") > -1) {
+                        ret = ret.replace("Ḁ", " 20 ");
+                    }
+                    if (ret.search("Ḉ") > -1) {
+                        ret = ret.replace("Ḉ", " TCL ");
+                    }
+                    $("#chat_area").html($("#chat_area").html() + "robot:" + ret + "</br>");
+                    $("#chat_area")[0].scrollTop = $("#chat_area")[0].scrollHeight;
+                });
+                $("#chat_input")[0].value = "";
+            });
+            $("#chat_form").keydown(function(event)
+            {
+                if(event.keyCode == 13) {
+                    // does not work
+                    // $("#chat_submit").trigger("click");
+                    var a = $("#chat_input").val();
+                    $("#chat_area").html($("#chat_area").html() + "user:" + a + "</br>");
+                    $("#chat_area")[0].scrollTop = $("#chat_area")[0].scrollHeight;
+                    $.get("/dev_chat/",{'sentence':a},function(ret)
+                    {
+                        if (ret.search("Ṅ") > -1) {
+                            ret = ret.replace("Ṅ", " ISABEL ");
+                        }
+                        if (ret.search("Ḁ") > -1) {
+                            ret = ret.replace("Ḁ", " 20 ");
+                        }
+                        if (ret.search("Ḉ") > -1) {
+                            ret = ret.replace("Ḉ", " TCL ");
+                        }
+                        $("#chat_area").html($("#chat_area").html() + "robot:" + ret + "</br>");
+                        $("#chat_area")[0].scrollTop = $("#chat_area")[0].scrollHeight;
+                    });
+                    $("#chat_input")[0].value = "";
+                    return false;
+                }
+                return true;
+            });
+        });  
+</script>  
+</div>
+</body>  
+</html>  
